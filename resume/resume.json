@@ -21,6 +21,13 @@
 					]
 				},
 				{
+					"type" : "Markup Languages",
+					"items" : [
+						"HTML",
+						"LaTeX"
+					]
+				},
+				{
 					"type" : "Web Frameworks",
 					"items" : [
 						"Flask",
@@ -50,21 +57,19 @@
 					"degree" : "High School Diploma",
 					"institution" : "Stuyvesant High School",
 					"graduation_year" : 2014,
-					"gpa" : "95.4/100.0"
+					"gpa" : "95.4/100.0",
+					"details" : [
+						"High Honors in Stuyvesant Computer Science",
+						"2370 on the SAT"
+					]
 				}
-			]
-		},
-		"acad_achievements" : {
-			"items" : [
-				"High Honors in Stuyvesant Computer Science",
-				"2370 on the SAT"
 			]
 		},
 		"experience" : {
 			"items" : [
 				{
 					"title" : "Back-end Engineer",
-					"organisation" : "Mapzen (at the Samsung Accelerator)",
+					"organisation" : "Mapzen (Samsung Accelerator)",
 					"from" : "Jul. 2014",
 					"to" : "now",
 					"details" : [
@@ -129,20 +134,20 @@
 		"github_projects" : {
 			"details" : [
 				{
-					"project_name": "sevko/large-pixel-collider",
+					"project_name": "large-pixel-collider",
 					"description": [
 						"Built a rudimentary graphics engine from the ground up.",
 						"Started with per-pixel access, and implemented rasterization, polygonal rendering, z-buffering, shading, etc."
 					]
 				},
 				{
-					"project_name" : "sevko/portfolio",
+					"project_name" : "portfolio",
 					"description" : [
 						"Miscellaneous personal projects, like algorithm implementations and experimentations with various languages."
 					]
 				},
 				{
-					"project_name": "sevko/.dotfiles",
+					"project_name": ".dotfiles",
 					"description": [
 						"My personal collection of dotfiles and system administration scripts."
 					]
