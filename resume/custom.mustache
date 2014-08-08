@@ -1,0 +1,182 @@
+{{=<% %>=}}
+\documentclass[11pt,a4paper]{moderncv}
+
+\moderncvtheme[blue]{classic}
+
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.8]{geometry}
+
+<%#bio_data%>
+\firstname{<%&firstname%>}
+\familyname{\mbox{<%&familyname%>}}
+\title{\small <%#stars%><%#items%><%name%><%^last%> $\star$ <%/last%><%/items%><%/stars%>}
+<%#phone%>\phone{<%.%>}<%/phone%>
+<%#email%>\email{<%.%>}<%/email%>
+<%#raw_website%>\homepage{<%& .%>}<%/raw_website%>
+<%#linkedin_id%>\social[linkedin][<%& .%>]{<%& .%>}<%/linkedin_id%>
+<%#github_id%>\social[github][<%& .%>]{<%& .%>}<%/github_id%>
+
+% the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+
+% command and color used in this document, independently from moderncv
+\definecolor{see}{rgb}{0.5,0.5,0.5}% for web links
+\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}% for text subscripts
+\renewcommand{\labelitemi}{$\circ$}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\vspace*{-1cm}
+
+<%#summary%>
+\section{\textsc{##summary##}}
+	<%#points%>
+		\cvitem{\textbullet}{<%& .%>}
+	<%/points%>
+<%/summary%>
+
+<%#skills%>
+\section{\textsc{##skills##}}
+	<%#details%>
+		\cvitem{\textbullet}{\textbf{<%type%>}: <%#items%><%name%><%^last%>, <%/last%><%/items%>}
+	<%/details%>
+<%/skills%>
+
+<%#experience%>
+\section{\textsc{##experience##}}
+%    \cventry{years}{degree/job title}{institution/employer}{localization}{grade}{description}
+	<%#items%>
+		\cventry{<%from%> - <%to%>}{<%title%>}{<%organisation%>}{<%location%>}{}{
+			{\footnotesize
+				\begin{itemize}
+				<%#details%>\item <%& .%><%/details%>
+				<%#technology_used%>
+				\item ##technology_used##:
+				<%#tools%><%name%><%^last%>, <%/last%><%/tools%>
+				<%/technology_used%>
+				\end{itemize}
+			}
+		}
+	<%/items%>
+<%/experience%>
+
+<%#github_projects%>
+\section{\textsc{##github_projects##}}
+	<%#details%>
+		\cvitem{\textbullet}{\textbf{\href{http://github.com/<%project_name%>}{<%project_name%>}}<%#tagline%> - <%& .%><%/tagline%>}
+		\vspace*{-0.15cm}
+		\cvitem{}{
+			{\footnotesize
+				\begin{itemize}
+				<%#description%>\item <%& .%><%/description%>
+				\end{itemize}
+			}
+		}
+		\vspace*{-0.5cm}
+	<%/details%>
+<%/github_projects%>
+
+<%#other_projects%>
+\section{\textsc{##other_projects##}}
+	<%#items%>
+		\cvitem{\textbullet}{<%& headline%>}
+		\vspace*{-0.15cm}
+		\cvitem{}{
+			{\footnotesize
+				\begin{itemize}
+				<%#points%>\item <%& .%><%/points%>
+				<%#technology_used%>
+				\item ##technology_used##:
+				<%#tools%><%name%><%^last%>, <%/last%><%/tools%>
+				<%/technology_used%>
+				\end{itemize}
+			}
+		}
+		\vspace*{-0.5cm}
+	<%/items%>
+<%/other_projects%>
+
+<%#education%>
+\section{\textsc{##education##}}
+%    \cventry{years}{degree/job title}{institution/employer}{localization}{grade}{description}
+<%#schools%>
+\cventry{<%graduation_year%>}{<%degree%><%#major%>, <%major%><%/major%>}{<%institution%>}{}{<%#show_gpa%>##gpa##: <%gpa%><%/show_gpa%>}{}
+<%/schools%>
+<%/education%>
+
+<%#acad_achievements%>
+\section{\textsc{##acad_achievements##}}
+	<%#items%>
+		% \cvitem{LHS}{RHS}
+		\cvitem{\textbullet}{<%& .%>}
+	<%/items%>
+<%/acad_achievements%>
+
+<%#grad_courses%>
+\section{\textsc{##grad_courses##}}
+	<%#rows%>
+		\cvlistdoubleitem
+		<%#columns%>{<%#name%>\href{<%& url%>}{<%name%>}<%/name%>}<%/columns%>
+	<%/rows%>
+<%/grad_courses%>
+
+<%#undergrad_courses%>
+\section{\textsc{##undergrad_courses##}}
+	<%#rows%>
+		\cvlistdoubleitem
+		<%#columns%>{<%#name%>\href{<%& url%>}{<%name%>}<%/name%>}<%/columns%>
+	<%/rows%>
+<%/undergrad_courses%>
+
+<%#research_experience%>
+\section{\textsc{##research_experience##}}
+	<%#items%>
+		\cventry{<%from%> - <%to%>}{<%title%>}{<%organisation%>}{<%location%>}{}{
+			{\footnotesize
+				\begin{itemize}
+				<%#points%>\item <%& .%><%/points%>
+				\end{itemize}
+			}
+		}
+	<%/items%>
+<%/research_experience%>
+
+<%#patents%>
+\section{\textsc{##patents##}}
+	<%#items%>
+		\cvitem{<%patent_id%>}{\textit{\href{<%url%>}{<%title%>}}<%#issuance_date%>, ##issuance## <%issuance_date%><%/issuance_date%>.}
+	<%/items%>
+<%/patents%>
+
+<%#papers%>
+\section{\textsc{##papers##}}
+	<%#items%>
+		\cvitem{\textbullet}{<%authors%>, \textit{\href{<%url%>}{<%title%>}} <%& misc%>}
+	<%/items%>
+<%/papers%>
+
+<%#memberships%>
+\section{\textsc{##memberships##}}
+	<%#committees%>
+		\cvitem{\textbullet}{<%& .%>}
+	<%/committees%>
+<%/memberships%>
+
+<%#extra_curricular%>
+\section{\textsc{##extra_curricular##}}
+	<%#items%>
+		\cvitem{\textbullet}{<%& .%>}
+	<%/items%>
+<%/extra_curricular%>
+
+<%/bio_data%>
+\end{document}
+%% end of file `page.tex'.
