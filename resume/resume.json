@@ -82,7 +82,17 @@
 							"OpenStreetMap",
 							"ESRI Shapefiles"
 						]
-					}
+					},
+					"references" : [
+						{
+							"name" : "Randy Meech",
+							"contact" : "randy@mapzen.com"
+						},
+						{
+							"name" : "Mike Cunningham",
+							"contact" : "mike@mapzen.com"
+						}
+					]
 				},
 				{
 					"title" : "Programming/Computer Science Tutor",
@@ -92,6 +102,16 @@
 					"details" : [
 						"Tutored two Stuyvesant High School students in computer-science for their CS 101 class over the span of six months.",
 						"Currently teaching a middle-school student how to program in Python."
+					],
+					"references" : [
+						{
+							"name" : "Dolly Rosen",
+							"contact" : "917.224.7070"
+						},
+						{
+							"name" : "Katrin Sosnick",
+							"contact" : "Katrin@rondeel.com"
+						}
 					]
 				}
 			]
@@ -121,13 +141,6 @@
 					"points" : [
 						"Developed a new website for CSTUY, a non-profit that promotes computer-science education for high-school students."
 					]
-				},
-				{
-					"headline" : "**stuybooks**, an application for literary quote submissions. <<stuybooks.com>>",
-					"points" : [
-						"Developed a web application that allows the submission of literary quotes to a public wall of text.",
-						"Source: <<github.com/sevko/stuybooks>>"
-					]
 				}
 			]
 		},
@@ -151,6 +164,29 @@
 					"description": [
 						"My personal collection of dotfiles and system administration scripts."
 					]
+				},
+				{
+					"project_name" : "stuybooks",
+					"description" : [
+						"Developed a web application that allows the submission of literary quotes to a public wall of text.",
+						"Live at: <<stuybooks.com>>"
+					]
+				}
+			]
+		},
+		"competitions" : {
+			"details" : [
+				{
+					"name" : "picoCTF",
+					"date" : "2013",
+					"position" : "71<sup>st</sup>/1938",
+					"description" : "High-school cyber-security competition."
+				},
+				{
+					"name" : "UFOCTF",
+					"date" : "2013",
+					"position" : "38<sup>th</sup>/353",
+					"description" : "Industry-level cyber-security competition."
 				}
 			]
 		}
