@@ -1,0 +1,32 @@
+/*
+ * Insert vendor prefixes for a property.
+ *
+ * $property : A CSS property.
+ * $value : The value corresponding to the property `$property`.
+ */
+@mixin vendor($property, $value)
+	-webkit-#{$property}: $value
+	-moz-#{$property}: $value
+	-ms-#{$property}: $value
+	-o-#{$property}: $value
+	#{$property}: $value
+
+/*
+ * Insert a CSS ease-out transition.
+ *
+ * $time : The time the transition should last.
+ */
+@mixin transition($time)
+	@include vendor(transition, all $time ease-out)
+
+/*
+ * Add portable opacity styling.
+ *
+ * $opacity : The desired opacity level.
+ */
+@mixin opaque($opacity)
+	@include vendor(opacity, $opacity)
+	filter: alpha(opacity=$opacity)
+
+.t3
+	@include transition(0.3s)
