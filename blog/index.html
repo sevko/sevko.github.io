@@ -1,5 +1,18 @@
 ---
 title: blog
+stylesheet: true
 ---
 
 <h1>blog</h1>
+
+<ul id="posts">
+	{% for post in site.posts %}
+		<li class="post">
+			<p>
+				<a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
+				<span class="date">{{ post.date | date_to_string }}</span>
+			</p>
+			<div class="excerpt">{{ post.excerpt }}</div>
+		</li>
+	{% endfor %}
+</ul>
