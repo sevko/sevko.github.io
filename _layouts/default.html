@@ -9,9 +9,14 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<meta name="description" content="">
 		<meta name="viewport" content="initial-scale=1">
-
+		<!-- <meta http-equiv="refresh" content="3"> -->
 		{% if page.redirect %}
 			<meta http-equiv="refresh" content="0; url={{ page.redirect }}">
+		{% endif %}
+
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		{% if page.stylesheet %}
+			<link rel="stylesheet" type="text/css" href="/css/{{ page.title }}.css">
 		{% endif %}
 
 	</head>
