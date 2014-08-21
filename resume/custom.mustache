@@ -72,7 +72,7 @@
 					\setlength\multicolsep{0pt}
 					\begin{itemize}
 						<%#references%>
-							\item <%name%>, \href{<%contact%>}{<%contact%>}
+							\item <%name%>, {<%#has_phone%><%phone%>, <%/has_phone%>}{<%#has_email%>\href{mailto:<%email%>}{<%email%>}<%/has_email%>}
 						<%/references%>
 					\end{itemize}
 				\end{itemize}
@@ -112,7 +112,7 @@
 			\cvitem{}{
 				{\footnotesize
 					\begin{itemize}
-					<%#description%>\item <%& .%><%/description%>
+						<%#description%>\item <%& .%><%/description%>
 					\end{itemize}
 				}
 			}

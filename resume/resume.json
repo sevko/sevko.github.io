@@ -86,11 +86,17 @@
 					"references" : [
 						{
 							"name" : "Randy Meech",
-							"contact" : "randy@mapzen.com"
+							"has_phone" : false,
+							"phone" : "",
+							"has_email" : true,
+							"email" : "randy@mapzen.com"
 						},
 						{
 							"name" : "Mike Cunningham",
-							"contact" : "mike@mapzen.com"
+							"has_phone" : false,
+							"phone" : "",
+							"has_email" : true,
+							"email" : "mike@mapzen.com"
 						}
 					]
 				},
@@ -106,11 +112,17 @@
 					"references" : [
 						{
 							"name" : "Dolly Rosen",
-							"contact" : "917.224.7070"
+							"has_phone" : true,
+							"phone" : "",
+							"has_email" : false,
+							"email" : "917.224.7070"
 						},
 						{
 							"name" : "Katrin Sosnick",
-							"contact" : "Katrin@rondeel.com"
+							"has_phone" : false,
+							"phone" : "",
+							"has_email" : true,
+							"email" : "Katrin@rondeel.com"
 						}
 					]
 				}
