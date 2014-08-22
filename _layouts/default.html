@@ -18,7 +18,9 @@
 		{% if page.stylesheet %}
 			<link rel="stylesheet" type="text/css" href="/css/{{ page.title }}.css">
 		{% endif %}
-
+		{% if page.title != "home" %}
+			<link rel="stylesheet" type="text/css" href="/css/menubar.css">
+		{% endif %}
 	</head>
 	<body>
 		<!--[if lt IE 7]>
