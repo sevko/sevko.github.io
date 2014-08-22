@@ -1,1 +1,1 @@
-../res/plugins/jekyll-toc-generator/_plugins/tocGenerator.rb
+jekyll-toc-generator/_plugins/tocGenerator.rb
