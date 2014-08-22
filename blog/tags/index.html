@@ -3,6 +3,11 @@ title: tags
 stylesheet: true
 ---
 
+<div id="cloud">
+	<h3>tags</h3>
+	{% tag_cloud %}
+</div>
+
 {% capture tags %}
 	{% for tag in site.tags %}
 		{{ tag[0] }}

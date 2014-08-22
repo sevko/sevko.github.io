@@ -1,3 +1,6 @@
 [submodule "_plugins/jekyll-toc-generator"]
 	path = _plugins/jekyll-toc-generator
 	url = https://github.com/dafi/jekyll-toc-generator
+[submodule "_plugins/tag-cloud"]
+	path = _plugins/tag-cloud
+	url = https://gist.github.com/2290195.git
