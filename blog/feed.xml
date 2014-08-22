@@ -17,6 +17,11 @@ layout:
 			<item>
 				<title>{{ post.title | strip_html }}</title>
 				<description>{{ post.excerpt | strip_html }}</description>
+				<image>
+					<url>http://www.w3schools.com/images/logo.gif</url>
+					<title>A thumbnail image for "{{ post.title }}".</title>
+					<link>{{ post.thumbnail }}</link>
+				</image>
 				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 				<link>{{ site.url }}{{ post.url }}</link>
 				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>

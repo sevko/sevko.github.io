@@ -3,14 +3,27 @@
 
 @import variables
 
-li.post > div.meta
-	display: inline-block
-	margin-bottom: 10px
-	width: 100%
+ul
+	li.post
+		margin-top: 50px
+		padding-top: 10px
+		border-top: 1px solid #ccc
 
-	a
-		font-size: 1.5em
+		>div.meta
+			display: inline-block
+			line-height: 1.8em
+			width: 100%
 
-	span
-		color: $baseColor1
-		float: right
+			>a
+				font-size: 1.5em
+
+			>span
+				color: $baseColor1
+				float: right
+
+			div
+				span.tags
+					color: $baseColor1
+
+		>div.excerpt
+			font-size: 0.8em
