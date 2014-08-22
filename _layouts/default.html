@@ -21,6 +21,13 @@
 		{% if page.title != "home" %}
 			<link rel="stylesheet" type="text/css" href="/css/header.css">
 		{% endif %}
+
+		{% if page.math %}
+			<script src="http://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,local/local">
+			</script>
+		{% endif %}
+
+		{{ page.head }}
 	</head>
 	<body>
 		<!--[if lt IE 7]>
