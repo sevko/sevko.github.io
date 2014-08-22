@@ -1,6 +1,7 @@
 ---
 layout: default
-head: <link rel="stylesheet" href="/css/post.css">
+head: |
+  <link rel="stylesheet" href="/css/post.css">
 ---
 
 <div id="meta">
@@ -8,4 +9,4 @@ head: <link rel="stylesheet" href="/css/post.css">
 	<span>{{ page.date | date_to_string }}</span>
 </div>
 
-{{ content }}
+{{ content | toc_generate }}

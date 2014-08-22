@@ -6,14 +6,15 @@
 			{{ page.title }}
 		</title>
 
-		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<meta name="description" content="">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="description" content="{{ page.description }}">
 		<meta name="viewport" content="initial-scale=1">
-		<!-- <meta http-equiv="refresh" content="3"> -->
+
 		{% if page.redirect %}
 			<meta http-equiv="refresh" content="0; url={{ page.redirect }}">
 		{% endif %}
 
+		<link rel=”author” href="https://plus.google.com/109642458345919934865/">
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 		{% if page.stylesheet %}
 			<link rel="stylesheet" type="text/css" href="/css/{{ page.title }}.css">

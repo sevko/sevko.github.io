@@ -1,0 +1,3 @@
+[submodule "res/plugins/jekyll-toc-generator"]
+	path = res/plugins/jekyll-toc-generator
+	url = https://github.com/dafi/jekyll-toc-generator
