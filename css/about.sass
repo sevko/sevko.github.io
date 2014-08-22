@@ -1,19 +1,29 @@
 ---
 ---
 
+@import mixins
+
 div#about
-    div
-        display: inline-block
-        vertical-align: top
+	text-align: center
 
-        &#left
-            margin-right: 40px
-            min-width: 100px
-            width: 20%
+	div
+		margin-top: 7%
+		display: inline-block
+		vertical-align: top
 
-            img
-                display: block
-                width: 100%
+		&#left
+			margin-bottom: 20px
+			margin-right: 40px
+			min-width: 100px
+			width: 20%
+			max-width: 150px
 
-        &#right
-            width: 60%
+			img
+				@include vendor(border-radius, 100px)
+
+				display: block
+				width: 100%
+
+		&#right
+			text-align: left
+			width: 60%
