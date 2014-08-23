@@ -2,6 +2,9 @@
 title: Polynomial interpolation in C
 math: false
 date: 2014-08-09 18:49:33
+thumbnail:
+  link: spiralSacks.png
+  alt: The ill Sacks Spiral, yo.
 tags:
   - Algorithms
   - Python

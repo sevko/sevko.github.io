@@ -13,17 +13,22 @@ head: |
 	{% for post in site.posts %}
 		<li class="post">
 			<div class="meta">
-				<a href="{{ post.url }}">{{ post.title }}</a>
-				<span class="date">{{ post.date | date_to_string }}</span>
-				<div>
-					<span class="tags">tags:</span>
+				<div id="thumbnail">
+					<img src="/img/thumbnails/{{ post.thumbnail.link }}" alt="{{ post.thumbnail.alt }}">
+				</div
+				><div id="text">
+					<a href="{{ post.url }}">{{ post.title }}</a>
+					<span class="date">{{ post.date | date_to_string }}</span>
+					<div>
+						<span class="tags">tags:</span>
 
-					{% for tag in post.tags %}
-						{% unless forloop.last %}
-							<a href="/blog/tags#{{ tag }}">{{ tag }}</a>,
-						{% endunless %}
-					{% endfor %}
-					<a href="/blog/tags#{{ post.tags[-1] }}">{{ post.tags[-1] }}</a>
+						{% for tag in post.tags %}
+							{% unless forloop.last %}
+								<a href="/blog/tags#{{ tag }}">{{ tag }}</a>,
+							{% endunless %}
+						{% endfor %}
+						<a href="/blog/tags#{{ post.tags[-1] }}">{{ post.tags[-1] }}</a>
+					</div>
 				</div>
 			</div>
 			<div class="excerpt">{{ post.excerpt | strip_html }}</div>

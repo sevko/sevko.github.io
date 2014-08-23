@@ -2,6 +2,9 @@
 title: Factoring large numbers
 math: true
 date: 2014-08-09 18:49:33
+thumbnail:
+  link: least_squares_estimation.png
+  alt: The ill least-squares-estimation image.
 tags:
   - R
   - Math
