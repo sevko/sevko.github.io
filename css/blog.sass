@@ -3,45 +3,48 @@
 
 @import variables
 
-div.meta
-	div
-		display: inline-block
+ul#posts
+	margin-top: 20px
 
-		&#thumbnail
-			// background-color: red
-			height: 70px
-			width: 70px
-
-			img
-				width: 100%
-
-		&#text
-			// background-color: green
-			vertical-align: top
-			margin-left: 4%
-			width: 76%
-
-ul
 	li.post
-		margin-top: 50px
-		padding-top: 10px
 		border-top: 1px solid #ccc
+		margin-bottom: 50px
+		padding-top: 10px
 
 		>div.meta
 			display: inline-block
 			line-height: 1.8em
 			width: 100%
 
-			>a
-				font-size: 1.5em
-
-			>span
-				color: $baseColor1
-				float: right
-
 			div
-				span.tags
+				display: inline-block
+
+				&#thumbnail
+					$imageSize: 70px
+
+					height: $imageSize
+					min-width: $imageSize
+					width: 10%
+
+					img
+						height: $imageSize
+						width: $imageSize
+						width: 100%
+
+			div#text
+				vertical-align: top
+				margin-left: 4%
+				width: 86%
+
+				>a
+					font-size: 1.5em
+
+				>span
 					color: $baseColor1
+					float: right
+
+			span.tags
+				color: $baseColor1
 
 		>div.excerpt
 			font-size: 0.8em

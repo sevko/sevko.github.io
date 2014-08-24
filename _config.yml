@@ -3,6 +3,7 @@ url: http://sevko.io
 description: The personal site and blog of Severyn Kozak.
 permalink: /blog/:title
 markdown: kramdown
+lsi: true
 defaults:
     -
         scope:

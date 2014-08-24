@@ -2,11 +2,32 @@
 layout: default
 head: |
   <link rel="stylesheet" href="/css/post.css">
+  <link rel="stylesheet" href="/css/blog.css">
 ---
 
 <div id="meta">
 	<h1>{{ page.title }}</h1>
 	<span>{{ page.date | date_to_string }}</span>
+	<div id="tags">
+		<span>tags:</span>
+		{% for tag in page.tags %}
+			{% unless forloop.last %}
+				<a href="/blog/tags#{{ tag }}">{{ tag }}</a>,
+			{% endunless %}
+		{% endfor %}
+		<a href="/blog/tags#{{ page.tags[-1] }}">{{ page.tags[-1] }}</a>
+	</div>
 </div>
 
-{{ content | toc_generate }}
+<div id="post">
+	{{ content | toc_generate }}
+</div>
+
+{% if site.related_posts.size > 0 %}
+	<h1 id="related-posts">Related posts</h1>
+	<ul id="posts">
+		{% for post in site.related_posts %}
+			{% include post_summary.html %}
+		{% endfor %}
+	</ul>
+{% endif %}
