@@ -6,10 +6,7 @@ sitemap:
   priority: 0.6
 ---
 
-<div id="cloud">
-	<h3>tags</h3>
-	{% tag_cloud %}
-</div>
+{% include tag_cloud.html %}
 
 {% capture tags %}
 	{% for tag in site.tags %}

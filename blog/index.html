@@ -12,6 +12,8 @@ head: |
     href="http://sevko.io/feed.xml">
 ---
 
+{% include tag_cloud.html %}
+
 <ul id="posts">
 	{% for post in site.posts %}
 		{% include post_summary.html %}
