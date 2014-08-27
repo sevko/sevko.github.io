@@ -22,6 +22,10 @@
 		{% if page.title != "home" %}
 			<link rel="stylesheet" type="text/css" href="/css/header.css">
 		{% endif %}
+		{% if page.code %}
+			<link rel="stylesheet" type="text/css" href="/css/code_color_scheme.css">
+			<link rel="stylesheet" type="text/css" href="/css/code.css">
+		{% endif %}
 
 		{% if page.math %}
 			<script src="http://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,local/local">
