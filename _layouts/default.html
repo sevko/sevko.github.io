@@ -16,6 +16,7 @@
 
 		<link rel=”author” href="https://plus.google.com/109642458345919934865/">
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link href="http://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" type="text/css">
 		{% if page.stylesheet %}
 			<link rel="stylesheet" type="text/css" href="/css/{{ page.title }}.css">
 		{% endif %}
@@ -29,6 +30,12 @@
 
 		{% if page.math %}
 			<script src="http://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,local/local">
+			</script>
+			<script>
+				MathJax.Hub.Config({
+					jax: ["input/TeX","output/HTML-CSS"],
+					displayAlign: "left"
+				});
 			</script>
 		{% endif %}
 
