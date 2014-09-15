@@ -13,22 +13,22 @@
 					"items" : [
 						"Python",
 						"C",
-						"Java",
 						"Javascript",
 						"Shell",
+						"Java"
+					]
+				},
+				{
+					"type" : "Markup/Other Languages",
+					"items" : [
+						"HTML",
+						"LaTeX",
 						"CSS",
 						"SASS"
 					]
 				},
 				{
-					"type" : "Markup Languages",
-					"items" : [
-						"HTML",
-						"LaTeX"
-					]
-				},
-				{
-					"type" : "Web Frameworks",
+					"type" : "Frameworks",
 					"items" : [
 						"Flask",
 						"Jekyll"
@@ -134,7 +134,7 @@
 					"headline" : "**bitshift**, a source-code search engine. <<bitshift.it>>",
 					"points" : [
 						"Helped develop _bitshift_, a search engine for source code published on various online frameworks (GitHub, Bitbucket, etc.). Allows users to search for language symbols, like loops and variables, and code metadata.",
-						"Will be presented at the Sep. 2014 **New York Tech Meetup**.",
+						"Demo'd at the Sept. 2014 **New York Tech Meetup** ([video](https://vimeo.com/106072869)).",
 						"Source: <<github.com/earwig/bitshift>>"
 					]
 				},
@@ -142,14 +142,14 @@
 					"headline" : "**Tour de City**, a city-bike tour app. <<tour-de-city.com>>",
 					"points" : [
 						"Developed an application that allows users to generate tours to popular venues in various cities using bicycles from bike-share programs.",
-						"Top 5 submission in **NYC Big Apps 2014**.",
-						"3<sup>rd</sup> place in the **US IEEE App competition**.",
-						"Semifinalist in the high-school division of MIT Media Lab's 2014 **Dream It. Code It. Win It.**.",
+						"[Top 5](http://www.alleywatch.com/2014/07/wait-until-you-see-who-the-nyc-big-apps-peoples-choices-were/3/) People's Choice submission in **NYC Big Apps 2014**.",
+						"[3<sup>rd</sup> place](http://www.appefeat.org/contest/) in the **US IEEE App competition**.",
+						"[Finalist](http://dreamitcodeitwinit.wordpress.com/2014/05/09/finalists-of-dream-it-code-it-win-it-high-school-division/) in the high-school division of MIT Media Lab's 2014 **Dream It. Code It. Win It.**",
 						"Source: <<github.com/cahnda/tour-de-city>>"
 					]
 				},
 				{
-					"headline" : "New website for the CSTUY organization. <<cstuy.org>>",
+					"headline" : "**CSTUY** organization's new website. <<cstuy.org>>",
 					"points" : [
 						"Developed a new website for CSTUY, a non-profit that promotes computer-science education for high-school students."
 					]
