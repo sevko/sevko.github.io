@@ -68,7 +68,7 @@
 		"experience" : {
 			"items" : [
 				{
-					"title" : "Back-end Engineer",
+					"title" : "Backend Engineer",
 					"organisation" : "Mapzen (Samsung Accelerator)",
 					"from" : "Jul. 2014",
 					"to" : "now",
@@ -189,15 +189,38 @@
 		"competitions" : {
 			"details" : [
 				{
+					"name" : "NYC Big Apps",
+					"date" : "2014",
+					"team" : "Tour de City",
+					"position" : "[Top 5](http://www.alleywatch.com/2014/07/wait-until-you-see-who-the-nyc-big-apps-peoples-choices-were/3/) people's choice",
+					"description" : "Civic software app competition centered on New York City."
+				},
+				{
+					"name" : "App-e-feat competition",
+					"date" : "2014",
+					"team" : "Tour de City",
+					"position" : "[3<sup>rd</sup>](http://www.appefeat.org/contest/)",
+					"description" : "Safety and protection software app competition, hosted by the **US Institute of Electrical and Electronics Engineers (IEEE)**."
+				},
+				{
+					"name" : "Dream It. Code It. Win it.",
+					"date" : "2014",
+					"team" : "Tour de City",
+					"position" : "[high-school division finalist](http://dreamitcodeitwinit.wordpress.com/2014/05/09/finalists-of-dream-it-code-it-win-it-high-school-division/)",
+					"description" : "Software app competition hosted by the **MIT Media Lab**."
+				},
+				{
 					"name" : "picoCTF",
 					"date" : "2013",
-					"position" : "71<sup>st</sup>/1938",
-					"description" : "High-school cyber-security competition."
+					"team" : "Qubit",
+					"position" : "[71<sup>st</sup>/1938](https://picoctf.com/scoreboard)",
+					"description" : "High-school cyber-security competition hosted by **Carnegie Mellon University's** cyber-security club."
 				},
 				{
 					"name" : "UFOCTF",
 					"date" : "2013",
-					"position" : "38<sup>th</sup>/353",
+					"team" : "Qubit",
+					"position" : "[38<sup>th</sup>/353](https://ctftime.org/event/99)",
 					"description" : "Industry-level cyber-security competition."
 				}
 			]
