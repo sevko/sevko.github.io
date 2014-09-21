@@ -20,6 +20,14 @@ head: |
 </div>
 
 <div id="post">
+	{% if page.math %}
+		<noscript>
+			<p id="mathjax-warning">
+				<b>Warning:</b> This post contains math blocks rendered with the <a href="http://www.mathjax.org/">MathJax</a>
+				JavaScript library. If you don't enable JavaScript in your browser, none of it will display.
+			</p>
+		</noscript>
+	{% endif %}
 	{{ content | toc_generate }}
 </div>
 

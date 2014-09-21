@@ -3,7 +3,9 @@ layout:
 ---
 
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
 	<channel>
 		<title>{{ site.name | xml_escape }}</title>
 		<description>
@@ -16,12 +18,16 @@ layout:
 		{% for post in site.posts %}
 			<item>
 				<title>{{ post.title | strip_html }}</title>
+				{% for tag in post.tags %}
+					<category>{{ tag | strip_html }}></category>
+				{% endfor %}
 				<description>{{ post.excerpt | strip_html }}</description>
 				<image>
 					<url>http://www.w3schools.com/images/logo.gif</url>
 					<title>{{ post.thumbnail.alt }}</title>
 					<link>{{ post.thumbnail.link }}</link>
 				</image>
+				<content:encoded><![CDATA[{{ post.content }}]]></content:encoded>
 				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 				<link>{{ site.url }}{{ post.url }}</link>
 				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
