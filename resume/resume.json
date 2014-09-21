@@ -69,7 +69,7 @@
 			"items" : [
 				{
 					"title" : "Backend Engineer",
-					"organisation" : "Mapzen (Samsung Accelerator)",
+					"organisation" : "[Mapzen](https://mapzen.com/) (Samsung Accelerator)",
 					"from" : "Jul. 2014",
 					"to" : "now",
 					"details" : [
@@ -113,9 +113,9 @@
 						{
 							"name" : "Dolly Rosen",
 							"has_phone" : true,
-							"phone" : "",
+							"phone" : "917.224.7070",
 							"has_email" : false,
-							"email" : "917.224.7070"
+							"email" : ""
 						},
 						{
 							"name" : "Katrin Sosnick",
@@ -133,7 +133,7 @@
 				{
 					"headline" : "**bitshift**, a source-code search engine. <<bitshift.it>>",
 					"points" : [
-						"Helped develop _bitshift_, a search engine for source code published on various online frameworks (GitHub, Bitbucket, etc.). Allows users to search for language symbols, like loops and variables, and code metadata.",
+						"Developed _bitshift_, a search engine for source code published on various online frameworks (GitHub, Bitbucket, etc.). Allows users to search for language symbols, like loops and variables, and code metadata.",
 						"Demo'd at the Sept. 2014 **New York Tech Meetup** ([video](https://vimeo.com/106072869)).",
 						"Source: <<github.com/earwig/bitshift>>"
 					]
