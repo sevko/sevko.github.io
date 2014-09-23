@@ -21,13 +21,13 @@ To refresh our memories: a [set](http://en.wikipedia.org/wiki/Set_(mathematics))
 theory](http://en.wikipedia.org/wiki/Set_theory), is a collection of any number of unique objects where order does not
 matter. A set is expressed using bracket notation, like $$\{1, 2, 3\}$$, and an empty, or **null**, set is represented
 using either of $$\emptyset$$ and $$\{\}$$. Because sets are order-agnostic, we can say that the $$\{1, 2, 3\}$$ and
-$$\{3, 1, 2\}$$ are equal, and, because they contain only distinct members, $$\{1, 1, 2\}$$ is invalid.
+$$\{3, 1, 2\}$$ are equal, and, because they contain only distinct members, something like $$\{1, 1, 2\}$$ is invalid.
 
 ## subsets and the power set
 The [subset](http://en.wikipedia.org/wiki/Subset) of a set is any combination (the null set included) of its members,
 such that it is contained inside the superset; $$\{a, b\}$$, then, is a subset of $$\{a, b, c\}$$, while $$\{a, d\}$$
 is not. If a subset contains *all* of the members of the parent set (ie, it's a copy), we call it an **improper**
-subset; otherwise, it's **proper**. Finally, the [power set](http://en.wikipedia.org/wiki/Power_set) of a set is the
+subset -- otherwise, it's **proper**. Finally, the [power set](http://en.wikipedia.org/wiki/Power_set) of a set is the
 collection of all of its subsets, so the power set of $$\{a, b, c\}$$ is:
 
 $$
@@ -43,7 +43,7 @@ $$
 \}
 $$
 
-## the length of a power set
+## the cardinality of a power set
 The length, or [cardinality](http://en.wikipedia.org/wiki/Cardinality), of a power set is $$2^n$$, where $$n$$ is the
 cardinality of the original set, so the number of subsets of something like $$\{a, b, c\} (n=3)$$ is 8 $$(2^{n=3})$$.
 Two ways of informally proving that property:
