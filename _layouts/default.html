@@ -24,6 +24,8 @@
 		<link rel=”author” href="https://plus.google.com/109642458345919934865/">
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
+
+		<!-- Page-specific stylesheets.  -->
 		{% if page.stylesheet %}
 			<link rel="stylesheet" type="text/css" href="/css/{{ page.title }}.css">
 		{% endif %}
@@ -35,18 +37,34 @@
 			<link rel="stylesheet" type="text/css" href="/css/code.css">
 		{% endif %}
 
+		<!-- MathJax configuration. -->
 		{% if page.math %}
 			<script src="http://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,local/local">
 			</script>
 			<script>
 				MathJax.Hub.Config({
-					jax: ["input/TeX","output/HTML-CSS"],
+					jax: ["input/TeX", "output/HTML-CSS"],
 					displayAlign: "left"
 				});
 			</script>
 		{% endif %}
 
 		{{ page.head }}
+
+		<!-- Bill. -->
+		<script>
+			console.log("_   /|\n\\'o.O'\n=(___)=\n   U\n\nHey there.");
+		</script>
+
+		<!-- Google Analytics. -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-30847723-5', 'auto');
+			ga('send', 'pageview');
+		</script>
 	</head>
 	<body>
 		<!--[if lt IE 7]>
@@ -62,5 +80,6 @@
 			{% endif %}
 			{{ content }}
 		</div>
+
 	</body>
 </html>
