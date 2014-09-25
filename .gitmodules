@@ -4,3 +4,6 @@
 [submodule "_plugins/tag-cloud"]
 	path = _plugins/tag-cloud
 	url = https://gist.github.com/2290195.git
+[submodule "js/smooth-scroll"]
+	path = js/smooth-scroll
+	url = https://github.com/cferdinandi/smooth-scroll

@@ -28,7 +28,11 @@ head: |
 			</p>
 		</noscript>
 	{% endif %}
-	{{ content | toc_generate }}
+	{% if page.toc %}
+		{{ content | toc_generate }}
+	{% else %}
+		{{ content }}
+	{% endif %}
 </div>
 
 {% if site.related_posts.size > 0 %}
@@ -38,4 +42,12 @@ head: |
 			{% include post_summary.html %}
 		{% endfor %}
 	</ul>
+{% endif %}
+
+{% if page.toc %}
+	<script src="/js/smooth-scroll/dist/js/bind-polyfill.min.js"></script>
+	<script src="/js/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+	<script>
+		smoothScroll.init({offset: 30});
+	</script>
 {% endif %}
