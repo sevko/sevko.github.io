@@ -44,7 +44,9 @@
 			<script>
 				MathJax.Hub.Config({
 					jax: ["input/TeX", "output/HTML-CSS"],
-					displayAlign: "left"
+					"HTML-CSS": {
+						linebreaks: {automatic: true, width: "container"}
+					}
 				});
 			</script>
 		{% endif %}
