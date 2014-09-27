@@ -29,9 +29,10 @@ layout:
 				</image>
 				<content type="html">
 					{% if post.math %}
-						<b>Warning:</b> This post contains math blocks rendered with the
-						<a href="http://www.mathjax.org/">MathJax</a> JavaScript library. If you don't enable
-						JavaScript in your browser, none of them will display.
+						<b>Warning:</b> this post contains math blocks rendered with the
+						<a href="http://www.mathjax.org/">MathJax</a> JavaScript library. If you're using an RSS reader or
+						otherwise have Javascript disabled, none of them will display, so you should instead read this article at
+						its <a href="{{ site.url }}{{ post.url }}">source</a>.
 					{% endif %}
 					{{ post.content }}>
 				</content>
