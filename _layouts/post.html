@@ -24,7 +24,7 @@ head: |
 		<noscript>
 			<p id="mathjax-warning">
 				<b>Warning:</b> This post contains math blocks rendered with the <a href="http://www.mathjax.org/">MathJax</a>
-				JavaScript library. If you don't enable JavaScript in your browser, none of it will display.
+				JavaScript library. If you don't enable JavaScript in your browser, none of them will display.
 			</p>
 		</noscript>
 	{% endif %}
@@ -43,6 +43,22 @@ head: |
 		{% endfor %}
 	</ul>
 {% endif %}
+
+<div id="discourse-comments"></div>
+
+<!-- Embedded Discourse comments. -->
+<script type="text/javascript">
+	var discourseUrl = "http://discourse.sevko.io/",
+		discourseEmbedUrl = "{{ site.url }}{{ page.url }}";
+
+	(function() {
+		var d = document.createElement('script');
+		d.type = "text/javascript";
+		d.async = true;
+		d.src = discourseUrl + "javascripts/embed.js";
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+	})();
+</script>
 
 {% if page.toc %}
 	<script src="/js/smooth-scroll/dist/js/bind-polyfill.min.js"></script>
