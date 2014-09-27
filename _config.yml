@@ -4,6 +4,7 @@ description: Severyn Kozak's personal site and blog.
 permalink: /blog/:title
 markdown: kramdown
 lsi: true
+exclude: [Gemfile, Gemfile.lock, nginx.conf, CNAME]
 defaults:
     -
         scope:
