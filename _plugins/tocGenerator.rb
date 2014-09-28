@@ -1,3 +1,5 @@
+# Taken from: https://github.com/dafi/jekyll-toc-generator
+
 require 'nokogiri'
 
 module Jekyll
