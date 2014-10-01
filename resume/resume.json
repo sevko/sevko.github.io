@@ -6,6 +6,7 @@
 	"bio_data" : {
 		"email" : "severyn.kozak@gmail.com",
 		"phone" : "347.882.1722",
+		"website": "sevko.io",
 		"skills" : {
 			"details" : [
 				{
@@ -31,21 +32,18 @@
 					"type" : "Frameworks",
 					"items" : [
 						"Flask",
-						"Jekyll"
-					]
-				},
-				{
-					"type" : "Databases",
-					"items" : [
-						"PostgreSQL",
-						"MongoDB"
+						"Jekyll",
+						"NodeJS"
 					]
 				},
 				{
 					"type" : "Tools",
 					"items" : [
 						"Linux",
-						"Git"
+						"Git",
+						"Nginx",
+						"PostgreSQL",
+						"MongoDB"
 					]
 				}
 			]
@@ -56,7 +54,7 @@
 				{
 					"degree" : "High School Diploma",
 					"institution" : "Stuyvesant High School",
-					"graduation_year" : 2014,
+					"graduation_year" : "2010 - '14",
 					"gpa" : "95.4/100.0",
 					"details" : [
 						"High Honors in Stuyvesant Computer Science",
@@ -131,57 +129,29 @@
 		"other_projects" : {
 			"items" : [
 				{
-					"headline" : "**bitshift**, a source-code search engine. <<bitshift.it>>",
+					"name" : "bitshift",
+					"headline" : "a source-code search engine. <<bitshift.it>>",
+					"time" : "2014",
 					"points" : [
-						"Developed _bitshift_, a search engine for source code published on various online frameworks (GitHub, Bitbucket, etc.). Allows users to search for language symbols, like loops and variables, and code metadata.",
-						"Demo'd at the Sept. 2014 **New York Tech Meetup** ([video](https://vimeo.com/106072869)).",
-						"Source: <<github.com/earwig/bitshift>>"
+						"Demo'd at the Sept. 2014 **New York Tech Meetup** ([video](https://vimeo.com/106072869))."
 					]
 				},
 				{
-					"headline" : "**Tour de City**, a city-bike tour app. <<tour-de-city.com>>",
+					"name" : "Tour de City",
+					"headline" : "a city-bike tour app. <<tour-de-city.com>>",
+					"time" : "2013 - '14",
 					"points" : [
-						"Developed an application that allows users to generate tours to popular venues in various cities using bicycles from bike-share programs.",
 						"[Top 5](http://www.alleywatch.com/2014/07/wait-until-you-see-who-the-nyc-big-apps-peoples-choices-were/3/) People's Choice submission in **NYC Big Apps 2014**.",
 						"[3<sup>rd</sup> place](http://www.appefeat.org/contest/) in the **US IEEE App competition**.",
-						"[Finalist](http://dreamitcodeitwinit.wordpress.com/2014/05/09/finalists-of-dream-it-code-it-win-it-high-school-division/) in the high-school division of MIT Media Lab's 2014 **Dream It. Code It. Win It.**",
-						"Source: <<github.com/cahnda/tour-de-city>>"
+						"[Finalist](http://dreamitcodeitwinit.wordpress.com/2014/05/09/finalists-of-dream-it-code-it-win-it-high-school-division/) in the high-school division of MIT Media Lab's 2014 **Dream It. Code It. Win It.**"
 					]
 				},
 				{
-					"headline" : "**CSTUY** organization's new website. <<cstuy.org>>",
+					"name" : "CSTUY",
+					"headline" : "organization's new website. <<cstuy.org>>",
+					"time" : "2013 - '14",
 					"points" : [
 						"Developed a new website for CSTUY, a non-profit that promotes computer-science education for high-school students."
-					]
-				}
-			]
-		},
-		"github_projects" : {
-			"details" : [
-				{
-					"project_name": "large-pixel-collider",
-					"description": [
-						"Built a rudimentary graphics engine from the ground up.",
-						"Started with per-pixel access, and implemented rasterization, polygonal rendering, z-buffering, shading, etc."
-					]
-				},
-				{
-					"project_name" : "portfolio",
-					"description" : [
-						"Miscellaneous personal projects, like algorithm implementations and experimentations with various languages."
-					]
-				},
-				{
-					"project_name": ".dotfiles",
-					"description": [
-						"My personal collection of dotfiles and system administration scripts."
-					]
-				},
-				{
-					"project_name" : "stuybooks",
-					"description" : [
-						"Developed a web application that allows the submission of literary quotes to a public wall of text.",
-						"Live at: <<stuybooks.com>>"
 					]
 				}
 			]
@@ -192,36 +162,31 @@
 					"name" : "NYC Big Apps",
 					"date" : "2014",
 					"team" : "Tour de City",
-					"position" : "[Top 5](http://www.alleywatch.com/2014/07/wait-until-you-see-who-the-nyc-big-apps-peoples-choices-were/3/) people`s choice",
-					"description" : "Civic software app competition centered on New York City."
+					"position" : "[Top 5](http://www.alleywatch.com/2014/07/wait-until-you-see-who-the-nyc-big-apps-peoples-choices-were/3/) people`s choice"
 				},
 				{
 					"name" : "App-e-feat competition",
 					"date" : "2014",
 					"team" : "Tour de City",
-					"position" : "[3<sup>rd</sup>](http://www.appefeat.org/contest/)",
-					"description" : "Safety and protection software app competition, hosted by the **US Institute of Electrical and Electronics Engineers (IEEE)**."
+					"position" : "[3<sup>rd</sup>](http://www.appefeat.org/contest/)"
 				},
 				{
 					"name" : "Dream It. Code It. Win it.",
 					"date" : "2014",
 					"team" : "Tour de City",
-					"position" : "[high-school division finalist](http://dreamitcodeitwinit.wordpress.com/2014/05/09/finalists-of-dream-it-code-it-win-it-high-school-division/)",
-					"description" : "Software app competition hosted by the **MIT Media Lab**."
+					"position" : "[high-school division finalist](http://dreamitcodeitwinit.wordpress.com/2014/05/09/finalists-of-dream-it-code-it-win-it-high-school-division/)"
 				},
 				{
 					"name" : "picoCTF",
 					"date" : "2013",
 					"team" : "Qubit",
-					"position" : "[71<sup>st</sup>/1938](https://picoctf.com/scoreboard)",
-					"description" : "High-school cyber-security competition hosted by **Carnegie Mellon University's** cyber-security club."
+					"position" : "[71<sup>st</sup>/1938](https://picoctf.com/scoreboard)"
 				},
 				{
 					"name" : "UFOCTF",
 					"date" : "2013",
 					"team" : "Qubit",
-					"position" : "[38<sup>th</sup>/353](https://ctftime.org/event/99)",
-					"description" : "Industry-level cyber-security competition."
+					"position" : "[38<sup>th</sup>/353](https://ctftime.org/event/99)"
 				}
 			]
 		}

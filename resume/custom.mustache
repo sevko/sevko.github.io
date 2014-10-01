@@ -4,7 +4,7 @@
 \moderncvtheme[blue]{classic}
 
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.8]{geometry}
+\usepackage[margin=0.45in,scale=0.8]{geometry}
 \usepackage{multicol}
 
 <%#bio_data%>
@@ -32,14 +32,7 @@
 
 	\begin{document}
 	\maketitle
-	\vspace*{-1cm}
-
-	<%#summary%>
-		\section{\textsc{##summary##}}
-		<%#points%>
-			\cvitem{\textbullet}{<%& .%>}
-		<%/points%>
-	<%/summary%>
+	\vspace*{-1.8cm}
 
 	<%#skills%>
 		\section{\textsc{##skills##}}
@@ -84,7 +77,16 @@
 	<%#other_projects%>
 		\section{\textsc{Projects}}
 		<%#items%>
-			\cvitem{\textbullet}{<%& headline%>}
+			\cventry
+			{<%time%>}
+			{<%name%>}
+			{<%headline%>}
+			{}
+			{}
+			{}
+
+			% \vspace*{-0.25cm}
+			% \cvitem{\textbullet}{<%& headline%>}
 			\vspace*{-0.15cm}
 			\cvitem{}{
 				{\footnotesize
@@ -101,25 +103,6 @@
 		<%/items%>
 	<%/other_projects%>
 
-	<%#github_projects%>
-		\section{\textsc{##github_projects##}}
-		<%#details%>
-			\cvitem{\textbullet}{
-				\textbf{\href{http://github.com/sevko/<%project_name%>}
-				{<%project_name%>}}<%#tagline%> - <%& .%><%/tagline%>
-			}
-			\vspace*{-0.15cm}
-			\cvitem{}{
-				{\footnotesize
-					\begin{itemize}
-						<%#description%>\item <%& .%><%/description%>
-					\end{itemize}
-				}
-			}
-			\vspace*{-0.5cm}
-		<%/details%>
-	<%/github_projects%>
-
 	<%#education%>
 		\section{\textsc{##education##}}
 		<%#schools%>
@@ -130,7 +113,7 @@
 			{}
 			{<%#show_gpa%>##gpa##: <%gpa%><%/show_gpa%>}
 			{}
-			\vspace*{-0.15cm}
+			\vspace*{-0.25cm}
 			\cvitem{}{
 				{\footnotesize
 					\begin{itemize}
@@ -139,6 +122,7 @@
 				}
 			}
 		<%/schools%>
+		\vspace{-0.7cm}
 	<%/education%>
 
 	<%#acad_achievements%>
@@ -149,63 +133,6 @@
 		<%/items%>
 	<%/acad_achievements%>
 
-	<%#grad_courses%>
-		\section{\textsc{##grad_courses##}}
-		<%#rows%>
-			\cvlistdoubleitem
-			<%#columns%>{<%#name%>\href{<%& url%>}{<%name%>}<%/name%>}<%/columns%>
-		<%/rows%>
-	<%/grad_courses%>
-
-	<%#undergrad_courses%>
-		\section{\textsc{##undergrad_courses##}}
-		<%#rows%>
-			\cvlistdoubleitem
-			<%#columns%>{<%#name%>\href{<%& url%>}{<%name%>}<%/name%>}<%/columns%>
-		<%/rows%>
-	<%/undergrad_courses%>
-
-	<%#research_experience%>
-		\section{\textsc{##research_experience##}}
-		<%#items%>
-			\cventry{<%from%> - <%to%>}{<%title%>}{<%organisation%>}{<%location%>}{}{
-				{\footnotesize
-					\begin{itemize}
-					<%#points%>\item <%& .%><%/points%>
-					\end{itemize}
-				}
-			}
-		<%/items%>
-	<%/research_experience%>
-
-	<%#patents%>
-		\section{\textsc{##patents##}}
-		<%#items%>
-			\cvitem{<%patent_id%>}{\textit{\href{<%url%>}{<%title%>}}<%#issuance_date%>, ##issuance## <%issuance_date%><%/issuance_date%>.}
-		<%/items%>
-	<%/patents%>
-
-	<%#papers%>
-		\section{\textsc{##papers##}}
-		<%#items%>
-			\cvitem{\textbullet}{<%authors%>, \textit{\href{<%url%>}{<%title%>}} <%& misc%>}
-		<%/items%>
-	<%/papers%>
-
-	<%#memberships%>
-		\section{\textsc{##memberships##}}
-		<%#committees%>
-			\cvitem{\textbullet}{<%& .%>}
-		<%/committees%>
-	<%/memberships%>
-
-	<%#extra_curricular%>
-		\section{\textsc{##extra_curricular##}}
-		<%#items%>
-			\cvitem{\textbullet}{<%& .%>}
-		<%/items%>
-	<%/extra_curricular%>
-
 	<%#competitions%>
 		\section{\textsc{Competitions}}
 		<%#details%>
@@ -215,22 +142,11 @@
 
 			\cventry
 			{<%date%>}
-			{<%name%>}
-			{\textnormal{Position}: <%position%>}
+			{<%name%> \textnormal{| <%position%> | team} <%team%>}
 			{}
 			{}
 			{}
-
-			\vspace*{-0.15cm}
-			\cvitem{}{
-				{\footnotesize
-					\begin{itemize}
-						\item Team: \textbf{<%team%>}
-						<%#description%>\item <%& .%><%/description%>
-					\end{itemize}
-				}
-			}
-			\vspace*{-0.5cm}
+			{}
 		<%/details%>
 	<%/competitions%>
 <%/bio_data%>
