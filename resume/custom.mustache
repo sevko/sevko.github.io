@@ -77,7 +77,16 @@
 	<%#other_projects%>
 		\section{\textsc{Projects}}
 		<%#items%>
-			\cvitem{\textbullet}{<%& headline%>}
+			\cventry
+			{<%time%>}
+			{<%name%>}
+			{<%headline%>}
+			{}
+			{}
+			{}
+
+			% \vspace*{-0.25cm}
+			% \cvitem{\textbullet}{<%& headline%>}
 			\vspace*{-0.15cm}
 			\cvitem{}{
 				{\footnotesize
@@ -104,7 +113,7 @@
 			{}
 			{<%#show_gpa%>##gpa##: <%gpa%><%/show_gpa%>}
 			{}
-			\vspace*{-0.15cm}
+			\vspace*{-0.25cm}
 			\cvitem{}{
 				{\footnotesize
 					\begin{itemize}
@@ -113,6 +122,7 @@
 				}
 			}
 		<%/schools%>
+		\vspace{-0.7cm}
 	<%/education%>
 
 	<%#acad_achievements%>

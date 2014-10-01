@@ -6,6 +6,7 @@
 	"bio_data" : {
 		"email" : "severyn.kozak@gmail.com",
 		"phone" : "347.882.1722",
+		"website": "sevko.io",
 		"skills" : {
 			"details" : [
 				{
@@ -31,21 +32,18 @@
 					"type" : "Frameworks",
 					"items" : [
 						"Flask",
-						"Jekyll"
-					]
-				},
-				{
-					"type" : "Databases",
-					"items" : [
-						"PostgreSQL",
-						"MongoDB"
+						"Jekyll",
+						"NodeJS"
 					]
 				},
 				{
 					"type" : "Tools",
 					"items" : [
 						"Linux",
-						"Git"
+						"Git",
+						"Nginx",
+						"PostgreSQL",
+						"MongoDB"
 					]
 				}
 			]
@@ -56,7 +54,7 @@
 				{
 					"degree" : "High School Diploma",
 					"institution" : "Stuyvesant High School",
-					"graduation_year" : 2014,
+					"graduation_year" : "2010 - '14",
 					"gpa" : "95.4/100.0",
 					"details" : [
 						"High Honors in Stuyvesant Computer Science",
@@ -131,13 +129,17 @@
 		"other_projects" : {
 			"items" : [
 				{
-					"headline" : "**bitshift**, a source-code search engine. <<bitshift.it>>",
+					"name" : "bitshift",
+					"headline" : "a source-code search engine. <<bitshift.it>>",
+					"time" : "2014",
 					"points" : [
 						"Demo'd at the Sept. 2014 **New York Tech Meetup** ([video](https://vimeo.com/106072869))."
 					]
 				},
 				{
-					"headline" : "**Tour de City**, a city-bike tour app. <<tour-de-city.com>>",
+					"name" : "Tour de City",
+					"headline" : "a city-bike tour app. <<tour-de-city.com>>",
+					"time" : "2013 - '14",
 					"points" : [
 						"[Top 5](http://www.alleywatch.com/2014/07/wait-until-you-see-who-the-nyc-big-apps-peoples-choices-were/3/) People's Choice submission in **NYC Big Apps 2014**.",
 						"[3<sup>rd</sup> place](http://www.appefeat.org/contest/) in the **US IEEE App competition**.",
@@ -145,7 +147,9 @@
 					]
 				},
 				{
-					"headline" : "**CSTUY** organization's new website. <<cstuy.org>>",
+					"name" : "CSTUY",
+					"headline" : "organization's new website. <<cstuy.org>>",
+					"time" : "2013 - '14",
 					"points" : [
 						"Developed a new website for CSTUY, a non-profit that promotes computer-science education for high-school students."
 					]
