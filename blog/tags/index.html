@@ -8,16 +8,12 @@ sitemap:
 
 {% include tag_cloud.html %}
 
-{% capture tags %}
-	{% for tag in site.tags %}
-		{{ tag[0] }}
-	{% endfor %}
-{% endcapture %}
+{% capture tags %}{% for tag in site.tags %}{{ tag[0] }},{% endfor %}{% endcapture %}
 
-{% assign sorted = tags | split: " " | sort %}
+{% assign sorted = tags | split: "," | sort %}
 
 {% for tag in sorted %}
-	<h1 id="{{ tag }}" class="tag-name">{{ tag }}</h1>
+	<a data-scroll href="#cloud"><h1 id="{{ tag }}" class="tag-name">{{ tag }}</h1></a>
 	<ul id="post-titles">
 		{% for post in site.tags[tag] %}
 			<li>
@@ -27,3 +23,5 @@ sitemap:
 		{% endfor %}
 	</ul>
 {% endfor %}
+
+{% include smooth_scroll.html %}
