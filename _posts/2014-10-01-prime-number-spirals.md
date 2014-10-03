@@ -214,6 +214,9 @@ That's all! For more reading on prime-number spirals, I recommend this [in-depth
 by Robert Sacks himself, and another [write-up](http://www.dcs.gla.ac.uk/~jhw/spirals/) of algorithms used to render
 them.
 
+Download all of the source code [here](/downloads/prime_number_spirals.zip), or view it on
+[Github](https://github.com/sevko/portfolio/tree/develop/visualizations/prime_number_spirals).
+
 ---
 
 [^1]: Ulam is also well-known for contributing to the
