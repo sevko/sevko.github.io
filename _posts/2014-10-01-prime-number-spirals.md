@@ -10,7 +10,6 @@ tags:
   - math
   - visualizations
   - prime number
-  - algorithms
   - javascript
 ---
 
@@ -23,9 +22,10 @@ and algorithms to render each.
 ## Ulam spiral
 
 The story has it that [Stanislaw Ulam](http://en.wikipedia.org/wiki/Stanislaw_Ulam), a Polish-American mathematician of
-[thermonuclear](http://en.wikipedia.org/wiki/Teller%E2%80%93Ulam_design) fame, sat in a presentation of a
+[thermonuclear](http://en.wikipedia.org/wiki/Teller%E2%80%93Ulam_design)
+[fame](http://en.wikipedia.org/wiki/History_of_the_Teller%E2%80%93Ulam_design)[^1], sat in a presentation of a
 "long and very boring paper" at a 1963 scientific conference. After some time, he began doodling (the hallmark of great
-genius), first wroting out the first few positive integers in a counter-clockwise spiral, and then circling all of
+genius), first writing out the first few positive integers in a counter-clockwise spiral, and then circling all of
 the prime numbers. And he noticed something that he'd later formulate as "a strongly nonrandom appearance." Even on
 a small scale -- say, the first 121 integers, which form a 11x11 grid -- it's visible that many primes align along
 certain diagonal lines.
@@ -34,25 +34,27 @@ certain diagonal lines.
 
 Ulam later used [MANIAC II](http://en.wikipedia.org/wiki/MANIAC_II), a first-generation computer built for
 [Los Alamos National Laboratory](http://en.wikipedia.org/wiki/Los_Alamos_Scientific_Laboratory) in 1957, to generate
-images of the first 65,000<sup id="link1">[1](#note1)</sup> integers. The following spiral contains the first 360,000
+images of the first 65,000[^2] integers. The following spiral contains the first 360,000
 (600x600):
 
 ![An Ulam spiral consisting of the first 360,000 natural numbers.](/img/prime_number_spirals/big_ulam_spiral.png)
 
+Look closely, and we see much more than just white noise.
+
 ## Sacks spiral
 
-Robert Sacks, a software engineer, devised a variant of the Ulam spiral in 1994. Unlike Ulam's, Sacks's spiral
+A software engineer named Robert Sacks devised a variant of the Ulam spiral in 1994. Unlike Ulam's, Sacks's spiral
 distributes integers along an [Archimedean spiral](http://en.wikipedia.org/wiki/Archimedean_spiral), or a function of
 the polar form $$r = a + b\theta$$. Sacks discarded $$a$$ (which just controls the offset of the starting point of the curve
 from the pole) and used $$b=\frac{1}{2\pi}$$, leaving $$r = \frac{\theta}{2\pi}$$; he then plotted the squares of all
-the natural numbers on the intersections of the spiral and the polar axis, and filled in the points between squares
-along the spiral, drawing them equidistant from one another. [^1]
+the natural numbers -- $${1, 4, 9, 16, 25, ...}$$ -- on the intersections of the spiral and the polar axis, and filled
+in the points between squares along the spiral, drawing them equidistant from one another.
 
 ![A Sacks spiral consisting of the first 22,800 natural numbers.](/img/prime_number_spirals/big_sacks_spiral.png)
 
 # prime-generating polynomials
 
-The reason why we see ghostly diagonals is that some quadratic polynomials (or functions of the form $$ax^2 + bx + c$$), informally called
+The reason why we see ghostly diagonals is that some polynomials, informally called
 [prime-generating polynomials](http://mathworld.wolfram.com/Prime-GeneratingPolynomial.html), have aberrantly high
 occurrences of prime numbers. $$n^2 + n + 41$$, for instance, patented by
 [Leonhard Euler](http://en.wikipedia.org/wiki/Leonhard_Euler) in 1772, is prime for all $$n$$ in the range $$[0, 39]$$,
@@ -73,7 +75,7 @@ In the case of the rectangular Ulam spiral, these polynomials appear as diagonal
 earlier before Ulam!), [Laurence M. Klauber](http://en.wikipedia.org/wiki/Laurence_Monroe_Klauber), a herpetologist
 primarily focused on the study of rattlesnakes, presented a method of using a spiral grid to identify prime-generating
 polynomials to the
-[Mathematical Association ofAmerica](http://en.wikipedia.org/wiki/Mathematical_Association_of_America). The second
+[Mathematical Association of America](http://en.wikipedia.org/wiki/Mathematical_Association_of_America). The second
 frequently-cited mention of prime spirals came from [Arthur C. Clarke](http://en.wikipedia.org/wiki/Arthur_C._Clarke),
 a British science-fiction writer, whose [*The City and the Stars*](http://en.wikipedia.org/wiki/The_City_and_the_Stars)
 (1956) describes a protagonist, Jeserac, as "[setting] up the matrix of all possible integers, and [starting] his
@@ -86,11 +88,11 @@ intricate) at random -- there may have been some method to it.
 # rendering the spirals
 
 I was introduced to prime number spirals about a year ago, by [a video](https://www.youtube.com/watch?v=iFuR97YcSLM)
-on the excellent [Numberphile](https://www.youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A) channel. I immediately jumped
+on the excellent [Numberphile](https://www.youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A). I immediately jumped
 into hacking together a Python script to render the spirals on my own, because it's both tremendously easy and very
-visually rewarding. I'll revisit the implementation, this time using Javascript and the HTML Canvas. I'm not going to
-show all of the necessary code (like HTML markup/CSS styles), but the zipped files are linked to at the end of the
-post.
+visually rewarding. I'll revisit the implementation, this time in Javascript. I'm not going to show all of the
+necessary code (like HTML markup/CSS styles) in the interest of brevity, but the zipped files are linked to at the end
+of the post.
 
 ## canvas setup
 
@@ -120,7 +122,7 @@ function setupCanvas(numLayers){
 
 Note that we set `sideLen` equal to `numLayers * 2 + 1`, rather than only `numLayers * 2`, because we need to account for the
 row/column containing the origin of the spiral, which is not technically a ring. Now, we can use `setupCanvas()` to
-both set the canvas dimensions, and return a `drawPixel()` that takes advantage of closures to access all of the
+both set the canvas dimensions, and return a `drawPixel()` that takes advantage of closure to access all of the
 variables (`numLayers`, `context`) that it needs. Also, to draw a single pixel, we're calling `fillRect()` with a
 width and height of 1 -- the canvas unfortunately doesn't have (or perhaps just doesn't expose) a single pixel-plotting
 function. Finally, to test the primality of our values, we'll use [Kenan Yildirim](https://www.npmjs.org/~kenan)'s
@@ -208,11 +210,19 @@ that the point lies at (`var theta = point * angle;`). We'll also `Math.floor()`
 because, after the various trigonometic operations they're likely decimals rather than integers and cause blurred
 canvas reading.
 
+That's all! For more reading on prime-number spirals, I recommend this [in-depth article](http://www.numberspiral.com/)
+by Robert Sacks himself, and another [write-up](http://www.dcs.gla.ac.uk/~jhw/spirals/) of algorithms used to render
+them.
+
 ---
 
-<span id="note1">[1](#link1)</span>: Assuming that Ulam began rendering his spiral with the integer 1 (instead of
-something like 41, which is also common), I suspect that the generated images had exactly 65,025 integers. 65,000
-integers implies as many pixels, the square root -- the Ulam spiral is inherently square -- of which is 254.95, which
-obviously isn't a valid image height/width. Thus, we round to 255, and square for 65,025.
+[^1]: Ulam is also well-known for contributing to the
+    [Manhattan Project](http://en.wikipedia.org/wiki/Manhattan_Project), proponing the
+    [Monte Carlo method](http://en.wikipedia.org/wiki/Monte_Carlo_method) of computation, and exploring
+    [spaceships propelled by nuclear explosions](http://en.wikipedia.org/wiki/Project_Orion_(nuclear_propulsion)),
+    amongst a large number of other things.
 
-[^1]: Hello, footnote!
+[^2]: Assuming that Ulam began rendering his spiral with the integer 1 (instead of something like 41, which is also
+    common), I suspect that the generated images had exactly 65,025 integers. 65,000 integers implies as many pixels,
+    the square root -- the Ulam spiral is inherently square -- of which is 254.95, which obviously isn't a valid image
+    height/width. Thus, we round to 255, and square for 65,025.
