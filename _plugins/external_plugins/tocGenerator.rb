@@ -41,6 +41,19 @@ module Jekyll
 				anchor['data-scroll'] = ''
 			end
 
+			block_class = 'block'
+			doc.css('div.highlight code').each do |code|
+				if code['class'].nil?
+					code['class'] = block_class
+				else
+					code['class'] += ' ' + block_class
+				end
+			end
+
+			doc.css("code:not(.#{block_class})").each do |code|
+				code['class'] = 'inline'
+			end
+
 			# Find H1 tag and all its H2 siblings until next H1
 			doc.css('h1').each do |h1|
 				# TODO This XPATH expression can greatly improved
