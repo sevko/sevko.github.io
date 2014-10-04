@@ -37,6 +37,10 @@ module Jekyll
 
 			doc = Nokogiri::HTML(html)
 
+			doc.css('a[href^="#fn"]').each do |anchor|
+				anchor['data-scroll'] = ''
+			end
+
 			# Find H1 tag and all its H2 siblings until next H1
 			doc.css('h1').each do |h1|
 				# TODO This XPATH expression can greatly improved

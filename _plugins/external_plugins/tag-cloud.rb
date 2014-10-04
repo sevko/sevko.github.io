@@ -47,7 +47,7 @@ module Jekyll
 				name, weight = tag
 				size = size_min + ((size_max - size_min) * weight).to_f
 				size = sprintf("%.#{@precision}f", size)
-				html << "<a style='font-size: #{size}#{unit}' href='/blog/tags##{name}'>#{name}</a>\n"
+				html << "<a data-scroll style='font-size: #{size}#{unit}' href='/blog/tags##{name}'>#{name}</a>\n"
 			end
 		end
 
