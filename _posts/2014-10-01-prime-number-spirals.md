@@ -9,7 +9,7 @@ thumbnail:
 tags:
   - math
   - visualizations
-  - prime number
+  - prime numbers
   - javascript
 ---
 
