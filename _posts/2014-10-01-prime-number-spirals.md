@@ -1,5 +1,6 @@
 ---
 title: Ulam and Sacks prime number spirals
+description: An introduction to the Ulam and Sacks prime number spirals, and Javascript implementations of each.
 code: true
 math: true
 date: 2014-10-01 21:00:00
@@ -20,7 +21,6 @@ fairly beautiful. We'll explore the Ulam and Sacks spirals, some of their underl
 and algorithms to render each.
 
 ## Ulam spiral
-
 The story has it that [Stanislaw Ulam](http://en.wikipedia.org/wiki/Stanislaw_Ulam), a Polish-American mathematician of
 [thermonuclear](http://en.wikipedia.org/wiki/Teller%E2%80%93Ulam_design)
 [fame](http://en.wikipedia.org/wiki/History_of_the_Teller%E2%80%93Ulam_design)[^1], sat in a presentation of a

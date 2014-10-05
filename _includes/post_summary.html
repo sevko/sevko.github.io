@@ -18,5 +18,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="excerpt">{{ post.content | excerpt }}</div>
+	<div class="excerpt">
+		{{ post.excerpt | markdownify | excerpt }}
+	</div>
 </li>
