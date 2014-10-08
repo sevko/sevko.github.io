@@ -1,5 +1,5 @@
 ---
-title: Ulam and Sacks prime number spirals
+title: prime number spirals
 description: An introduction to the Ulam and Sacks prime number spirals, and Javascript implementations of each.
 code: true
 math: true
