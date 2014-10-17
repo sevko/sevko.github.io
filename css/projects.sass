@@ -1,0 +1,35 @@
+---
+---
+
+@import variables
+
+div.project
+	>div.text, >img
+		display: inline-block
+		vertical-align: top
+		width: 65%
+
+	>img
+		$size: 160px
+
+		height: $size
+		margin-right: 20px
+		width: $size
+
+	>div.text
+		>h1
+			font-size: 1.5em
+			margin-bottom: 4px
+
+		>div.meta
+			color: $baseColor2
+			font-size: 1.1em
+			margin-bottom: 4px
+
+			>span.time
+				font-weight: bold
+				letter-spacing: 0.05em
+
+			>span.separator
+				color: $baseColor1
+				margin: 0 5px
