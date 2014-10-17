@@ -1,0 +1,8 @@
+- name: bitshift
+  time: Feb. 14
+  img: bitshift/sample.jpg
+  tagline: source code search engine
+  description: Developed bitshift, a source code search engine. Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate.
+  github:
+    url: sevko/bitshift
+    branch: master
