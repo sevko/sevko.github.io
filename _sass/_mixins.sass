@@ -15,9 +15,11 @@
  * Insert Fontspring bulletproof font statements.
  *
  * $font-family: The name to assign the font.
- * $path: The relative path to the font.
+ * $name: The root name of each font file; each one is assumed to be located in
+ *      `/fonts/$name/`
  */
-@mixin font($font-family, $path)
+@mixin font($font-family, $name)
+	$path: "../fonts/" + $name + "/" + $name
 	@font-face
 		font-family: $font-family
 		src: url($path)
