@@ -3,15 +3,7 @@
 
 @import mixins
 
-@font-face
-	font-family: "social_media_icons"
-	src: url("../fonts/social_media_icons.eot?42575700")
-	src: url("../fonts/social_media_icons.eot?42575700#iefix") format("embedded-opentype"),
-	src: url("../fonts/social_media_icons.woff?42575700") format("woff")
-	src: url("../fonts/social_media_icons.ttf?42575700") format("truetype")
-	src: url("../fonts/social_media_icons.svg?42575700#social_media_icons") format("svg")
-	font-weight: normal
-	font-style: normal
+@include font("social_media_icons", "../fonts/social_media_icons")
 
 div#about
 	text-align: center

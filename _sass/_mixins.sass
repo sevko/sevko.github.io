@@ -12,6 +12,20 @@
 	#{$property}: $value
 
 /*
+ * Insert Fontspring bulletproof font statements.
+ *
+ * $font-family: The name to assign the font.
+ * $path: The relative path to the font.
+ */
+@mixin font($font-family, $path)
+	@font-face
+		font-family: $font-family
+		src: url($path)
+		src: url($path) format("embedded-opentype"), url($path + ".eot?#iefix") format("woff"), url($path + ".woff") format("truetype"), url($path + ".ttf") format("svg")
+		font-weight: normal
+		font-style: normal
+
+/*
  * Insert a CSS ease-out transition.
  *
  * $time : The time the transition should last.
