@@ -7,25 +7,29 @@ sitemap:
   priority: 1.0
 ---
 
-{% for project in site.data.projects %}
-	<div class="project">
-		<img src="/img/projects/{{ project.img }}" alt="An image of {{ project.name }}."
-		><div class="text">
-			<h1>{{ project.name }}</h1>
-			<div class="meta">
-				<span class="time">{{ project.time }} +</span>
-				<span class="separator">|</span>
-				<span>{{ project.tagline }}</span>
-			</div>
-			<div>{{ project.description }}</div>
-			<div class="links">
-				<div class="download">
-					<a href="https://github.com/{{ project.github.url }}/{{ project.github.branch }}.zip">download zip</a>
-				</div
-				><div class="github">
-					<a href="https://github.com/{{ project.github.url }}">view on GitHub</a>
+<div id="projects">
+	{% for project in site.data.projects %}
+		<div class="project">
+			<img src="/img/projects/{{ project.img }}" alt="An image of {{ project.name }}."
+			><div class="text">
+				<h1>{{ project.name }}</h1>
+				<div class="meta">
+					<span class="time">{{ project.time }}</span>
+					<span class="separator">|</span>
+					<span>{{ project.tagline }}</span>
 				</div>
+				<div class="description">{{ project.description | markdownify }}</div>
+				{% if project.github %}
+					<div class="links">
+						<div class="github">
+							<a href="https://github.com/{{ project.github.url }}">view on GitHub</a>
+						</div
+						><div class="download">
+							<a href="https://github.com/{{ project.github.url }}/archive/{{ project.github.branch }}.zip">download zip</a>
+						</div>
+					</div>
+				{% endif %}
 			</div>
 		</div>
-	</div>
-{% endfor %}
+	{% endfor %}
+</div>

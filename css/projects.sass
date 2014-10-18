@@ -6,17 +6,22 @@
 
 @include font("projects")
 
+div#projects
+	padding-bottom: 50px
+
 div.project
+	margin: 55px 0
+
 	>div.text, >img
 		display: inline-block
 		vertical-align: top
 		width: 70%
 
 	>img
-		$size: 25%
+		$size: 26%
 
 		height: $size
-		margin-right: 5%
+		margin-right: 4%
 		width: $size
 
 	>div.text
@@ -36,6 +41,21 @@ div.project
 			>span.separator
 				color: $baseColor1
 				margin: 0 5px
+
+		>div.description
+			p
+				margin-top: 0px
+
+			ul
+				list-style: disc inside
+				margin-left: 24px
+				padding-left: 2em
+				text-indent: -2em
+
+			sup
+				font-size: 0.7em
+				vertical-align: super
+				line-height: 0
 
 		>div.links
 			font-family: projects
