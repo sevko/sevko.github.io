@@ -14,14 +14,14 @@
 /*
  * Insert Fontspring bulletproof font statements.
  *
- * $font-family: The name to assign the font.
  * $name: The root name of each font file; each one is assumed to be located in
- *      `/fonts/$name/`
+ *      `/fonts/$name/`. Also the value of the `font-family` name assigned to
+ *      the font.
  */
-@mixin font($font-family, $name)
+@mixin font($name)
 	$path: "../fonts/" + $name + "/" + $name
 	@font-face
-		font-family: $font-family
+		font-family: $name
 		src: url($path)
 		src: url($path) format("embedded-opentype"), url($path + ".eot?#iefix") format("woff"), url($path + ".woff") format("truetype"), url($path + ".ttf") format("svg")
 		font-weight: normal
