@@ -43,7 +43,7 @@
     portal, and donations endpoint.
 
 - name: large pixel collider
-  time: Feb - Jul 2014
+  time: Feb - Jul 14
   img: bitshift/sample.jpg
   tagline: proof-of-concept graphics engine
   description: Developed a proof-of-concept graphics engine from the ground up.
@@ -67,7 +67,7 @@
     branch: develop
 
 - name: stuybooks
-  time: Nov 2013
+  time: Nov 13
   img: bitshift/sample.jpg
   tagline: quote-sharing web application
   description: A simple application that allowed users to submit quotes to a
