@@ -1,8 +1,77 @@
 - name: bitshift
-  time: Feb. 14
+  time: Mar - Jul 14
   img: bitshift/sample.jpg
   tagline: source code search engine
-  description: Developed bitshift, a source code search engine. Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate Boilerplate.
+  description: |
+      Developed a semantic source code search engine that crawls code
+      from various online frameworks, extracts its metadata, parses it, and
+      finally lets users search through it with a robust, custom query
+      language.
+
+        * demo'd at the Sep. '14 **New York Tech Meetup**
+          ([video](vimeo.com/98697078))
   github:
     url: sevko/bitshift
+    branch: develop
+
+- name: tour de city
+  time: Nov 13 - Apr 14
+  img: bitshift/sample.jpg
+  tagline: a bike-share tour app
+  description: |
+    Developed an application that generates tours to popular city venues
+    (pulled from FourSquare, Yelp, and other APIs), relying on local bike-share
+    programs for transportation.
+
+      * [Top 5](http://www.alleywatch.com/2014/07/wait-until-you-see-who-the-nyc-big-apps-peoples-choices-were/3/)
+        People\'s Choice submission in **NYC Big Apps 2014**.
+      * [3<sup>rd</sup> place](http://www.appefeat.org/contest/) in the
+        **US IEEE App competition**.
+      * [Finalist](http://dreamitcodeitwinit.wordpress.com/2014/05/09/finalists-of-dream-it-code-it-win-it-high-school-division/)
+        in the high-school division of MIT Media Lab's 2014
+        **Dream It. Code It. Win It.**
+  github:
+    url: cahnda/tour-de-city
+    branch: master
+
+- name: CSTUY
+  time: Oct 13 - Jul 14
+  img: bitshift/sample.jpg
+  tagline: website for the CSTUY organization
+  description: Developed a new website for CSTUY, a high school
+    computer-science education non-profit. Serves as a blog, information
+    portal, and donations endpoint.
+
+- name: large pixel collider
+  time: Feb - Jul 2014
+  img: bitshift/sample.jpg
+  tagline: proof-of-concept graphics engine
+  description: Developed a proof-of-concept graphics engine from the ground up.
+    Using only the SDL media library for simple pixel plotting, I implemented
+    line rasterization, shape creation, transformations, curves, polygonal
+    rendering, z-buffering, and a number of other features.
+  github:
+    url: sevko/large-pixel-collider
+    branch: develop
+
+- name: portfolio
+  time: Jun 14 +
+  img: bitshift/sample.jpg
+  tagline: collection of miscellaneous work
+  description: "A repository containing all of my software experiments:
+    algorithm implementations, interesting visualizations, and projects
+    undertaken to learn more about a particular language, framework, or
+    whatever else."
+  github:
+    url: sevko/portfolio
+    branch: develop
+
+- name: stuybooks
+  time: Nov 2013
+  img: bitshift/sample.jpg
+  tagline: quote-sharing web application
+  description: A simple application that allowed users to submit quotes to a
+    public wall of text; developed as a gift for an English class.
+  github:
+    url: sevko/stuybooks
     branch: master
