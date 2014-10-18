@@ -1,19 +1,22 @@
 ---
 ---
 
+@import mixins
 @import variables
+
+@include font("projects")
 
 div.project
 	>div.text, >img
 		display: inline-block
 		vertical-align: top
-		width: 65%
+		width: 70%
 
 	>img
-		$size: 160px
+		$size: 25%
 
 		height: $size
-		margin-right: 20px
+		margin-right: 5%
 		width: $size
 
 	>div.text
@@ -33,3 +36,22 @@ div.project
 			>span.separator
 				color: $baseColor1
 				margin: 0 5px
+
+		>div.links
+			font-family: projects
+			margin-top: 14px
+			width: 100%
+
+			div
+				display: inline-block
+				text-align: center
+				width: 50%
+
+				&.download:before
+					content: "\e800"
+
+				&.github:before
+					content: "\e801"
+
+				a
+					padding-left: 5px
