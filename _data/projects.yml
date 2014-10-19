@@ -1,6 +1,5 @@
 - name: bitshift
   time: Mar - Jul 14
-  img: bitshift/sample.jpg
   tagline: source code search engine
   description: |
       Developed a semantic source code search engine that crawls code
@@ -16,7 +15,6 @@
 
 - name: tour de city
   time: Nov 13 - Apr 14
-  img: bitshift/sample.jpg
   tagline: a bike-share tour app
   description: |
     Developed an application that generates tours to popular city venues
@@ -36,7 +34,6 @@
 
 - name: CSTUY
   time: Oct 13 - Jul 14
-  img: bitshift/sample.jpg
   tagline: website for the CSTUY organization
   description: Developed a new website for CSTUY, a high school
     computer-science education non-profit. Serves as a blog, information
@@ -44,7 +41,6 @@
 
 - name: large pixel collider
   time: Feb - Jul 14
-  img: bitshift/sample.jpg
   tagline: proof-of-concept graphics engine
   description: Developed a proof-of-concept graphics engine from the ground up.
     Using only the SDL media library for simple pixel plotting, I implemented
@@ -56,7 +52,6 @@
 
 - name: portfolio
   time: Jun 14 +
-  img: bitshift/sample.jpg
   tagline: collection of miscellaneous work
   description: "A repository containing all of my software experiments:
     algorithm implementations, interesting visualizations, and projects
@@ -68,7 +63,6 @@
 
 - name: stuybooks
   time: Nov 13
-  img: bitshift/sample.jpg
   tagline: quote-sharing web application
   description: A simple application that allowed users to submit quotes to a
     public wall of text; developed as a gift for an English class.
