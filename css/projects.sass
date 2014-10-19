@@ -20,6 +20,11 @@ div.project
 		font-size: 1.5em
 		margin-bottom: 4px
 
+		>a
+			padding-left: 10px
+			font-size: 0.8em
+			font-weight: normal
+
 	>div.meta
 		color: $baseColor2
 		font-size: 1.1em
@@ -51,12 +56,22 @@ div.project
 	>div.links
 		font-family: projects
 		margin-top: 14px
+		text-align: center
 		width: 100%
+
+		&#links_3 > div
+			width: 33.33%
+
+		&#links_2 > div
+			width: 50%
 
 		div
 			display: inline-block
+			min-width: 150px
 			text-align: center
-			width: 50%
+
+			&.website:before
+				content: "\e802"
 
 			&.download:before
 				content: "\e800"
@@ -65,4 +80,5 @@ div.project
 				content: "\e801"
 
 			a
+				font-size: 0.9em
 				padding-left: 5px

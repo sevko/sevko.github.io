@@ -18,8 +18,17 @@ sitemap:
 			</div>
 			<div class="description">{{ project.description | markdownify }}</div>
 			{% if project.github %}
-				<div class="links">
-					<div class="github">
+				<div class="links"
+					{% if project.url %}
+						id="links_3"
+					{% else %}
+						id="links_2"
+					{% endif %}>
+					{% if project.url %}
+						<div class="website">
+							<a href="{{ project.url }}">view online</a>
+						</div
+					>{% endif %}<div class="github">
 						<a href="https://github.com/{{ project.github.url }}">view on GitHub</a>
 					</div
 					><div class="download">
