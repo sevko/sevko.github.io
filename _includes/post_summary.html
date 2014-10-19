@@ -11,10 +11,10 @@
 
 				{% for tag in post.tags %}
 					{% unless forloop.last %}
-						<a href="/blog/tags#{{ tag }}">{{ tag }}</a>,
+						<a href="/articles/tags#{{ tag }}">{{ tag }}</a>,
 					{% endunless %}
 				{% endfor %}
-				<a href="/blog/tags#{{ post.tags[-1] }}">{{ post.tags[-1] }}</a>
+				<a href="/articles/tags#{{ post.tags[-1] }}">{{ post.tags[-1] }}</a>
 			</div>
 		</div>
 	</div>

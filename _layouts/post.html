@@ -2,7 +2,7 @@
 layout: default
 head: |
   <link rel="stylesheet" href="/css/post.css">
-  <link rel="stylesheet" href="/css/blog.css">
+  <link rel="stylesheet" href="/css/articles.css">
 ---
 
 <div id="meta">
@@ -12,10 +12,10 @@ head: |
 		<span>tags:</span>
 		{% for tag in page.tags %}
 			{% unless forloop.last %}
-				<a href="/blog/tags#{{ tag }}">{{ tag }}</a>,
+				<a href="/articles/tags#{{ tag }}">{{ tag }}</a>,
 			{% endunless %}
 		{% endfor %}
-		<a href="/blog/tags#{{ page.tags[-1] }}">{{ page.tags[-1] }}</a>
+		<a href="/articles/tags#{{ page.tags[-1] }}">{{ page.tags[-1] }}</a>
 	</div>
 </div>
 
