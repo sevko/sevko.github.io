@@ -20,6 +20,7 @@ ul#posts
 
 			div
 				display: inline-block
+				margin-right: 3%
 
 				&#thumbnail
 					$imageSize: 70px
@@ -33,9 +34,12 @@ ul#posts
 						width: $imageSize
 						width: 100%
 
+			@media (max-width: 560px)
+				div#thumbnail
+					display: none
+
 			div#text
 				vertical-align: top
-				margin-left: 4%
 				width: 80%
 
 				>a
