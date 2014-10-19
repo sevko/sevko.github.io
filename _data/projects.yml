@@ -69,6 +69,16 @@
     url: sevko/portfolio
     branch: develop
 
+- name: sevko.io
+  time: Aug - Oct 14 +
+  url: http://sevko.io
+  tagline: personal portfolio site
+  tools: Jekyll, Ruby, SASS
+  description: Well, er, look around.
+  github:
+    url: sevko/sevko.github.io
+    branch: master
+
 - name: stuybooks
   time: Nov 13
   url: http://stuybooks.com
