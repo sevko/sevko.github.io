@@ -17,26 +17,36 @@ div.project
 		vertical-align: top
 
 	>h1
+		display: inline-block
 		font-size: 1.5em
 		margin-bottom: 4px
+		vertical-align: middle
 
 		>a
 			padding-left: 10px
 			font-size: 0.8em
 			font-weight: normal
 
-	>div.meta
+	>span, >div.meta > span
 		color: $baseColor2
 		font-size: 1.1em
 		margin-bottom: 4px
 
-		>span.time
+	>span.separator
+		color: $baseColor1
+		margin: 0 5px
+
+	>div.meta
+		color: $baseColor2
+		font-size: 0.9em
+		margin-bottom: 3px
+
+		span.time
 			font-weight: bold
 			letter-spacing: 0.05em
 
-		>span.separator
+		span.toolstack
 			color: $baseColor1
-			margin: 0 5px
 
 	>div.description
 		p
