@@ -1,0 +1,43 @@
+---
+title: projects
+description: Severyn Kozak's portfolio, composed of various projects.
+stylesheet: true
+sitemap:
+  changefreq: monthly
+  priority: 1.0
+---
+
+<div id="projects">
+	{% for project in site.data.projects %}
+		<div class="project">
+			<h1>{{ project.name }}</h1>
+			<div class="meta">
+				<span class="time">{{ project.time }}</span>
+				<span class="separator">|</span>
+				<span>{{ project.tagline }}</span>
+			</div>
+			<div class="description">{{ project.description | markdownify }}</div>
+			{% if project.url or project.github %}
+				<div class="links"
+					{% if project.url and project.github %}
+						id="links_3"
+					{% else if project.github %}
+						id="links_2"
+					{% else %}
+						id="links_1"
+					{% endif %}>
+					{% if project.url %}
+						<div class="website">
+							<a href="{{ project.url }}">view online</a>
+						</div
+					>{% endif %}{% if project.github %}<div class="github">
+						<a href="https://github.com/{{ project.github.url }}">view on GitHub</a>
+					</div
+					><div class="download">
+						<a href="https://github.com/{{ project.github.url }}/archive/{{ project.github.branch }}.zip">download zip</a>
+					</div>{% endif %}
+				</div>
+			{% endif %}
+		</div>
+	{% endfor %}
+</div>

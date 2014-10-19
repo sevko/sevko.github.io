@@ -6,18 +6,18 @@ markdown: kramdown
 lsi: true
 exclude: [Gemfile, Gemfile.lock, nginx.conf, CNAME]
 defaults:
-    -
-        scope:
-            path: ""
-        values:
-            layout: "default"
-    -
-        scope:
-            path: ""
-            type: "posts"
-        values:
-            layout: "post"
-            toc: true
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      toc: true
 
 sass:
-    style: :compressed
+  style: :compressed
