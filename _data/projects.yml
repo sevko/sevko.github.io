@@ -2,6 +2,7 @@
   time: Mar - Jul 14
   url: http://bitshift.it
   tagline: source code search engine
+  tools: Python, SASS, JS, MySQL
   description: |
       Developed a semantic source code search engine that crawls code
       from various online frameworks, extracts its metadata, parses it, and
@@ -18,6 +19,7 @@
   time: Nov 13 - Apr 14
   url: http://tour-de-city.com
   tagline: a bike-share tour app
+  tools: Python, SASS, JS, MongoDB
   description: |
     Developed an application that generates tours to popular city venues
     (pulled from FourSquare, Yelp, and other APIs), relying on local bike-share
@@ -38,6 +40,7 @@
   time: Oct 13 - Jul 14
   url: http://cstuy.org
   tagline: website for the CSTUY organization
+  tools: Python, Jekyll, JS
   description: Developed a new website for CSTUY, a high school
     computer-science education non-profit. Serves as a blog, information
     portal, and donations endpoint.
@@ -45,6 +48,7 @@
 - name: large pixel collider
   time: Feb - Jul 14
   tagline: proof-of-concept graphics engine
+  tools: C
   description: Developed a proof-of-concept graphics engine from the ground up.
     Using only the SDL media library for simple pixel plotting, it implemented
     line rasterization, shape creation, transformations, curves, polygonal
@@ -56,6 +60,7 @@
 - name: portfolio
   time: Jun 14 +
   tagline: collection of miscellaneous work
+  tools: everything and anything
   description: "A repository containing all of my software experiments:
     algorithm implementations, interesting visualizations, and projects
     undertaken to learn more about a particular language, framework, or
@@ -68,6 +73,7 @@
   time: Nov 13
   url: http://stuybooks.com
   tagline: quote-sharing web application
+  tools: Python, SQLite
   description: A simple application that allowed users to submit quotes to a
     public wall of text; developed as a gift for an English class.
   github:

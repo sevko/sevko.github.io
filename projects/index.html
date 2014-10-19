@@ -11,10 +11,11 @@ sitemap:
 	{% for project in site.data.projects %}
 		<div class="project">
 			<h1>{{ project.name }}</h1>
+			<span class="separator">|</span>
+			<span>{{ project.tagline }}</span>
 			<div class="meta">
 				<span class="time">{{ project.time }}</span>
-				<span class="separator">|</span>
-				<span>{{ project.tagline }}</span>
+				<span class="toolstack">| toolstack:</span> {{ project.tools | join: ", " }}
 			</div>
 			<div class="description">{{ project.description | markdownify }}</div>
 			{% if project.url or project.github %}
