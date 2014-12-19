@@ -25,7 +25,7 @@ layout:
 				<image>
 					<url>http://www.w3schools.com/images/logo.gif</url>
 					<title>{{ post.thumbnail.alt }}</title>
-					<link>{{ post.thumbnail.link }}</link>
+					<link>{{ site.files_url }}/img/thumbnails/{{ post.thumbnail.link }}</link>
 				</image>
 				<content type="html">
 					{% if post.math %}
