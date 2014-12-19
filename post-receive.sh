@@ -39,6 +39,7 @@ main(){
 	cmd "Moving site." mv $repo_dest/_site .
 	rm -rf _old
 	rm -rf $repo_dest
+	cmd "Restarting nginx." service nginx restart
 	echo "Build completed."
 }
 
