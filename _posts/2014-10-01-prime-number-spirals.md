@@ -30,14 +30,14 @@ the prime numbers. And he noticed something that he'd later formulate as "a stro
 a small scale -- say, the first 121 integers, which form a 11x11 grid -- it's visible that many primes align along
 certain diagonal lines.
 
-![An Ulam spiral consisting of the first 121 natural numbers](/img/prime_number_spirals/small_ulam_spiral.png)
+![An Ulam spiral consisting of the first 121 natural numbers]({% static small_ulam_spiral.png %})
 
 Ulam later used [MANIAC II](http://en.wikipedia.org/wiki/MANIAC_II), a first-generation computer built for
 [Los Alamos National Laboratory](http://en.wikipedia.org/wiki/Los_Alamos_Scientific_Laboratory) in 1957, to generate
 images of the first 65,000[^2] integers. The following spiral contains the first 360,000
 (600x600):
 
-![An Ulam spiral consisting of the first 360,000 natural numbers.](/img/prime_number_spirals/big_ulam_spiral.png)
+![An Ulam spiral consisting of the first 360,000 natural numbers.]({% static big_ulam_spiral.png %})
 
 Look closely, and we see much more than just white noise.
 
@@ -50,7 +50,7 @@ from the pole) and used $$b=\frac{1}{2\pi}$$, leaving $$r = \frac{\theta}{2\pi}$
 the natural numbers -- $${1, 4, 9, 16, 25, ...}$$ -- on the intersections of the spiral and the polar axis, and filled
 in the points between squares along the spiral, drawing them equidistant from one another.
 
-![A Sacks spiral consisting of the first 22,800 natural numbers.](/img/prime_number_spirals/big_sacks_spiral.png)
+![A Sacks spiral consisting of the first 22,800 natural numbers.]({% static big_sacks_spiral.png %})
 
 # prime-generating polynomials
 
@@ -214,8 +214,8 @@ That's all! For more reading on prime-number spirals, I recommend this [in-depth
 by Robert Sacks himself, and another [write-up](http://www.dcs.gla.ac.uk/~jhw/spirals/) of algorithms used to render
 them.
 
-Download all of the source code [here](/downloads/prime_number_spirals.zip), or view it on
-[Github](https://github.com/sevko/portfolio/tree/develop/visualizations/prime_number_spirals).
+Download all of the source code [here]({% static prime_number_spirals.zip %}), or view it
+on [Github](https://github.com/sevko/portfolio/tree/develop/visualizations/prime_number_spirals).
 
 ---
 
