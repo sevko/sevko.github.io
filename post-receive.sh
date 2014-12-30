@@ -31,7 +31,7 @@ main(){
 	unset GIT_DIR
 	cmd "Initializing submodules." git submodule update --init --quiet
 	cmd "Compiling resume." json_resume convert \
-		--template=resume/custom.mustache --out=tex_pdf resume/resume.json
+		--template=resume/custom.mustache --out=tex_pdf resume/resume.yaml
 	cmd "Compiling site." jekyll build
 
 	cd /var/www/sevko.io
