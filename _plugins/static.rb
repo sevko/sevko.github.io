@@ -11,7 +11,7 @@ module Jekyll
 		end
 
 		def render(context)
-			files_url = Jekyll.configuration({})['files_url']
+			files_url = context.registers[:site].config['files_url']
 			post_title = context.environments.first['page']['title']
 			post_dir_path = post_title.gsub(/[^a-zA-Z0-9]/, '_')
 			"#{files_url}/#{post_dir_path}/#{@path}"
