@@ -12,9 +12,14 @@ module Jekyll
 
 		def render(context)
 			files_url = context.registers[:site].config['files_url']
-			post_title = context.environments.first['page']['title']
-			post_dir_path = post_title.gsub(/[^a-zA-Z0-9]/, '_')
-			"#{files_url}/#{post_dir_path}/#{@path}"
+			page_context = context.environments.first['page']
+			if page_context.has_key?('static')
+				static = page_context['static']
+			else
+				post_title = page_context['title']
+				static = post_title.gsub(/[^a-zA-Z0-9]/, '_')
+			end
+			"#{files_url}/#{static}/#{@path}"
 		end
 	end
 end
