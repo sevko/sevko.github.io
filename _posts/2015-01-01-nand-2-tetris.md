@@ -15,9 +15,11 @@ tags:
 # what is Nand2Tetris?
 [Nand2Tetris](http://www.nand2tetris.org/), or *The Elements of Computing Systems*, is a twelve-part course in
 fundamental computer engineering that steps you through the creation of a computer from the ground up, starting with
-NAND logic gates and ending with an operating system capable of running a complicated program like Tetris. The course,
-architected by [Noam Nisan](http://www.cs.huji.ac.il/~noam/) and [Shimon Schocken](http://shimonschocken.com/), is
-available as a [book](http://www.amazon.com/The-Elements-Computing-Systems-Principles/dp/0262640686) that you can
+NAND logic gates and ending with an operating system capable of running a complicated program like Tetris.
+
+The course, architected by [Noam Nisan](http://www.cs.huji.ac.il/~noam/) and
+[Shimon Schocken](http://shimonschocken.com/), is available as a
+[book](http://www.amazon.com/The-Elements-Computing-Systems-Principles/dp/0262640686) that you can
 download for [free](http://www1.idc.ac.il/tecs/plan.html) (though it appears that some chapters are only available in
 terse PowerPoint form), and emphasizes a hands-on approach that leads up to some pretty epic struggles and *Aha!*
 moments. I just recently finished the course after about two months of hacking on it in my free time -- if you reliably
