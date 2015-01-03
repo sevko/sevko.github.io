@@ -12,19 +12,17 @@ tags:
   - computer engineering
 ---
 
-todo: virtual machine diagram, check hyperlinks, finish last section, fix image sizes (size them manually, no CSS)
-
 # what is Nand2Tetris?
 [Nand2Tetris](http://www.nand2tetris.org/), or *The Elements of Computing Systems*, is a twelve-part course in
 fundamental computer engineering that steps you through the creation of a computer from the ground up, starting with
-NAND logic gates and ending with an operating system capable of running a Tetris implementation. The course,
+NAND logic gates and ending with an operating system capable of running a complicated program like Tetris. The course,
 architected by [Noam Nisan](http://www.cs.huji.ac.il/~noam/) and [Shimon Schocken](http://shimonschocken.com/), is
 available as a [book](http://www.amazon.com/The-Elements-Computing-Systems-Principles/dp/0262640686) that you can
 download for [free](http://www1.idc.ac.il/tecs/plan.html) (though it appears that some chapters are only available in
-terse PowerPoint form). The book emphasises a hands-on approach without *too* much hand holding, which leads up to some
-pretty epic struggles and *Aha!* moments. I just recently finished the course after about two months of hacking on it
-in my free time -- if you reliably spend a couple hours a day on it, though, I can easily see you finishing in two
-weeks -- and wanted to share an overview of the content and some thoughts.
+terse PowerPoint form), and emphasizes a hands-on approach that leads up to some pretty epic struggles and *Aha!*
+moments. I just recently finished the course after about two months of hacking on it in my free time -- if you reliably
+spend a couple hours a day on it, though, I can easily see you finishing in two weeks -- and wanted to share an
+overview of the content and some thoughts.
 
 ![The cover of The Elements of Computing Systems.]({% static book.png %})
 
@@ -130,6 +128,8 @@ centralized in one place; high-level language developers don't have to worry abo
 wheel if they build their language around the same virtual machine, instead leaving that problem to the virtual machine
 maintainers.
 
+![A simple diagram of a virtual machine.]({% static virtual_machine.png %})
+
 Anyway, the *Hack* virtual machine wraps its assembly language in a simple, stack-based interface. We implement the
 IR-to-assembly compiler, which becomes tricky once we involve things like stack frames. Sample code looks like:
 
@@ -183,8 +183,8 @@ project walkthroughs, and benefit from a uniform structure. Each project assignm
 steering, as the authors underscore the *suggested* (though probably always the way you'd want to go anyway) approach to
 implementing the next stage of the computer, but with nothing in the way of concrete implementations -- this encourages
 the reader to wet their feet and, in true hacker fashion, build the thing on their own. The software package that ships
-with the course is entirely bug-free, and the emulators are both user-friendly and robust; one might expect that by
-default, but you'd be surprised..
+with the course is entirely bug-free, and the emulators are both user-friendly and robust (these things are easy to
+take for granted...).
 
 An enormous amount of thought was clearly invested in the structure of the course. The various components of the *Hack*
 system have perfectly coupled interrelationships, and your work up to any single point almost magically helps you
@@ -194,12 +194,25 @@ no time.
 
 Another nice bit about Nand2Tetris is that it has much to offer to people at various skill levels. I entered the
 course having never written a line of assembly, nor did I have much knowledge about compilers and virtual machines, but
-I did have a reasonable amount of software engineering experience and at least a vague understanding of the
+I *did* have a reasonable amount of software engineering experience and at least a vague understanding of the
 aforementioned components: the course ended up perfect, though I suspect that it's mostly aimed at people in my
 situation. Still, I can see it being useful even to greybeards with a nuanced knowledge of architectures, compilers,
 and operating systems, simply because it does such a good job of tying them all together in a *single coherent
-project*. I can imagine myself giving it another pass a couple of years from now, taking each of the projects farther
+project*. I can imagine myself giving it another pass a couple of years from now, taking each of the projects further
 and refreshing myself on the overview it provides.
+
+Finally, the course is lightweight: the book comes in at just under 300 pages, and that's with *twelve* sections that
+collectively cover all of the vital components of a rudimentary computer. As a result, it doesn't delve terribly far
+into any one of them; you won't implement many elementary chips, the authors intentionally skip over involved
+problems like hardware multiplication, the computer won't have a filesystem, you won't come anywhere near hardware
+acceleration, networking isn't covered, and the high-level language you develop is highly limited (both in syntax and
+functionality). That's the point. *The Elements of Computing Systems* tries to provide a general introduction to each
+component and a coherent project that ties them all together -- it's not the place to go for an immersive foray
+into any of them. On the upside, it underscore a wealth of questions which you're then encouraged to explore on your
+own.
+
+Taking some notes ([I did](https://github.com/sevko/portfolio/tree/develop/books/nand2tetris/notes)) for future
+reference might be a good idea while you read.
 
 N2T is, in my opinion, a high quality must-read for software engineers. Can't recommend it enough.
 
@@ -211,6 +224,10 @@ solid grasp of recursion is necessary for parsing, tokenization would probably b
 and the compilers require some engineering acumen to implement cleanly -- plus, it might be nice to have a vague
 understanding of all the various components of a computer's hardware and software going into the course, so that it
 clarifies and refines your understanding of the various moving parts instead of simply introducing a bunch of
-theretofore unheard-of concepts that, as a result, might be difficult to appreciate.
+theretofore unheard-of concepts that, as a result, might be difficult to appreciate. I hope someone proves me wrong,
+though!
 
-## questions left open
+## vim syntax files
+As a complete aside, you'll work with a number of ad-hoc languages throughout the course: *HDL*, *Hack* assembly,
+*Hack* virtual machine language, and *Jack*. I'm a Vim user and got a little tired of the lack of syntax highlighting,
+so wrote up a [minimalist plugin](https://github.com/sevko/vim-nand2tetris-syntax) to provide it.
