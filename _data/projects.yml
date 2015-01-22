@@ -36,15 +36,6 @@
     url: cahnda/tour-de-city
     branch: master
 
-- name: CSTUY
-  time: Oct 13 - Jul 14
-  url: http://cstuy.org
-  tagline: website for the CSTUY organization
-  tools: Python, Jekyll, JS
-  description: Developed a new website for CSTUY, a high school
-    computer-science education non-profit. Serves as a blog, information
-    portal, and donations endpoint.
-
 - name: large pixel collider
   time: Feb - Jul 14
   tagline: proof-of-concept graphics engine
