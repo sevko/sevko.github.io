@@ -2,6 +2,7 @@
 ---
 
 @import variables
+@import mixins
 
 div#header li#articles a
 	color: $baseColor1
@@ -89,3 +90,17 @@ h1#related-posts
 
 section#isso-thread
 	margin-bottom: 150px
+
+	.input-wrapper
+		margin-right: 10px
+
+	.post-action > input
+		@extend .t3
+
+		background-color: $baseColor1
+		color: white
+		font-size: 0.9em
+		padding: 4px 30px
+
+		&:hover
+			background-color: $baseColor1 * 0.85
