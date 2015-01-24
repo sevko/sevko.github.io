@@ -35,19 +35,10 @@ head: |
 	{% endif %}
 </div>
 
-{% if site.related_posts.size > 0 %}
-	<h1 id="related-posts">Related posts</h1>
-	<ul id="posts">
-		{% for post in site.related_posts %}
-			{% include post_summary.html %}
-		{% endfor %}
-	</ul>
-{% endif %}
-
 <!-- Embedded isso comments. -->
 <script data-isso="{{ site.comments_url }}/" src="{{ site.comments_url }}/js/embed.dev.js"></script>
 <section id="isso-thread">
-	<h2>comments</h2>
+	<h1>comments</h1>
 </section>
 
 {% if page.toc %}
