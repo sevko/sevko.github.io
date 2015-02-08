@@ -16,6 +16,7 @@ bio_data:
           - "Javascript"
           - "Shell"
           - "Java"
+          - "Processing"
       -
         type: "Markup/Other Languages"
         items:
@@ -28,7 +29,7 @@ bio_data:
         items:
           - "Flask"
           - "Jekyll"
-          - "NodeJS"
+          - "Node.js"
       -
         type: "Tools"
         items:
@@ -36,7 +37,7 @@ bio_data:
           - "Git"
           - "Nginx"
           - "PostgreSQL"
-          - "MongoDB"
+          - "Elasticsearch"
   education:
     show_gpa: true
     schools:
@@ -51,18 +52,21 @@ bio_data:
   experience:
     items:
       -
-        title: "Backend Engineer"
-        organisation: "[Mapzen](https://mapzen.com/) (Samsung Accelerator)"
+        title: "Software Engineering Intern"
+        organisation: "[Mapzen](https://mapzen.com/)"
         from: "Jul. 2014"
         to: "now"
         details:
-          - "Performed analytics on large geographic datasets from OpenStreetMap, GeoNames, and other sources."
+          - "Member of the core team developing our geocoder, Pelias."
+          - "Engineered data import pipelines and wrote technical documentation."
+          - "Worked with huge geographic datasets like OpenStreetMap, TIGER, and OpenAddresses."
         technology_used:
           tools:
+            - "Node.js"
             - "PostgreSQL"
-            - "PostGIS"
             - "OpenStreetMap"
-            - "ESRI Shapefiles"
+            - "elasticsearch"
+            - "geocoding"
         references:
           -
             name: "Randy Meech"
@@ -82,7 +86,7 @@ bio_data:
         from: "Jan. 2014"
         to: "Jun. 2014"
         details:
-          - "Tutored two Stuyvesant High School students in computer-science for their CS 101 class over the span of six months."
+          - "Tutored two Stuyvesant High School students in computer science over the span of six months."
           - "Taught a middle-school student how to program in Python."
         references:
           -
