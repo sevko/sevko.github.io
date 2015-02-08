@@ -4,9 +4,10 @@
 \moderncvtheme[blue]{banking}
 
 \usepackage[utf8]{inputenc}
-\usepackage[margin=0.8in,scale=0.8]{geometry}
+\usepackage[margin=1.1in,scale=0.8]{geometry}
 \usepackage{multicol}
 \renewcommand*\sectionfont{\fontfamily{phv}\fontsize{15}{24}\selectfont}
+\renewcommand*\headingfont{\fontfamily{phv}\fontsize{15}{24}\selectfont}
 
 \renewcommand*{\addresssymbol} {}
 \renewcommand*{\mobilephonesymbol} {}
@@ -43,21 +44,24 @@
 	\begin{document}
 	\maketitle
 
-	\vspace*{-1.2cm}
+	\vspace*{-1.0cm}
 	<%#skills%>
 		\section{\textsc{##skills##}}
+		\vspace*{0.2cm}
 		<%#details%>
 			\cvitem{}{\textbf{<%type%>}: <%#items%><%name%><%^last%>, <%/last%><%/items%>}
 		<%/details%>
 	<%/skills%>
+	\vspace*{0.1cm}
 
 	<%#experience%>
 		\section{\textsc{Experience}}
 		\vspace*{-0.4cm}
+
 		<%#items%>
 		\cventry
 			{\textnormal{<%from%> - <%to%>}}
-			{\textnormal{\textbf{<%title%>} at <%organisation%>}}
+					{\textnormal{{\textbf{<%title%>} at <%organisation%>}}}
 			{}
 			{<%location%>}
 			{}
@@ -69,8 +73,10 @@
 					<%/details%>
 				\end{itemize}
 			}
+			\vspace*{-.2cm}
 		<%/items%>
 	<%/experience%>
+	\vspace*{0.1cm}
 
 	<%#other_projects%>
 		\section{\textsc{Projects}}
@@ -83,17 +89,19 @@
 			{}
 			{}
 			{
-					\begin{itemize}
-						\setlength{\itemindent}{1.5em}
-						<%#points%>\item <%& .%><%/points%>
-						<%#technology_used%>
-						\item ##technology_used##:
-						<%#tools%><%name%><%^last%>, <%/last%><%/tools%>
-						<%/technology_used%>
-					\end{itemize}
+				\begin{itemize}
+					\setlength{\itemindent}{1.5em}
+					<%#points%>\item <%& .%><%/points%>
+					<%#technology_used%>
+					\item ##technology_used##:
+					<%#tools%><%name%><%^last%>, <%/last%><%/tools%>
+					<%/technology_used%>
+				\end{itemize}
 			}
+			\vspace*{-.2cm}
 		<%/items%>
 	<%/other_projects%>
+	\vspace*{0.1cm}
 
 	<%#education%>
 		\section{\textsc{##education##}}
@@ -113,8 +121,10 @@
 					\end{itemize}
 				}
 			}
+			\vspace*{-.2cm}
 		<%/schools%>
 	<%/education%>
+	\vspace*{0.1cm}
 
 	<%#competitions%>
 		\section{\textsc{Competitions}}
