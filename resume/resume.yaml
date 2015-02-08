@@ -55,13 +55,13 @@ bio_data:
         title: Software Engineering Intern
         organisation: "[Mapzen](https://mapzen.com/)"
         from: 07/2014
-        to: now
+        to: "**now**"
         details:
           - Member of the core team developing our geocoder, [Pelias](https://github.com/pelias/pelias).
           - Engineered data import pipelines and wrote technical documentation.
           - Worked with huge geographic datasets like OpenStreetMap, TIGER, and OpenAddresses.
       -
-        title: Programming/Computer Science Tutor
+        title: Computer Science Tutor
         organisation: self-employed
         from: 01/2014
         to: 06/2014

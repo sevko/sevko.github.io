@@ -1,17 +1,26 @@
 % {{=<% %>=}}
 \documentclass[12pt,a4paper,sans]{moderncv}
 
-\moderncvtheme[blue]{classic}
+\moderncvtheme[blue]{banking}
 
 \usepackage[utf8]{inputenc}
 \usepackage[margin=0.8in,scale=0.8]{geometry}
 \usepackage{multicol}
 \renewcommand*\sectionfont{\fontfamily{phv}\fontsize{15}{24}\selectfont}
 
+\renewcommand*{\addresssymbol} {}
+\renewcommand*{\mobilephonesymbol} {}
+\renewcommand*{\fixedphonesymbol} {}
+\renewcommand*{\faxphonesymbol} {}
+\renewcommand*{\emailsymbol} {}
+\renewcommand*{\homepagesymbol} {}
+\renewcommand*{\linkedinsocialsymbol}{}
+\renewcommand*{\twittersocialsymbol} {}
+\renewcommand*{\githubsocialsymbol} {}
+
 <%#bio_data%>
 	\firstname{<%&firstname%>}
 	\familyname{\mbox{<%&familyname%>}}
-	\title{\small <%#stars%><%#items%><%name%><%^last%> $\star$ <%/last%><%/items%><%/stars%>}
 	<%#phone%>\phone{<%.%>}<%/phone%>
 	<%#email%>\email{<%.%>}<%/email%>
 	<%#raw_website%>\homepage{<%& .%>}<%/raw_website%>
@@ -33,8 +42,8 @@
 
 	\begin{document}
 	\maketitle
-	\vspace*{-1.8cm}
 
+	\vspace*{-1.2cm}
 	<%#skills%>
 		\section{\textsc{##skills##}}
 		<%#details%>
@@ -44,75 +53,77 @@
 
 	<%#experience%>
 		\section{\textsc{Experience}}
+		\vspace*{-0.4cm}
 		<%#items%>
-		\cventry{<%from%> - <%to%>}{<%title%> \textnormal{at} <%organisation%>}{}{<%location%>}{}{
+		\cventry
+			{\textnormal{<%from%> - <%to%>}}
+			{\textnormal{\textbf{<%title%>} at <%organisation%>}}
+			{}
+			{<%location%>}
+			{}
 			{
 				\begin{itemize}
+					\setlength{\itemindent}{1.5em}
 					<%#details%>
 						\item <%& .%>
 					<%/details%>
 				\end{itemize}
-				}
 			}
-			\vspace*{0.2cm}
 		<%/items%>
 	<%/experience%>
 
 	<%#other_projects%>
 		\section{\textsc{Projects}}
+		\vspace*{-0.4cm}
 		<%#items%>
 			\cventry
-			{<%time%>}
-			{<%name%>}
-			{<%headline%>}
+			{\textnormal{<%time%>}}
+			{\textnormal{\textbf{<%name%>}: <%headline%>}}
 			{}
 			{}
 			{}
-
-			\vspace*{-0.15cm}
-			\cvitem{}{
-				{
+			{
 					\begin{itemize}
-					<%#points%>\item <%& .%><%/points%>
-					<%#technology_used%>
-					\item ##technology_used##:
-					<%#tools%><%name%><%^last%>, <%/last%><%/tools%>
-					<%/technology_used%>
+						\setlength{\itemindent}{1.5em}
+						<%#points%>\item <%& .%><%/points%>
+						<%#technology_used%>
+						\item ##technology_used##:
+						<%#tools%><%name%><%^last%>, <%/last%><%/tools%>
+						<%/technology_used%>
 					\end{itemize}
-				}
 			}
-			\vspace*{-0.5cm}
 		<%/items%>
 	<%/other_projects%>
 
 	<%#education%>
 		\section{\textsc{##education##}}
+		\vspace*{-0.4cm}
 		<%#schools%>
 			\cventry
-			{<%graduation_year%>}
-			{<%degree%><%#major%>, <%major%><%/major%>}
-			{<%institution%>}
+			{\textnormal{<%graduation_year%>}}
+			{\textnormal{\textbf{<%institution%>}}, \textnormal{<%degree%>, <%#show_gpa%>##gpa##: <%gpa%><%/show_gpa%>}}
 			{}
-			{<%#show_gpa%>##gpa##: <%gpa%><%/show_gpa%>}
 			{}
-			\vspace*{-0.10cm}
-			\cvitem{}{
+			{}
+			{
 				{
 					\begin{itemize}
+						\setlength{\itemindent}{1.5em}
 						<%#details%>\item <%& .%><%/details%>
 					\end{itemize}
 				}
 			}
 		<%/schools%>
-		\vspace*{-0.7cm}
 	<%/education%>
 
 	<%#competitions%>
 		\section{\textsc{Competitions}}
+		\vspace*{0.1cm}
 		<%#details%>
+			\vspace*{-0.5cm}
 			\cventry
-			{<%date%>}
-			{<%name%> \textnormal{| <%position%> | team} <%team%>}
+			{\textnormal{<%date%>}}
+					{\textnormal{\textbf{<%name%>} | <%position%> | team} <%team%>}
 			{}
 			{}
 			{}
