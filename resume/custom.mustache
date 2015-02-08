@@ -4,7 +4,7 @@
 \moderncvtheme[blue]{classic}
 
 \usepackage[utf8]{inputenc}
-\usepackage[margin=0.45in,scale=0.8]{geometry}
+\usepackage[margin=0.8in,scale=0.8]{geometry}
 \usepackage{multicol}
 \renewcommand*\sectionfont{\fontfamily{phv}\fontsize{15}{24}\selectfont}
 
@@ -38,37 +38,19 @@
 	<%#skills%>
 		\section{\textsc{##skills##}}
 		<%#details%>
-			\cvitem{\textbullet}{\textbf{<%type%>}: <%#items%><%name%><%^last%>, <%/last%><%/items%>}
+			\cvitem{}{\textbf{<%type%>}: <%#items%><%name%><%^last%>, <%/last%><%/items%>}
 		<%/details%>
 	<%/skills%>
 
 	<%#experience%>
-		\section{\textsc{##experience##}}
+		\section{\textsc{Experience}}
 		<%#items%>
 		\cventry{<%from%> - <%to%>}{<%title%> \textnormal{at} <%organisation%>}{}{<%location%>}{}{
-			{\footnotesize
+			{
 				\begin{itemize}
 					<%#details%>
 						\item <%& .%>
 					<%/details%>
-					<%#technology_used%>
-						\item Tools used:
-						\setlength\multicolsep{0pt}
-						\begin{multicols}{2}
-							\begin{itemize}
-								<%#tools%>
-									\item <%name%><%^last%><%/last%>
-								<%/tools%>
-							\end{itemize}
-						\end{multicols}
-					<%/technology_used%>
-					\item References:
-					\setlength\multicolsep{0pt}
-					\begin{itemize}
-						<%#references%>
-							\item <%name%>, {<%#has_phone%><%phone%>, <%/has_phone%>}{<%#has_email%>\href{mailto:<%email%>}{<%email%>}<%/has_email%>}
-						<%/references%>
-					\end{itemize}
 				\end{itemize}
 				}
 			}
@@ -90,7 +72,7 @@
 			% \cvitem{\textbullet}{<%& headline%>}
 			\vspace*{-0.15cm}
 			\cvitem{}{
-				{\footnotesize
+				{
 					\begin{itemize}
 					<%#points%>\item <%& .%><%/points%>
 					<%#technology_used%>
@@ -116,7 +98,7 @@
 			{}
 			\vspace*{-0.25cm}
 			\cvitem{}{
-				{\footnotesize
+				{
 					\begin{itemize}
 						<%#details%>\item <%& .%><%/details%>
 					\end{itemize}

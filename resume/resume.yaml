@@ -47,7 +47,7 @@ bio_data:
         graduation_year: "2010 - '14"
         gpa: "95.4/100.0"
         details:
-          - "High Honors in Stuyvesant Computer Science"
+          - "High Honors in Computer Science"
           - "2370 on the SAT"
   experience:
     items:
@@ -67,40 +67,14 @@ bio_data:
             - "OpenStreetMap"
             - "elasticsearch"
             - "geocoding"
-        references:
-          -
-            name: "Randy Meech"
-            has_phone: false
-            phone: ""
-            has_email: true
-            email: "randy@mapzen.com"
-          -
-            name: "Mike Cunningham"
-            has_phone: false
-            phone: ""
-            has_email: true
-            email: "mike@mapzen.com"
       -
         title: "Programming/Computer Science Tutor"
         organisation: "self-employed"
         from: "Jan. 2014"
         to: "Jun. 2014"
         details:
-          - "Tutored two Stuyvesant High School students in computer science over the span of six months."
+          - "Tutored two Stuyvesant HS students in computer science for six months."
           - "Taught a middle-school student how to program in Python."
-        references:
-          -
-            name: "Dolly Rosen"
-            has_phone: true
-            phone: "917.224.7070"
-            has_email: false
-            email: ""
-          -
-            name: "Katrin Sosnick"
-            has_phone: false
-            phone: ""
-            has_email: true
-            email: "Katrin@rondeel.com"
   other_projects:
     items:
       -
