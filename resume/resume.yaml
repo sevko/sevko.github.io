@@ -1,7 +1,7 @@
 firstname: "Severyn"
 familyname: "Kozak"
 github_id: "github.com/sevko"
-linkedin_id: "linkedin.com/pub/severyn-kozak/54/534/181/"
+linkedin_id: "linkedin.com/in/sevko"
 bio_data:
   email: "severyn.kozak@gmail.com"
   phone: "347.882.1722"
@@ -54,10 +54,10 @@ bio_data:
       -
         title: "Software Engineering Intern"
         organisation: "[Mapzen](https://mapzen.com/)"
-        from: "Jul. 2014"
+        from: "07/2014"
         to: "now"
         details:
-          - "Member of the core team developing our geocoder, Pelias."
+          - "Member of the core team developing our geocoder, [Pelias](https://github.com/pelias/pelias)."
           - "Engineered data import pipelines and wrote technical documentation."
           - "Worked with huge geographic datasets like OpenStreetMap, TIGER, and OpenAddresses."
         technology_used:
@@ -70,8 +70,8 @@ bio_data:
       -
         title: "Programming/Computer Science Tutor"
         organisation: "self-employed"
-        from: "Jan. 2014"
-        to: "Jun. 2014"
+        from: "01/2014"
+        to: "06/2014"
         details:
           - "Tutored two Stuyvesant HS students in computer science for six months."
           - "Taught a middle-school student how to program in Python."

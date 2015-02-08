@@ -1,4 +1,4 @@
-{{=<% %>=}}
+% {{=<% %>=}}
 \documentclass[12pt,a4paper,sans]{moderncv}
 
 \moderncvtheme[blue]{classic}
@@ -54,6 +54,7 @@
 				\end{itemize}
 				}
 			}
+			\vspace*{0.2cm}
 		<%/items%>
 	<%/experience%>
 
@@ -68,8 +69,6 @@
 			{}
 			{}
 
-			% \vspace*{-0.25cm}
-			% \cvitem{\textbullet}{<%& headline%>}
 			\vspace*{-0.15cm}
 			\cvitem{}{
 				{
@@ -96,7 +95,7 @@
 			{}
 			{<%#show_gpa%>##gpa##: <%gpa%><%/show_gpa%>}
 			{}
-			\vspace*{-0.25cm}
+			\vspace*{-0.10cm}
 			\cvitem{}{
 				{
 					\begin{itemize}
@@ -105,24 +104,12 @@
 				}
 			}
 		<%/schools%>
-		\vspace{-0.7cm}
+		\vspace*{-0.7cm}
 	<%/education%>
-
-	<%#acad_achievements%>
-		\section{\textsc{##acad_achievements##}}
-		<%#items%>
-			% \cvitem{LHS}{RHS}
-			\cvitem{\textbullet}{<%& .%>}
-		<%/items%>
-	<%/acad_achievements%>
 
 	<%#competitions%>
 		\section{\textsc{Competitions}}
 		<%#details%>
-			% \cvitem{\textbullet}{
-				% \textbf{{<%name%>}}, <%date%>, Position: \textbf{<%position%>}
-			% }
-
 			\cventry
 			{<%date%>}
 			{<%name%> \textnormal{| <%position%> | team} <%team%>}
@@ -134,4 +121,3 @@
 	<%/competitions%>
 <%/bio_data%>
 \end{document}
-%% end of file `page.tex'.
