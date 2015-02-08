@@ -1,92 +1,85 @@
-firstname: "Severyn"
-familyname: "Kozak"
-github_id: "github.com/sevko"
-linkedin_id: "linkedin.com/in/sevko"
+firstname: Severyn
+familyname: Kozak
+github_id: github.com/sevko
+linkedin_id: linkedin.com/in/sevko
 bio_data:
-  email: "severyn.kozak@gmail.com"
-  phone: "347.882.1722"
-  website: "sevko.io"
+  email: severyn.kozak@gmail.com
+  phone: 347.882.1722
+  website: sevko.io
   skills:
     details:
       -
-        type: "Programming Languages"
+        type: Programming Languages
         items:
-          - "Python"
-          - "C"
-          - "Javascript"
-          - "Shell"
-          - "Java"
-          - "Processing"
+          - Python
+          - C
+          - Javascript
+          - Shell
+          - Java
+          - Processing
       -
-        type: "Markup/Other Languages"
+        type: Markup/Other Languages
         items:
-          - "HTML"
-          - "LaTeX"
-          - "CSS"
-          - "SASS"
+          - HTML
+          - LaTeX
+          - CSS
+          - SASS
       -
-        type: "Frameworks"
+        type: Frameworks
         items:
-          - "Flask"
-          - "Jekyll"
-          - "Node.js"
+          - Flask
+          - Jekyll
+          - Node.js
       -
-        type: "Tools"
+        type: Tools
         items:
-          - "Linux"
-          - "Git"
-          - "Nginx"
-          - "PostgreSQL"
-          - "Elasticsearch"
+          - Linux
+          - Git
+          - Nginx
+          - PostgreSQL
+          - Elasticsearch
   education:
     show_gpa: true
     schools:
       -
-        degree: "High School Diploma"
-        institution: "Stuyvesant High School"
+        degree: High School Diploma
+        institution: Stuyvesant High School
         graduation_year: "2010 - '14"
-        gpa: "95.4/100.0"
+        gpa: 95.4/100.0
         details:
-          - "High Honors in Computer Science"
-          - "2370 on the SAT"
+          - High Honors in Computer Science
+          - 2370 on the SAT
   experience:
     items:
       -
-        title: "Software Engineering Intern"
+        title: Software Engineering Intern
         organisation: "[Mapzen](https://mapzen.com/)"
-        from: "07/2014"
-        to: "now"
+        from: 07/2014
+        to: now
         details:
-          - "Member of the core team developing our geocoder, [Pelias](https://github.com/pelias/pelias)."
-          - "Engineered data import pipelines and wrote technical documentation."
-          - "Worked with huge geographic datasets like OpenStreetMap, TIGER, and OpenAddresses."
-        technology_used:
-          tools:
-            - "Node.js"
-            - "PostgreSQL"
-            - "OpenStreetMap"
-            - "elasticsearch"
-            - "geocoding"
+          - Member of the core team developing our geocoder, [Pelias](https://github.com/pelias/pelias).
+          - Engineered data import pipelines and wrote technical documentation.
+          - Worked with huge geographic datasets like OpenStreetMap, TIGER, and OpenAddresses.
       -
-        title: "Programming/Computer Science Tutor"
-        organisation: "self-employed"
-        from: "01/2014"
-        to: "06/2014"
+        title: Programming/Computer Science Tutor
+        organisation: self-employed
+        from: 01/2014
+        to: 06/2014
         details:
-          - "Tutored two Stuyvesant HS students in computer science for six months."
-          - "Taught a middle-school student how to program in Python."
+          - Tutored two Stuyvesant HS students in computer science for six months.
+          - Taught a middle-school student how to program in Python.
   other_projects:
     items:
       -
-        name: "bitshift"
-        headline: "a source-code search engine. <<bitshift.it>>"
-        time: "2014"
+        name: bitshift
+        headline: a source-code search engine. <<bitshift.it>>
+        time: 2014
         points:
-          - "Demo'd at the Sept. 2014 **New York Tech Meetup** ([video](https://vimeo.com/106072869))."
+          - Demo'd at the Sept. 2014 **New York Tech Meetup** ([video](https://vimeo.com/106072869)).
       -
-        name: "Tour de City"
-        headline: "a city-bike tour app. <<tour-de-city.com>>"
-        time: "2013 - '14"
+        name: Tour de City
+        headline: a city-bike tour app. <<tour-de-city.com>>
+        time: 2013 - '14
         points:
           - "[Top 5](http://www.alleywatch.com/2014/07/wait-until-you-see-who-the-nyc-big-apps-peoples-choices-were/3/) People's Choice submission in **NYC Big Apps 2014**."
           - "[3<sup>rd</sup> place](http://www.appefeat.org/contest/) in the **US IEEE App competition**."
@@ -94,27 +87,27 @@ bio_data:
   competitions:
     details:
       -
-        name: "NYC Big Apps"
-        date: "2014"
-        team: "Tour de City"
+        name: NYC Big Apps
+        date: 2014
+        team: Tour de City
         position: "[Top 5](http://www.alleywatch.com/2014/07/wait-until-you-see-who-the-nyc-big-apps-peoples-choices-were/3/) people`s choice"
       -
-        name: "App-e-feat competition"
-        date: "2014"
-        team: "Tour de City"
+        name: App-e-feat competition
+        date: 2014
+        team: Tour de City
         position: "[3<sup>rd</sup>](http://www.appefeat.org/contest/)"
       -
-        name: "Dream It. Code It. Win it."
-        date: "2014"
-        team: "Tour de City"
+        name: Dream It. Code It. Win it.
+        date: 2014
+        team: Tour de City
         position: "[high-school division finalist](http://dreamitcodeitwinit.wordpress.com/2014/05/09/finalists-of-dream-it-code-it-win-it-high-school-division/)"
       -
-        name: "picoCTF"
-        date: "2013"
-        team: "Qubit"
+        name: picoCTF
+        date: 2013
+        team: Qubit
         position: "[71<sup>st</sup>/1938](https://picoctf.com/scoreboard)"
       -
-        name: "UFOCTF"
-        date: "2013"
-        team: "Qubit"
+        name: UFOCTF
+        date: 2013
+        team: Qubit
         position: "[38<sup>th</sup>/353](https://ctftime.org/event/99)"
