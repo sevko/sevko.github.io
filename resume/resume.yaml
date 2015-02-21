@@ -61,12 +61,13 @@ bio_data:
           - Engineered data import pipelines and wrote technical documentation.
           - Worked with huge geographic datasets like OpenStreetMap, TIGER, and OpenAddresses.
       -
-        title: Computer Science Tutor
-        organisation: self-employed
-        from: 01/2014
+        title: Programming Mentor
+        organisation: "[CSTUY](https://cstuy.org/)/self-employed"
+        from: 11/2013
         to: 06/2014
         details:
-          - Tutored two Stuyvesant HS students in computer science for six months.
+          - Mentored 25 high-school students in software engineering (web dev, databases, Linux).
+          - Privately tutored two high-school students in computer science.
           - Taught a middle-school student how to program in Python.
   other_projects:
     items:
