@@ -46,7 +46,7 @@ main(){
 
 	cmd "Initializing submodules." git submodule update --init --quiet
 	cmd "Compiling resume." json_resume convert \
-		--template=resume/custom.mustache --out=tex_pdf resume/resume.yaml
+		--template=resume/custom.mustache --out=tex_pdf _resume/resume.yaml
 	cmd "Compiling site." jekyll build
 
 	cd $site_dest
