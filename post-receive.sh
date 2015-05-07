@@ -47,7 +47,8 @@ cmd "Compiling site." jekyll build
 cd $site_dest
 mv _site _old
 cmd "Moving site." mv $repo_dest/_site .
-cmd "Moving nginx config." mv $repo_dest/nginx.conf /etc/nginx/sites-enabled/sevko.io
+cmd "Moving nginx config." mv $repo_dest/nginx.conf \
+	/etc/nginx/sites-enabled/sevko.io
 rm -rf _old
 rm -rf $repo_dest
 cmd "Restarting nginx." service nginx restart
