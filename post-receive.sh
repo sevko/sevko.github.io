@@ -13,10 +13,6 @@
 cmd(){
 	# Print a diagnostic message and execute a command. Print an error message
 	# if it fails.
-	#
-	# use: cmd MSG CMD
-	#   MSG (string): The diagnostic message to print before executing `CMD`.
-	#   CMD (string): The command to execute.
 
 	echo $1
 	${@:2} > /dev/null || (echo "Failed" && exit 1)
