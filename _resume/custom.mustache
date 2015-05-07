@@ -1,17 +1,27 @@
-{{=<% %>=}}
+% {{=<% %>=}}
 \documentclass[12pt,a4paper,sans]{moderncv}
 
-\moderncvtheme[blue]{classic}
+\moderncvtheme[blue]{banking}
 
 \usepackage[utf8]{inputenc}
-\usepackage[margin=0.45in,scale=0.8]{geometry}
+\usepackage[margin=1.1in,scale=0.8]{geometry}
 \usepackage{multicol}
 \renewcommand*\sectionfont{\fontfamily{phv}\fontsize{15}{24}\selectfont}
+\renewcommand*\headingfont{\fontfamily{phv}\fontsize{15}{24}\selectfont}
+
+\renewcommand*{\addresssymbol} {}
+\renewcommand*{\mobilephonesymbol} {}
+\renewcommand*{\fixedphonesymbol} {}
+\renewcommand*{\faxphonesymbol} {}
+\renewcommand*{\emailsymbol} {}
+\renewcommand*{\homepagesymbol} {}
+\renewcommand*{\linkedinsocialsymbol}{}
+\renewcommand*{\twittersocialsymbol} {}
+\renewcommand*{\githubsocialsymbol} {}
 
 <%#bio_data%>
 	\firstname{<%&firstname%>}
 	\familyname{\mbox{<%&familyname%>}}
-	\title{\small <%#stars%><%#items%><%name%><%^last%> $\star$ <%/last%><%/items%><%/stars%>}
 	<%#phone%>\phone{<%.%>}<%/phone%>
 	<%#email%>\email{<%.%>}<%/email%>
 	<%#raw_website%>\homepage{<%& .%>}<%/raw_website%>
@@ -33,117 +43,97 @@
 
 	\begin{document}
 	\maketitle
-	\vspace*{-1.8cm}
 
+	\vspace*{-1.0cm}
 	<%#skills%>
 		\section{\textsc{##skills##}}
+		\vspace*{0.2cm}
 		<%#details%>
-			\cvitem{\textbullet}{\textbf{<%type%>}: <%#items%><%name%><%^last%>, <%/last%><%/items%>}
+			\cvitem{}{\textbf{<%type%>}: <%#items%><%name%><%^last%>, <%/last%><%/items%>}
 		<%/details%>
 	<%/skills%>
+	\vspace*{0.1cm}
 
 	<%#experience%>
-		\section{\textsc{##experience##}}
+		\section{\textsc{Experience}}
+		\vspace*{-0.4cm}
+
 		<%#items%>
-		\cventry{<%from%> - <%to%>}{<%title%> \textnormal{at} <%organisation%>}{}{<%location%>}{}{
-			{\footnotesize
+		\cventry
+			{\textnormal{<%from%> - <%to%>}}
+					{\textnormal{{\textbf{<%title%>} at <%organisation%>}}}
+			{}
+			{<%location%>}
+			{}
+			{
 				\begin{itemize}
+					\setlength{\itemindent}{1.5em}
 					<%#details%>
 						\item <%& .%>
 					<%/details%>
-					<%#technology_used%>
-						\item Tools used:
-						\setlength\multicolsep{0pt}
-						\begin{multicols}{2}
-							\begin{itemize}
-								<%#tools%>
-									\item <%name%><%^last%><%/last%>
-								<%/tools%>
-							\end{itemize}
-						\end{multicols}
-					<%/technology_used%>
-					\item References:
-					\setlength\multicolsep{0pt}
-					\begin{itemize}
-						<%#references%>
-							\item <%name%>, {<%#has_phone%><%phone%>, <%/has_phone%>}{<%#has_email%>\href{mailto:<%email%>}{<%email%>}<%/has_email%>}
-						<%/references%>
-					\end{itemize}
 				\end{itemize}
-				}
 			}
+			\vspace*{-.2cm}
 		<%/items%>
 	<%/experience%>
+	\vspace*{0.1cm}
 
 	<%#other_projects%>
 		\section{\textsc{Projects}}
+		\vspace*{-0.4cm}
 		<%#items%>
 			\cventry
-			{<%time%>}
-			{<%name%>}
-			{<%headline%>}
+			{\textnormal{<%time%>}}
+			{\textnormal{\textbf{<%name%>}: <%headline%>}}
 			{}
 			{}
 			{}
-
-			% \vspace*{-0.25cm}
-			% \cvitem{\textbullet}{<%& headline%>}
-			\vspace*{-0.15cm}
-			\cvitem{}{
-				{\footnotesize
-					\begin{itemize}
+			{
+				\begin{itemize}
+					\setlength{\itemindent}{1.5em}
 					<%#points%>\item <%& .%><%/points%>
 					<%#technology_used%>
 					\item ##technology_used##:
 					<%#tools%><%name%><%^last%>, <%/last%><%/tools%>
 					<%/technology_used%>
-					\end{itemize}
-				}
+				\end{itemize}
 			}
-			\vspace*{-0.5cm}
+			\vspace*{-.2cm}
 		<%/items%>
 	<%/other_projects%>
+	\vspace*{0.1cm}
 
 	<%#education%>
 		\section{\textsc{##education##}}
+		\vspace*{-0.4cm}
 		<%#schools%>
 			\cventry
-			{<%graduation_year%>}
-			{<%degree%><%#major%>, <%major%><%/major%>}
-			{<%institution%>}
+			{\textnormal{<%graduation_year%>}}
+			{\textnormal{\textbf{<%institution%>}}, \textnormal{<%degree%>, <%#show_gpa%>##gpa##: <%gpa%><%/show_gpa%>}}
 			{}
-			{<%#show_gpa%>##gpa##: <%gpa%><%/show_gpa%>}
 			{}
-			\vspace*{-0.25cm}
-			\cvitem{}{
-				{\footnotesize
+			{}
+			{
+				{
 					\begin{itemize}
+						\setlength{\itemindent}{1.5em}
 						<%#details%>\item <%& .%><%/details%>
 					\end{itemize}
 				}
 			}
+			\vspace*{-.2cm}
 		<%/schools%>
-		\vspace{-0.7cm}
 	<%/education%>
-
-	<%#acad_achievements%>
-		\section{\textsc{##acad_achievements##}}
-		<%#items%>
-			% \cvitem{LHS}{RHS}
-			\cvitem{\textbullet}{<%& .%>}
-		<%/items%>
-	<%/acad_achievements%>
+	\vspace*{0.1cm}
 
 	<%#competitions%>
 		\section{\textsc{Competitions}}
+		\vspace*{0.1cm}
 		<%#details%>
-			% \cvitem{\textbullet}{
-				% \textbf{{<%name%>}}, <%date%>, Position: \textbf{<%position%>}
-			% }
-
+			\vspace*{-0.5cm}
 			\cventry
-			{<%date%>}
-			{<%name%> \textnormal{| <%position%> | team} <%team%>}
+			{\textnormal{<%date%>}}
+					{\textnormal{\textbf{<%name%>} | <%position%> | team} <%team%>}
 			{}
 			{}
 			{}
@@ -152,4 +142,3 @@
 	<%/competitions%>
 <%/bio_data%>
 \end{document}
-%% end of file `page.tex'.
