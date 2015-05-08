@@ -25,18 +25,20 @@ fi
 IFS='/' read -ra REF <<< "${ref[2]}"
 branch="${REF[2]}"
 
-repo_url=https://github.com/sevko/sevko.github.io
-repo_dest=/var/www/sevko.github.io
+if [ $branch = staging ]; then
+	repo_dest=/var/www/staging.sevko.io
+else
+	repo_dest=/var/www/sevko.io
+fi
 
-cmd "Cloning site." git clone --quiet $repo_url $repo_dest
-cd $repo_dest
+work_repo_dest=$repo_dest.deploying
+cmd "Cloning site." \
+	git clone --quiet https://github.com/sevko/sevko.github.io $work_repo_dest
+cd $work_repo_dest
 unset GIT_DIR
 
 if [ $branch = staging ]; then
 	cmd "Checking out staging." git checkout staging 2> /dev/null
-	site_dest=/var/www/staging.sevko.io
-else
-	site_dest=/var/www/sevko.io
 fi
 
 cmd "Initializing submodules." git submodule update --init --quiet
@@ -44,12 +46,8 @@ cmd "Compiling resume." json_resume convert \
 	--template=_resume/custom.mustache --out=tex_pdf _resume/resume.yaml
 cmd "Compiling site." jekyll build
 
-cd $site_dest
-mv _site _old
-cmd "Moving site." mv $repo_dest/_site .
-cmd "Moving nginx config." mv $repo_dest/nginx.conf \
-	/etc/nginx/sites-enabled/sevko.io
-rm -rf _old
-rm -rf $repo_dest
+cd ..
+cmd "Removing old site." rm -rf $repo_dest
+cmd "Moving new site." mv $work_repo_dest $repo_dest
 cmd "Restarting nginx." service nginx restart
 echo "Build completed."
