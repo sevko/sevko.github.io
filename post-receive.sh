@@ -3,12 +3,6 @@
 # Description:
 #   Server-side git hook that compiles the site whenever new commits are
 #   pushed.
-#
-# Use:
-#   # from the repository root on the server
-#   cd .git/hooks/
-#   ln -s ../../post-receive.sh post-receive
-#   cd -
 
 cmd(){
 	# Print a diagnostic message and execute a command. Print an error message
