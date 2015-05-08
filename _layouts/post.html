@@ -3,6 +3,7 @@ layout: default
 head: |
   <link rel="stylesheet" href="/css/post.css">
   <link rel="stylesheet" href="/css/articles.css">
+  <script src="http://sevko.disqus.com/embed.js"></script>
 ---
 
 <div id="meta">
@@ -35,13 +36,10 @@ head: |
 	{% endif %}
 </div>
 
-<!-- Embedded isso comments. -->
-<script data-isso="{{ site.comments_url }}/" src="{{ site.comments_url }}/js/embed.dev.js"></script>
-<section id="isso-thread">
-	<h1>comments</h1>
-	<p>
-	<a href="http://markdowntutorial.com/">Markdown</a> formatting supported!
-	</p>
+<section id="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript" src="http://sevko.disqus.com/embed.js"></script>
+	<noscript><b id="comments-noscript">Enable JavaScript to see comments.</b></noscript>
 </section>
 
 {% if page.toc %}
