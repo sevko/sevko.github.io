@@ -25,8 +25,8 @@ fi
 IFS='/' read -ra REF <<< "${ref[2]}"
 branch="${REF[2]}"
 
-local repo_url=https://github.com/sevko/sevko.github.io
-local repo_dest=/var/www/sevko.github.io
+repo_url=https://github.com/sevko/sevko.github.io
+repo_dest=/var/www/sevko.github.io
 
 cmd "Cloning site." git clone --quiet $repo_url $repo_dest
 cd $repo_dest
@@ -34,9 +34,9 @@ unset GIT_DIR
 
 if [ $branch = staging ]; then
 	cmd "Checking out staging." git checkout staging 2> /dev/null
-	local site_dest=/var/www/staging.sevko.io
+	site_dest=/var/www/staging.sevko.io
 else
-	local site_dest=/var/www/sevko.io
+	site_dest=/var/www/sevko.io
 fi
 
 cmd "Initializing submodules." git submodule update --init --quiet
