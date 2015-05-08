@@ -1,6 +1,8 @@
 ---
 ---
 
+@import mixins
+
 pre
 	overflow: auto
 	padding: 10px
@@ -8,7 +10,10 @@ pre
 	white-space: pre
 
 div.highlight
-	background-color: #ebebeb
+	@include vendor(border-radius, 4px)
+
+	background-color: #f0eeee
+	border: 1px solid #bbb
 	font-size: 0.95em
 	line-height: 1em
 	margin-bottom: 20px
