@@ -5,6 +5,10 @@ feel free to subscribe to my [RSS feed](http://sevko.io/articles/feed.xml)!
 
 ## installation
 
+The site has several Ruby dependencies (like Jekyll itself and some libraries used in my custom `_plugins`), as
+specified in `Gemfile`. I recommend using a Ruby version manager like [`rvm`](https://rvm.io/) and Ruby 2.1.3
+before installing them.
+
 ```
 bundle install
 git submodule update --init
