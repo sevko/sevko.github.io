@@ -4,6 +4,8 @@
 #   Server-side git hook that compiles the site whenever new commits are
 #   pushed.
 
+[[ -s /usr/local/rvm/scripts/rvm ]] && source /usr/local/rvm/scripts/rvm
+
 cmd(){
 	# Print a diagnostic message and execute a command. Print an error message
 	# if it fails.
