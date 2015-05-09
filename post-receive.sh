@@ -2,7 +2,12 @@
 
 # Description:
 #   Server-side git hook that compiles the site whenever new commits are
-#   pushed.
+#   pushed. Here's a rough guide of how to set it up:
+#
+#       ssh server
+#       git --init bare deploy
+#       exit
+#       git remote add deploy server:~/deploy
 
 [[ -s /usr/local/rvm/scripts/rvm ]] && source /usr/local/rvm/scripts/rvm
 
