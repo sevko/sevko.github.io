@@ -15,6 +15,18 @@
     url: sevko/bitshift
     branch: develop
 
+- name: portfolio
+  time: Jun 14 +
+  tagline: collection of miscellaneous work
+  tools: everything and anything
+  description: "A repository containing all of my software experiments:
+    algorithm implementations, interesting visualizations, and projects
+    undertaken to learn more about a particular language, framework, or
+    whatever else."
+  github:
+    url: sevko/portfolio
+    branch: develop
+
 - name: tour de city
   time: Nov 13 - Apr 14
   url: http://tour-de-city.com
@@ -46,18 +58,6 @@
     rendering, z-buffering, and a number of other features.
   github:
     url: sevko/large-pixel-collider
-    branch: develop
-
-- name: portfolio
-  time: Jun 14 +
-  tagline: collection of miscellaneous work
-  tools: everything and anything
-  description: "A repository containing all of my software experiments:
-    algorithm implementations, interesting visualizations, and projects
-    undertaken to learn more about a particular language, framework, or
-    whatever else."
-  github:
-    url: sevko/portfolio
     branch: develop
 
 - name: sevko.io
