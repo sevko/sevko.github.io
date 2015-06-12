@@ -72,7 +72,6 @@
 
 - name: stuybooks
   time: Nov 13
-  url: http://stuybooks.com
   tagline: quote-sharing web application
   tools: Python, SQLite
   description: A simple application that allowed users to submit quotes to a
