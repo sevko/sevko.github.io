@@ -3,24 +3,21 @@ familyname: Kozak
 github_id: github.com/sevko
 linkedin_id: linkedin.com/in/sevko
 bio_data:
-  email: severyn.kozak@gmail.com
+  email: sev@mit.edu
   phone: 347.882.1722
   website: sevko.io
   skills:
     details:
       -
-        type: Programming Languages
+        type: Languages
         items:
           - Python
           - C
           - Javascript
-          - Shell
+          - Haskell
           - Java
           - Processing
-      -
-        type: Markup/Other Languages
-        items:
-          - HTML
+          - Shell
           - LaTeX
           - CSS
           - SASS
@@ -30,6 +27,7 @@ bio_data:
           - Flask
           - Jekyll
           - Node.js
+          - PostGIS
       -
         type: Tools
         items:
@@ -39,10 +37,11 @@ bio_data:
           - PostgreSQL
           - Elasticsearch
   education:
-    show_gpa: true
     schools:
       -
-        degree: High School Diploma
+        institution: MIT
+        graduation_year: "2015 - '19"
+      -
         institution: Stuyvesant High School
         graduation_year: "2010 - '14"
         gpa: 95.4/100.0
@@ -55,20 +54,37 @@ bio_data:
         title: Software Engineering Intern
         organisation: "[Mapzen](https://mapzen.com/)"
         from: 07/2014
-        to: "**now**"
+        to: 06/2015
+        description:
+          Interned at Mapzen, an open-source and open-data geographic software startup, during my
+          gap year.
         details:
-          - Member of the core team developing our geocoder, [Pelias](https://github.com/pelias/pelias).
-          - Engineered data import pipelines and wrote technical documentation.
-          - Worked with huge geographic datasets like OpenStreetMap, TIGER, and OpenAddresses.
+          - one of a team of four developing our geocoder, [Pelias](https://github.com/pelias),
+            through its pre-beta stage
+          - developed our Node.js data pipelines and Elasticsearch-based API
+          - managed regular deployments in multiple environments and follow-up QA
+          - worked with huge geographic datasets like OpenStreetMap, OpenAddresses, and GeoNames
+          - worked on map [vector tile service](https://mapzen.com/projects/vector-tiles)'s
+            PostgreSQL, Python, and AWS infrastructure
+
       -
-        title: Programming Mentor
-        organisation: "[CSTUY](https://cstuy.org/)/self-employed"
-        from: 11/2013
+        title: Computer Science Tutor
+        organisation: self-employed
+        from: 01/2014
         to: 06/2014
         details:
-          - Mentored 25 high-school students in software engineering (web dev, databases, Linux).
-          - Privately tutored two high-school students in computer science.
+          - Tutored two high-school students in computer science.
           - Taught a middle-school student how to program in Python.
+
+      -
+        title: Programming Mentor/TA
+        organisation: "[CSTUY](https://cstuy.org/)"
+        from: 10/2013
+        to: 05/2014
+        description:
+          Mentored 25 high school students at weekly, three-hour programming sessions with a number
+          of other TAs and teachers. Helped introduce them to Python, databases, simple web-dev, and
+          basic computer science.
   other_projects:
     items:
       -

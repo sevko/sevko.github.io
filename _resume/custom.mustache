@@ -4,7 +4,7 @@
 \moderncvtheme[blue]{banking}
 
 \usepackage[utf8]{inputenc}
-\usepackage[margin=1.1in,scale=0.8]{geometry}
+\usepackage[margin=0.5in,scale=0.8]{geometry}
 \usepackage{multicol}
 \renewcommand*\sectionfont{\fontfamily{phv}\fontsize{15}{24}\selectfont}
 \renewcommand*\headingfont{\fontfamily{phv}\fontsize{15}{24}\selectfont}
@@ -22,24 +22,24 @@
 <%#bio_data%>
 	\firstname{<%&firstname%>}
 	\familyname{\mbox{<%&familyname%>}}
-	<%#phone%>\phone{<%.%>}<%/phone%>
 	<%#email%>\email{<%.%>}<%/email%>
+	<%#phone%>\phone{<%.%>}<%/phone%>
 	<%#raw_website%>\homepage{<%& .%>}<%/raw_website%>
 	<%#linkedin_id%>\social[linkedin][<%& .%>]{<%& .%>}<%/linkedin_id%>
 	<%#github_id%>\social[github][<%& .%>]{<%& .%>}<%/github_id%>
 
 	% the ConTeXt symbol
 	\def\ConTeXt{%
-	  C%
-	  \kern-.0333emo%
-	  \kern-.0333emn%
-	  \kern-.0667em\TeX%
-	  \kern-.0333emt}
+		C%
+		\kern-.0333emo%
+		\kern-.0333emn%
+		\kern-.0667em\TeX%
+		\kern-.0333emt}
 
 	% command and color used in this document, independently from moderncv
 	\definecolor{see}{rgb}{0.0,0.0,0.8}% for web links
 	\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}% for text subscripts
-	\renewcommand{\labelitemi}{$\circ$}
+	\renewcommand{\labelitemi}{\bullet}
 
 	\begin{document}
 	\maketitle
@@ -61,26 +61,27 @@
 		<%#items%>
 		\cventry
 			{\textnormal{<%from%> - <%to%>}}
-					{\textnormal{{\textbf{<%title%>} at <%organisation%>}}}
+			{\textnormal{{\textbf{<%title%>} at <%organisation%>}}}
 			{}
 			{<%location%>}
 			{}
-			{
+			{<%#description%><%description%><%/description%>
 				\begin{itemize}
 					\setlength{\itemindent}{1.5em}
 					<%#details%>
 						\item <%& .%>
 					<%/details%>
 				\end{itemize}
+				\vspace*{-.2cm}
 			}
-			\vspace*{-.2cm}
 		<%/items%>
+		\vspace*{.4cm}
 	<%/experience%>
 	\vspace*{0.1cm}
 
 	<%#other_projects%>
 		\section{\textsc{Projects}}
-		\vspace*{-0.4cm}
+		\vspace*{-0.2cm}
 		<%#items%>
 			\cventry
 			{\textnormal{<%&time%>}}
@@ -98,33 +99,34 @@
 					<%/technology_used%>
 				\end{itemize}
 			}
-			\vspace*{-.2cm}
+			\vspace*{-.3cm}
 		<%/items%>
 	<%/other_projects%>
 	\vspace*{0.1cm}
 
 	<%#education%>
 		\section{\textsc{##education##}}
-		\vspace*{-0.4cm}
+		\vspace*{0.2cm}
 		<%#schools%>
+			\vspace*{-0.6cm}
 			\cventry
 			{\textnormal{<%&graduation_year%>}}
-			{\textnormal{\textbf{<%institution%>}}, \textnormal{<%degree%>, <%#show_gpa%>##gpa##: <%gpa%><%/show_gpa%>}}
+			{\textnormal{\textbf{<%institution%>}}<%#gpa%>\textnormal{, ##gpa##: <%gpa%>}<%/gpa%>}
 			{}
 			{}
 			{}
 			{
+				<%#details%>
 				{
 					\begin{itemize}
 						\setlength{\itemindent}{1.5em}
-						<%#details%>\item <%& .%><%/details%>
+						\item <%& .%>
 					\end{itemize}
 				}
+				<%/details%>
 			}
-			\vspace*{-.2cm}
 		<%/schools%>
 	<%/education%>
-	\vspace*{0.1cm}
 
 	<%#competitions%>
 		\section{\textsc{Competitions}}
