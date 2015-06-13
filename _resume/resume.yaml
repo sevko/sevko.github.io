@@ -64,7 +64,7 @@ bio_data:
           - developed our Node.js data pipelines and Elasticsearch-based API
           - managed regular deployments in multiple environments and follow-up QA
           - worked with huge geographic datasets like OpenStreetMap, OpenAddresses, and GeoNames
-          - worked on map [vector tile service](https://mapzen.com/projects/vector-tiles)'s
+          - worked on our map [vector tile service](https://mapzen.com/projects/vector-tiles)'s
             PostgreSQL, Python, and AWS infrastructure
 
       -
@@ -73,8 +73,8 @@ bio_data:
         from: 01/2014
         to: 06/2014
         details:
-          - Tutored two high-school students in computer science.
-          - Taught a middle-school student how to program in Python.
+          - tutored two high-school students in computer science
+          - taught a middle-school student how to program in Python
 
       -
         title: Programming Mentor/TA
