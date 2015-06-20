@@ -22,7 +22,7 @@ ul#posts
 				display: inline-block
 				margin-right: 3%
 
-				&#thumbnail
+				&.thumbnail
 					$imageSize: 70px
 
 					height: $imageSize
@@ -35,10 +35,10 @@ ul#posts
 						width: 100%
 
 			@media (max-width: 560px)
-				div#thumbnail
+				div.thumbnail
 					display: none
 
-			div#text
+			div.text
 				vertical-align: top
 				width: 80%
 
@@ -54,6 +54,9 @@ ul#posts
 
 					span.tags
 						color: $baseColor1
+
+			div.summary
+				color: $baseColor2
 
 		>div.excerpt
 			font-size: 0.8em

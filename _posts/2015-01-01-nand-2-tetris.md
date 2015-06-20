@@ -1,6 +1,6 @@
 ---
 title: "nand2tetris: a book review and recap"
-description: A review and recap of the book The Elements of Computing Systems (Nand2Tetris).
+description: A review and recap of The Elements of Computing Systems (Nand2Tetris).
 date: 2015-01-01 21:00:00
 static: nand2tetris_review
 thumbnail:

@@ -1,6 +1,6 @@
 ---
 title: power set algorithms
-description: An overview of the math behind power sets, and three algorithms used to generate them.
+description: An overview of the math behind power sets, and implementation of three algorithms to generate them.
 code: true
 math: true
 date: 2014-09-21 21:00:00

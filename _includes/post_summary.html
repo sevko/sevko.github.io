@@ -1,9 +1,9 @@
 <li class="post">
 	<div class="meta">
-		<div id="thumbnail">
+		<div class="thumbnail">
 			<img src="{{ site.files_url }}/img/thumbnails/{{ post.thumbnail.link }}" alt="{{ post.thumbnail.alt }}">
 		</div
-		><div id="text">
+		><div class="text">
 			<a href="{{ post.url }}">{{ post.title }}</a>
 			<span class="date">{{ post.date | date_to_string }}</span>
 			<div>
@@ -17,7 +17,9 @@
 				<a href="/articles/tags#{{ post.tags[-1] }}">{{ post.tags[-1] }}</a>
 			</div>
 		</div>
+		<div class="summary">{{ post.description }}</div>
 	</div>
+
 	<div class="excerpt">
 		{{ post.excerpt | markdownify | excerpt }}
 	</div>
