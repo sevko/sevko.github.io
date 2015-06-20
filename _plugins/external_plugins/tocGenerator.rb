@@ -72,7 +72,7 @@ module Jekyll
 						toc_level + 1,
 						toc_section + inner_section,
 						item_number.to_s + '.' + inner_section.to_s,
-						h2.text,
+						h2.children.to_s,
 						'')
 				end
 				if level_html.length > 0
