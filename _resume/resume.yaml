@@ -46,8 +46,8 @@ bio_data:
         graduation_year: "2010 - '14"
         gpa: 95.4/100.0
         details:
-          - High Honors in Computer Science
           - 2370 on the SAT
+          - High Honors in Computer Science
   experience:
     items:
       -
@@ -87,6 +87,12 @@ bio_data:
           basic computer science.
   other_projects:
     items:
+      -
+        name: portfolio
+        headline: "a collection of all my personal work. <<github.com/sevko/portfolio>>"
+        points:
+          - Algorithm implementations, presentation decks, pretty
+            visualizations, etc.
       -
         name: bitshift
         headline: a source-code search engine. <<bitshift.it>>
