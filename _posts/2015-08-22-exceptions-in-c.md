@@ -236,18 +236,22 @@ static JsonArray_t JsonParser_parseArray(JsonParser_t *state){
          * to `parseValue()`.
          */
 
+        // If we get this far, then no error occurred, so restore the
+        // original `prevErrorTrap`.
         copyJmpBuf(state->errorTrap, prevErrorTrap);
 
-        /**
-         * Omitted: return the array of parsed values here.
-         */
+        return (JsonArray_t){
+            .length = sb_count(values),
+            .values = values
+        };
     }
     else {
-        /**
-         * Omitted: deallocate all of the values already stored inside
-         * `values` and then `values` itself.
-         */
-
+        // An error occurred! Deallocate all intermediate memory,
+        // and then jump to the previous `prevErrorTrap`.
+        for(int ind = 0; ind < sb_count(values); ind++){
+            JsonVal_free(&values[ind]);
+        }
+        sb_free(values);
         longjmp(prevErrorTrap, 1);
     }
 }
