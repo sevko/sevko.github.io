@@ -16,9 +16,6 @@ bio_data:
           - Javascript
           - Haskell
           - Java
-          - Processing
-          - Shell
-          - LaTeX
           - CSS
           - SASS
       -
@@ -36,15 +33,15 @@ bio_data:
           - Nginx
           - PostgreSQL
           - Elasticsearch
+          - LevelDB
   education:
     schools:
       -
         institution: MIT
-        graduation_year: "2015 - '19"
+        degree: Bachelor's in Computer Science
+        graduation_year: current
       -
         institution: Stuyvesant High School
-        graduation_year: "2010 - '14"
-        gpa: 95.4/100.0
         details:
           - 2370 on the SAT
           - High Honors in Computer Science
@@ -59,13 +56,12 @@ bio_data:
           Interned at Mapzen, an open-source and open-data geographic software startup, during my
           gap year.
         details:
-          - one of a team of four developing our geocoder, [Pelias](https://github.com/pelias),
-            through its pre-beta stage
-          - developed our Node.js data pipelines and Elasticsearch-based API
-          - managed regular deployments in multiple environments and follow-up QA
-          - worked with huge geographic datasets like OpenStreetMap, OpenAddresses, and GeoNames
-          - worked on our map [vector tile service](https://mapzen.com/projects/vector-tiles)'s
+          - developed our Node.js/Elasticsearch-based geocoder, [Pelias](https://github.com/pelias), with a team of three
+          - reduced data build times from days to hours, improved geo-hierarchies, added new datasets, etc.
+          - managed regular deployments in multiple environments and follow-up testing/QA
+          - worked on our ultra high-volume map [vector tile service](https://mapzen.com/projects/vector-tiles)'s
             PostgreSQL, Python, and AWS infrastructure
+          - worked with huge geographic datasets like OpenStreetMap, OpenAddresses, and GeoNames
 
       -
         title: Computer Science Tutor
@@ -73,7 +69,7 @@ bio_data:
         from: 01/2014
         to: 06/2014
         details:
-          - tutored two high-school students in computer science
+          - tutored two high-school students in introductory computer science
           - taught a middle-school student how to program in Python
 
       -
@@ -88,12 +84,6 @@ bio_data:
   other_projects:
     items:
       -
-        name: portfolio
-        headline: "a collection of all my personal work. <<github.com/sevko/portfolio>>"
-        points:
-          - Algorithm implementations, presentation decks, pretty
-            visualizations, etc.
-      -
         name: bitshift
         headline: a source-code search engine. <<bitshift.it>>
         time: 2014
@@ -107,6 +97,12 @@ bio_data:
           - "[Top 5](http://www.alleywatch.com/2014/07/wait-until-you-see-who-the-nyc-big-apps-peoples-choices-were/3/) People's Choice submission in **NYC Big Apps 2014**."
           - "[3<sup>rd</sup> place](http://www.appefeat.org/contest/) in the **US IEEE App competition**."
           - "[Finalist](http://dreamitcodeitwinit.wordpress.com/2014/05/09/finalists-of-dream-it-code-it-win-it-high-school-division/) in the high-school division of MIT Media Lab's 2014 **Dream It. Code It. Win It.**"
+      -
+        name: portfolio
+        headline: "a collection of all my personal work. <<github.com/sevko/portfolio>>"
+        points:
+          - Algorithm implementations, presentation decks, pretty
+            visualizations, etc.
   competitions:
     details:
       -

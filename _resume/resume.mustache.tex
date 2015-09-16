@@ -27,10 +27,10 @@
 	\firstname{<%&firstname%>}
 	\familyname{\mbox{<%&familyname%>}}
 	<%#email%>\email{<%.%>}<%/email%>
-	<%#phone%>\phone{<%.%>}<%/phone%>
 	<%#raw_website%>\homepage{<%& .%>}<%/raw_website%>
 	<%#linkedin_id%>\social[linkedin][<%& .%>]{<%& .%>}<%/linkedin_id%>
 	<%#github_id%>\social[github][<%& .%>]{<%& .%>}<%/github_id%>
+	<%#phone%>\phone{<%.%>}<%/phone%>
 
 	% the ConTeXt symbol
 	\def\ConTeXt{%
@@ -115,7 +115,8 @@
 			\vspace*{-0.6cm}
 			\cventry
 			{\textnormal{<%&graduation_year%>}}
-			{\textnormal{\textbf{<%institution%>}}<%#gpa%>\textnormal{, ##gpa##: <%gpa%>}<%/gpa%>}
+			{\textnormal{\textbf{<%institution%>}} <%#gpa%>\textnormal{, ##gpa##:
+						<%gpa%>}<%/gpa%><%#degree%>\textit{<%&degree%>}<%/degree%>}
 			{}
 			{}
 			{}
