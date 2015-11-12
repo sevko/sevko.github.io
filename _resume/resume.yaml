@@ -39,9 +39,10 @@ bio_data:
       -
         institution: MIT
         degree: Bachelor's in Computer Science
-        graduation_year: current
+        graduation_year: "2015-'19"
       -
         institution: Stuyvesant High School
+        graduation_year: "2010-'14"
         details:
           - 2370 on the SAT
           - High Honors in Computer Science
@@ -84,49 +85,35 @@ bio_data:
   other_projects:
     items:
       -
-        name: bitshift
-        headline: a source-code search engine. <<bitshift.it>>
-        time: 2014
-        points:
-          - Demo'd at the Sept. 2014 **New York Tech Meetup** ([video](https://vimeo.com/106072869)).
-      -
-        name: Tour de City
-        headline: a city-bike tour app. <<tour-de-city.com>>
-        time: 2013 - '14
-        points:
-          - "[Top 5](http://www.alleywatch.com/2014/07/wait-until-you-see-who-the-nyc-big-apps-peoples-choices-were/3/) People's Choice submission in **NYC Big Apps 2014**."
-          - "[3<sup>rd</sup> place](http://www.appefeat.org/contest/) in the **US IEEE App competition**."
-          - "[Finalist](http://dreamitcodeitwinit.wordpress.com/2014/05/09/finalists-of-dream-it-code-it-win-it-high-school-division/) in the high-school division of MIT Media Lab's 2014 **Dream It. Code It. Win It.**"
-      -
         name: portfolio
         headline: "a collection of all my personal work. <<github.com/sevko/portfolio>>"
         points:
           - Algorithm implementations, presentation decks, pretty
             visualizations, etc.
+      -
+        name: bitshift
+        headline: a source-code search engine. <<bitshift.it>>
+        points:
+          - Demo'd at the Sept. 2014 **New York Tech Meetup** ([video](https://vimeo.com/106072869)).
   competitions:
     details:
       -
         name: NYC Big Apps
-        date: 2014
         team: Tour de City
         position: "[Top 5](http://www.alleywatch.com/2014/07/wait-until-you-see-who-the-nyc-big-apps-peoples-choices-were/3/) people`s choice"
       -
         name: App-e-feat competition
-        date: 2014
         team: Tour de City
         position: "[3<sup>rd</sup>](http://www.appefeat.org/contest/)"
       -
         name: Dream It. Code It. Win it.
-        date: 2014
         team: Tour de City
         position: "[high-school division finalist](http://dreamitcodeitwinit.wordpress.com/2014/05/09/finalists-of-dream-it-code-it-win-it-high-school-division/)"
       -
         name: picoCTF
-        date: 2013
         team: Qubit
         position: "[71<sup>st</sup>/1938](https://picoctf.com/scoreboard)"
       -
         name: UFOCTF
-        date: 2013
         team: Qubit
         position: "[38<sup>th</sup>/353](https://ctftime.org/event/99)"
