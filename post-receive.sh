@@ -5,7 +5,7 @@
 #   pushed. Here's a rough guide of how to set it up:
 #
 #       ssh server
-#       git --init bare deploy
+#       git init --bare deploy
 #       exit
 #       git remote add deploy server:~/deploy
 
