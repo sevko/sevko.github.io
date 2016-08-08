@@ -33,7 +33,8 @@ bio_data:
           - Nginx
           - PostgreSQL
           - Elasticsearch
-          - LevelDB
+          - MongoDB
+
   education:
     schools:
       -
@@ -43,11 +44,21 @@ bio_data:
       -
         institution: Stuyvesant High School
         graduation_year: "2010-'14"
-        details:
-          - 2370 on the SAT
-          - High Honors in Computer Science
   experience:
     items:
+      -
+        title: Software Engineering Intern
+        organisation: "[MongoDB](http://mongodb.com)"
+        from: 06/2016
+        to: 08/2016
+        description: Worked on performance at MongoDB.
+        details:
+          - worked on the performance engineering team, responsible for performance regression testing
+          - focused on test analysis, which consumes the diagnostic data produced by performance tests and tries to
+            identify performance regressions based on throughput over time, resource usage, logs, etc.
+          - improved our analysis logic, making it flag errors more intelligently and digest more diagnostic data
+          - added linting/testing/helpful tooling to our codebase that made development significantly easier for our team
+
       -
         title: Software Engineering Intern
         organisation: "[Mapzen](https://mapzen.com/)"
@@ -78,42 +89,15 @@ bio_data:
         organisation: "[CSTUY](https://cstuy.org/)"
         from: 10/2013
         to: 05/2014
-        description:
-          Mentored 25 high school students at weekly, three-hour programming sessions with a number
-          of other TAs and teachers. Helped introduce them to Python, databases, simple web-dev, and
-          basic computer science.
+        details:
+          - mentored 25 high school students at weekly, three-hour programming sessions
+          - helped teach Python, databases, simple web-dev, and basic computer science
+
   other_projects:
     items:
       -
         name: portfolio
-        headline: "a collection of all my personal work. <<github.com/sevko/portfolio>>"
-        points:
-          - Algorithm implementations, presentation decks, pretty
-            visualizations, etc.
+        description: "a collection of all my personal work. <<github.com/sevko/portfolio>>"
       -
         name: bitshift
-        headline: a source-code search engine. <<bitshift.it>>
-        points:
-          - Demo'd at the Sept. 2014 **New York Tech Meetup** ([video](https://vimeo.com/106072869)).
-  competitions:
-    details:
-      -
-        name: NYC Big Apps
-        team: Tour de City
-        position: "[Top 5](http://www.alleywatch.com/2014/07/wait-until-you-see-who-the-nyc-big-apps-peoples-choices-were/3/) people`s choice"
-      -
-        name: App-e-feat competition
-        team: Tour de City
-        position: "[3<sup>rd</sup>](http://www.appefeat.org/contest/)"
-      -
-        name: Dream It. Code It. Win it.
-        team: Tour de City
-        position: "[high-school division finalist](http://dreamitcodeitwinit.wordpress.com/2014/05/09/finalists-of-dream-it-code-it-win-it-high-school-division/)"
-      -
-        name: picoCTF
-        team: Qubit
-        position: "[71<sup>st</sup>/1938](https://picoctf.com/scoreboard)"
-      -
-        name: UFOCTF
-        team: Qubit
-        position: "[38<sup>th</sup>/353](https://ctftime.org/event/99)"
+        description: a source-code search engine ([demo](https://vimeo.com/106072869)). <<bitshift.it>>

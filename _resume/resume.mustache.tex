@@ -4,13 +4,16 @@
 \moderncvtheme[blue]{banking}
 
 \usepackage[utf8]{inputenc}
-\usepackage[margin=0.8in,scale=0.8]{geometry}
+\usepackage[margin=0.9in,scale=0.8]{geometry}
 \usepackage{multicol}
 
 % Specify custom fonts.
 \usepackage[default]{sourcesanspro}
 \renewcommand*\sectionfont{\fontfamily{pag}\fontsize{15}{24}\selectfont\bfseries}
 \renewcommand*\namefont{\fontfamily{pag}\fontsize{25}{50}\selectfont}
+
+\usepackage{enumitem}
+\setlist{leftmargin=7mm,topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex}
 
 % Remove all of the moderncv icons.
 \renewcommand*{\addresssymbol} {}
@@ -32,25 +35,25 @@
 	<%#github_id%>\social[github][<%& .%>]{<%& .%>}<%/github_id%>
 	<%#phone%>\phone{<%.%>}<%/phone%>
 
-	% the ConTeXt symbol
-	\def\ConTeXt{%
-		C%
-		\kern-.0333emo%
-		\kern-.0333emn%
-		\kern-.0667em\TeX%
-		\kern-.0333emt}
+% the ConTeXt symbol
+\def\ConTeXt{%
+	C%
+	\kern-.0333emo%
+	\kern-.0333emn%
+	\kern-.0667em\TeX%
+	\kern-.0333emt}
 
-	% command and color used in this document, independently from moderncv
-	\definecolor{see}{rgb}{0.0,0.0,0.8}% for web links
-	\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}% for text subscripts
-	\renewcommand{\labelitemi}{\bullet}
+% command and color used in this document, independently from moderncv
+\definecolor{see}{rgb}{0.0,0.0,0.8}% for web links
+\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}% for text subscripts
+\renewcommand{\labelitemi}{\bullet}
 
-	\begin{document}
+\begin{document}
 	\maketitle
 
 	\vspace*{-1.0cm}
 	<%#skills%>
-		\section{\textsc{##skills##}}
+		\section{\textsc{Skills}}
 		\vspace*{0.2cm}
 		<%#details%>
 			\cvitem{}{\textbf{<%type%>}: <%#items%><%name%><%^last%>, <%/last%><%/items%>}
@@ -69,9 +72,8 @@
 			{}
 			{<%location%>}
 			{}
-			{<%#description%><%description%><%/description%>
+			{\indent <%#description%><%description%><%/description%>
 				\begin{itemize}
-					\setlength{\itemindent}{1.5em}
 					<%#details%>
 						\item <%& .%>
 					<%/details%>
@@ -81,31 +83,6 @@
 		<%/items%>
 		\vspace*{.4cm}
 	<%/experience%>
-	\vspace*{0.1cm}
-
-	<%#other_projects%>
-		\section{\textsc{Projects}}
-		\vspace*{-0.2cm}
-		<%#items%>
-			\cventry
-			{\textnormal{<%&time%>}}
-			{\textnormal{\textbf{<%name%>}: <%headline%>}}
-			{}
-			{}
-			{}
-			{
-				\begin{itemize}
-					\setlength{\itemindent}{1.5em}
-					<%#points%>\item <%& .%><%/points%>
-					<%#technology_used%>
-					\item ##technology_used##:
-					<%#tools%><%name%><%^last%>, <%/last%><%/tools%>
-					<%/technology_used%>
-				\end{itemize}
-			}
-			\vspace*{-.3cm}
-		<%/items%>
-	<%/other_projects%>
 	\vspace*{0.1cm}
 
 	<%#education%>
@@ -133,19 +110,11 @@
 		<%/schools%>
 	<%/education%>
 
-	<%#competitions%>
-		\section{\textsc{Competitions}}
-		\vspace*{0.1cm}
-		<%#details%>
-			\vspace*{-0.5cm}
-			\cventry
-			{\textnormal{<%date%>}}
-					{\textnormal{\textbf{<%name%>} | <%position%> | team} <%team%>}
-			{}
-			{}
-			{}
-			{}
-		<%/details%>
-	<%/competitions%>
+	<%#other_projects%>
+		\section{\textsc{Projects}}
+		<%#items%>
+			\textbf{<%name%>}: <%description%> \\
+		<%/items%>
+	<%/other_projects%>
 <%/bio_data%>
 \end{document}
