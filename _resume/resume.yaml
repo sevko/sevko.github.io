@@ -19,13 +19,6 @@ bio_data:
           - CSS
           - SASS
       -
-        type: Frameworks
-        items:
-          - Flask
-          - Jekyll
-          - Node.js
-          - PostGIS
-      -
         type: Tools
         items:
           - Linux
@@ -34,12 +27,23 @@ bio_data:
           - PostgreSQL
           - Elasticsearch
           - MongoDB
-
+          - Flask
+          - Jekyll
+          - Node.js
+          - PostGIS
+      -
+        type: Skills
+        items:
+          - databases
+          - web
+          - GIS
+          - compilers
+          - performance testing
   education:
     schools:
       -
         institution: MIT
-        degree: Bachelor's in Computer Science
+        degree: B.S. in Computer Science
         graduation_year: "2015-'19"
       -
         institution: Stuyvesant High School
@@ -53,11 +57,11 @@ bio_data:
         to: 08/2016
         description: Worked on performance at MongoDB.
         details:
-          - worked on the performance engineering team, responsible for performance regression testing
+          - worked on the team responsible for performance regression testing
           - focused on test analysis, which consumes the diagnostic data produced by performance tests and tries to
             identify performance regressions based on throughput over time, resource usage, logs, etc.
           - improved our analysis logic, making it flag errors more intelligently and digest more diagnostic data
-          - added linting/testing/helpful tooling to our codebase that made development significantly easier for our team
+          - added linting, testing, and helpful tooling to our Python codebase
 
       -
         title: Software Engineering Intern
@@ -68,10 +72,10 @@ bio_data:
           Interned at Mapzen, an open-source and open-data geographic software startup, during my
           gap year.
         details:
-          - developed our Node.js/Elasticsearch-based geocoder, [Pelias](https://github.com/pelias), with a team of three
+          - developed our Node.js/Elasticsearch-based geocoder, [Pelias](https://github.com/pelias)
           - reduced data build times from days to hours, improved geo-hierarchies, added new datasets, etc.
           - managed regular deployments in multiple environments and follow-up testing/QA
-          - worked on our ultra high-volume map [vector tile service](https://mapzen.com/projects/vector-tiles)'s
+          - worked on our high-volume map [vector tile service](https://mapzen.com/projects/vector-tiles)'s
             PostgreSQL, Python, and AWS infrastructure
           - worked with huge geographic datasets like OpenStreetMap, OpenAddresses, and GeoNames
 
