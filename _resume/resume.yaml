@@ -13,11 +13,9 @@ bio_data:
         items:
           - Python
           - C
+          - Java
           - Javascript
           - Haskell
-          - Java
-          - CSS
-          - SASS
       -
         type: Tools
         items:
@@ -30,15 +28,15 @@ bio_data:
           - Flask
           - Jekyll
           - Node.js
-          - PostGIS
       -
         type: Skills
         items:
-          - databases
           - web
           - GIS
           - compilers
           - performance testing
+          - security
+          - graphics
   education:
     schools:
       -
@@ -52,12 +50,18 @@ bio_data:
     items:
       -
         title: Software Engineering Intern
+        organisation: "[Cryptosense](https://cryptosense.com/)"
+        from: 06/2017
+        to: 08/2017
+        description: Working on automated crypto-vulnerability/misuse detection tools.
+
+      -
+        title: Software Engineering Intern
         organisation: "[MongoDB](http://mongodb.com)"
         from: 06/2016
         to: 08/2016
-        description: Worked on performance at MongoDB.
+        description: Worked on performance regression testing at MongoDB.
         details:
-          - worked on the team responsible for performance regression testing
           - focused on test analysis, which consumes the diagnostic data produced by performance tests and tries to
             identify performance regressions based on throughput over time, resource usage, logs, etc.
           - improved our analysis logic, making it flag errors more intelligently and digest more diagnostic data
@@ -80,15 +84,6 @@ bio_data:
           - worked with huge geographic datasets like OpenStreetMap, OpenAddresses, and GeoNames
 
       -
-        title: Computer Science Tutor
-        organisation: self-employed
-        from: 01/2014
-        to: 06/2014
-        details:
-          - tutored two high-school students in introductory computer science
-          - taught a middle-school student how to program in Python
-
-      -
         title: Programming Mentor/TA
         organisation: "[CSTUY](https://cstuy.org/)"
         from: 10/2013
@@ -102,6 +97,3 @@ bio_data:
       -
         name: portfolio
         description: "a collection of all my personal work. <<github.com/sevko/portfolio>>"
-      -
-        name: bitshift
-        description: a source-code search engine ([demo](https://vimeo.com/106072869)). <<bitshift.it>>
