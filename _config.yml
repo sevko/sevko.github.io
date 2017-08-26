@@ -1,6 +1,6 @@
 name: Severyn Kozak
-url: http://sevko.io
-files_url: http://files.sevko.io
+url: https://sevko.io
+files_url: /data
 description: Severyn Kozak's personal portfolio site and blog.
 permalink: /articles/:title
 markdown: kramdown
