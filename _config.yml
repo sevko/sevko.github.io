@@ -1,14 +1,11 @@
 name: Severyn Kozak
-url: http://sevko.io
-files_url: http://files.sevko.io
+url: https://sevko.io
+files_url: /data
 description: Severyn Kozak's personal portfolio site and blog.
 permalink: /articles/:title
 markdown: kramdown
 lsi: true
-exclude: [
-  Gemfile, Gemfile.lock, nginx.conf, CNAME, nginx.common.conf, README.md,
-  post-receive.sh
-]
+exclude: [Gemfile, Gemfile.lock, CNAME, README.md, publish.sh]
 defaults:
   -
     scope:
