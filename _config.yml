@@ -5,7 +5,7 @@ description: Severyn Kozak's personal portfolio site and blog.
 permalink: /articles/:title
 markdown: kramdown
 lsi: true
-exclude: [Gemfile, Gemfile.lock, CNAME, README.md, publish.sh]
+exclude: [Gemfile, Gemfile.lock, CNAME, README.md, publish.sh, Makefile]
 defaults:
   -
     scope:
