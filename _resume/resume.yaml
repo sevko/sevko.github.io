@@ -57,7 +57,7 @@ bio_data:
 
       -
         title: Software Engineering Intern
-        organisation: "[MongoDB](http://mongodb.com)"
+        organisation: "[MongoDB](https://mongodb.com)"
         from: 06/2016
         to: 08/2016
         description: Worked on performance regression testing at MongoDB.
