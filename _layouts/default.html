@@ -35,16 +35,7 @@
 
 		<!-- MathJax configuration. -->
 		{% if page.math %}
-			<script src="https://cdn.mathjax.org/mathjax/2.7-latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-			<script>
-				MathJax.Hub.Config({
-					jax: ["input/TeX", "output/HTML-CSS"],
-					"HTML-CSS": {
-						linebreaks: {automatic: true, width: "container"}
-					},
-					tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-				});
-			</script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 		{% endif %}
 
 		{{ page.head }}
