@@ -28,6 +28,7 @@ bio_data:
           - Flask
           - Jekyll
           - Node.js
+          - AWS
       -
         type: Skills
         items:
@@ -53,7 +54,12 @@ bio_data:
         organisation: "[Cryptosense](https://cryptosense.com/)"
         from: 06/2017
         to: 08/2017
-        description: Working on automated crypto-vulnerability/misuse detection tools.
+        description: Worked on software that automatically identifies cryptographic vulnerabilities in Java software.
+        details:
+          - "automated our product for CI integration: wrote a backend API and Java client library, plugins for Gradle
+            and Jenkins, and helped make a demo video for clients"
+          - researched how to globally map Java crypto provider versions to the documented vulnerabilities that affect
+            them, using OpenJDK security reports, CVE databases, and automated vulnerability tests
 
       -
         title: Software Engineering Intern
