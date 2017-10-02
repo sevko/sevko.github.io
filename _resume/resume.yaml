@@ -16,6 +16,8 @@ bio_data:
           - Java
           - Javascript
           - Haskell
+          - C++
+          - x86
       -
         type: Tools
         items:
@@ -30,14 +32,15 @@ bio_data:
           - Node.js
           - AWS
       -
-        type: Skills
+        type: Experience Areas
         items:
           - web
           - GIS
-          - compilers
-          - performance testing
+          - performance
           - security
+          - crypto
           - graphics
+          - compilers
   education:
     schools:
       -
