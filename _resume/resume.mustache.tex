@@ -51,15 +51,15 @@
 \begin{document}
 	\maketitle
 
-	\vspace*{-1.0cm}
+	\vspace*{-1.3cm}
 	<%#skills%>
 		\section{\textsc{Skills}}
-		\vspace*{0.2cm}
+		\vspace*{-0.1cm}
 		<%#details%>
 			\cvitem{}{\textbf{<%type%>}: <%#items%><%name%><%^last%>, <%/last%><%/items%>}
 		<%/details%>
 	<%/skills%>
-	\vspace*{0.1cm}
+	% \vspace*{0.1cm}
 
 	<%#experience%>
 		\section{\textsc{Experience}}
@@ -93,7 +93,7 @@
 			\cventry
 			{\textnormal{<%&graduation_year%>}}
 			{\textnormal{\textbf{<%institution%>}} <%#gpa%>\textnormal{, ##gpa##:
-						<%gpa%>}<%/gpa%><%#degree%><%&degree%><%/degree%>}
+						<%gpa%>}<%/gpa%><%#degree%>\textnormal{\small <%&degree%>}<%/degree%>\normalsize}
 			{}
 			{}
 			{}

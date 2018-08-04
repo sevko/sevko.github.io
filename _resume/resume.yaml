@@ -41,17 +41,35 @@ bio_data:
           - crypto
           - graphics
           - compilers
+          - machine learning
+          - distributed systems
+
   education:
     schools:
       -
         institution: MIT
+        degree: Master of Engineering in Computer Systems (not yet started)
+        graduation_year: "2019-'20"
+
+      -
+        institution: MIT
         degree: B.S. in Computer Science
         graduation_year: "2015-'19"
+
       -
         institution: Stuyvesant High School
         graduation_year: "2010-'14"
   experience:
     items:
+      -
+        title: Trading Systems Engineering Intern
+        organisation: "[Tower Research Capital](https://www.tower-research.com/)"
+        from: 06/2018
+        to: 08/2018
+        description: Worked on our core trading infrastructure, in particular on improving the performance of order
+          placement in strategies with sparse order patterns. Dealt with large C++ codebases, low-level optimization,
+          and rigorous performance testing.
+
       -
         title: Software Engineering Intern
         organisation: "[Cryptosense](https://cryptosense.com/)"
@@ -101,8 +119,8 @@ bio_data:
           - mentored 25 high school students at weekly, three-hour programming sessions
           - helped teach Python, databases, simple web-dev, and basic computer science
 
-  other_projects:
-    items:
-      -
-        name: portfolio
-        description: "a collection of all my personal work. <<github.com/sevko/portfolio>>"
+  # other_projects:
+    # items:
+      # -
+        # name: portfolio
+        # description: "a collection of all my personal work. <<github.com/sevko/portfolio>>"
