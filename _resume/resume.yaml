@@ -43,6 +43,7 @@ bio_data:
           - compilers
           - machine learning
           - distributed systems
+          - operating systems
 
   education:
     schools:
@@ -55,10 +56,13 @@ bio_data:
         institution: MIT
         degree: B.S. in Computer Science
         graduation_year: "2015-'19"
+        # details:
+          # - Lightweight Crew (4 years)
 
       -
         institution: Stuyvesant High School
         graduation_year: "2010-'14"
+
   experience:
     items:
       -
@@ -66,15 +70,18 @@ bio_data:
         organisation: "[Tower Research Capital](https://www.tower-research.com/)"
         from: 06/2018
         to: 08/2018
-        description: Worked on our core trading infrastructure, in particular on improving the performance of order
-          placement in strategies with sparse order patterns. Dealt with large C++ codebases, low-level optimization,
-          and rigorous performance testing.
+        duration: 3 months
+        description: Worked on our core trading infrastructure.
+        details:
+          - improved the performance of order placement in strategies with sparse order patterns
+          - dealt with large C++ codebases, low-level optimization, and rigorous performance testing
 
       -
         title: Software Engineering Intern
         organisation: "[Cryptosense](https://cryptosense.com/)"
         from: 06/2017
         to: 08/2017
+        duration: 3 months
         description: Worked on software that automatically identifies cryptographic vulnerabilities in Java software.
         details:
           - "automated our product for CI integration: wrote a backend API and Java client library, plugins for Gradle
@@ -87,6 +94,7 @@ bio_data:
         organisation: "[MongoDB](https://mongodb.com)"
         from: 06/2016
         to: 08/2016
+        duration: 3 months
         description: Worked on performance regression testing at MongoDB.
         details:
           - focused on test analysis, which consumes the diagnostic data produced by performance tests and tries to
@@ -99,6 +107,7 @@ bio_data:
         organisation: "[Mapzen](https://mapzen.com/)"
         from: 07/2014
         to: 06/2015
+        duration: 1 year
         description:
           Interned at Mapzen, an open-source and open-data geographic software startup, during my
           gap year.
@@ -115,6 +124,7 @@ bio_data:
         organisation: "[CSTUY](https://cstuy.org/)"
         from: 10/2013
         to: 05/2014
+        duration: 8 months
         details:
           - mentored 25 high school students at weekly, three-hour programming sessions
           - helped teach Python, databases, simple web-dev, and basic computer science
