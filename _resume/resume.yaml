@@ -13,11 +13,12 @@ bio_data:
         items:
           - Python
           - C
-          - Java
-          - Javascript
           - Haskell
+          - Java
           - C++
+          - Javascript
           - x86
+          - Go
       -
         type: Tools
         items:
@@ -34,30 +35,33 @@ bio_data:
       -
         type: Experience Areas
         items:
-          - web
-          - GIS
+          - algorithmic trading
           - performance
+          - operating systems
+          - distributed systems
           - security
           - crypto
-          - graphics
           - compilers
+          - graphics
           - machine learning
-          - distributed systems
-          - operating systems
+          - AI
+          - inference
+          - web
+          - GIS
 
   education:
     schools:
       -
         institution: MIT
-        degree: Master of Engineering in Computer Systems (not yet started)
+        degree: Master of Engineering in Computer Systems
         graduation_year: "2019-'20"
 
       -
         institution: MIT
-        degree: B.S. in Computer Science
+        degree: B.S. in Computer Science, Minor in Mathematics
         graduation_year: "2015-'19"
-        # details:
-          # - Lightweight Crew (4 years)
+        details:
+          - Varsity Lighweight Rowing (4 years)
 
       -
         institution: Stuyvesant High School
@@ -66,7 +70,15 @@ bio_data:
   experience:
     items:
       -
-        title: Trading Systems Engineering Intern
+        title: Trading/Engineering Intern
+        organisation: "[Tsuru Capital](https://www.tsurucapital.com/en/)"
+        from: 06/2019
+        to: 08/2019
+        duration: 3 months
+        description: Algorithmic options and futures market-making on the KRX.
+
+      -
+        title: Systems Engineering Intern
         organisation: "[Tower Research Capital](https://www.tower-research.com/)"
         from: 06/2018
         to: 08/2018
@@ -97,9 +109,8 @@ bio_data:
         duration: 3 months
         description: Worked on performance regression testing at MongoDB.
         details:
-          - focused on test analysis, which consumes the diagnostic data produced by performance tests and tries to
-            identify performance regressions based on throughput over time, resource usage, logs, etc.
-          - improved our analysis logic, making it flag errors more intelligently and digest more diagnostic data
+          - improved our test analysis, which consumes the diagnostic data produced by performance tests and tries to
+            identify performance regressions based on throughput-over-time, resource usage, logs, etc.
           - added linting, testing, and helpful tooling to our Python codebase
 
       -
@@ -113,21 +124,20 @@ bio_data:
           gap year.
         details:
           - developed our Node.js/Elasticsearch-based geocoder, [Pelias](https://github.com/pelias)
-          - reduced data build times from days to hours, improved geo-hierarchies, added new datasets, etc.
-          - managed regular deployments in multiple environments and follow-up testing/QA
+          - reduced data build times from days to hours, improved search quality, added new datasets, etc.
           - worked on our high-volume map [vector tile service](https://mapzen.com/projects/vector-tiles)'s
             PostgreSQL, Python, and AWS infrastructure
           - worked with huge geographic datasets like OpenStreetMap, OpenAddresses, and GeoNames
 
-      -
-        title: Programming Mentor/TA
-        organisation: "[CSTUY](https://cstuy.org/)"
-        from: 10/2013
-        to: 05/2014
-        duration: 8 months
-        details:
-          - mentored 25 high school students at weekly, three-hour programming sessions
-          - helped teach Python, databases, simple web-dev, and basic computer science
+      # -
+        # title: Programming Mentor/TA
+        # organisation: "[CSTUY](https://cstuy.org/)"
+        # from: 10/2013
+        # to: 05/2014
+        # duration: 8 months
+        # details:
+          # - mentored 25 high school students at weekly, three-hour programming sessions
+          # - helped teach Python, databases, simple web-dev, and basic computer science
 
   # other_projects:
     # items:
