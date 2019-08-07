@@ -14,11 +14,11 @@ bio_data:
           - Python
           - C
           - Haskell
-          - Java
           - C++
-          - Javascript
-          - x86
           - Go
+          - x86
+          - Java
+          - Javascript
       -
         type: Tools
         items:
@@ -27,16 +27,15 @@ bio_data:
           - Nginx
           - PostgreSQL
           - Elasticsearch
+          - AWS
           - MongoDB
           - Flask
-          - Jekyll
           - Node.js
-          - AWS
       -
         type: Experience Areas
         items:
           - algorithmic trading
-          - performance
+          - HPC
           - operating systems
           - distributed systems
           - security
@@ -48,20 +47,25 @@ bio_data:
           - inference
           - web
           - GIS
+          - various math
 
   education:
     schools:
       -
         institution: MIT
-        degree: Master of Engineering in Computer Systems
+        degree: M. Eng. in Computer Systems
         graduation_year: "2019-'20"
+        details:
+          - TA for 6.172 Performance Engineering
+          - High Performance Computing research with the Supertech group
 
       -
         institution: MIT
-        degree: B.S. in Computer Science, Minor in Mathematics
+        degree: B.S. in Computer Science (course 6-3), Minor in Mathematics (course 18)
         graduation_year: "2015-'19"
         details:
           - Varsity Lighweight Rowing (4 years)
+          - Parallel Computing research on the Cilk platform with the Supertech group
 
       -
         institution: Stuyvesant High School
@@ -71,17 +75,20 @@ bio_data:
     items:
       -
         title: Trading/Engineering Intern
-        organisation: "[Tsuru Capital](https://www.tsurucapital.com/en/)"
-        from: 06/2019
-        to: 08/2019
+        organisation: "[Tsuru Capital](https://www.tsurucapital.com/en/) (Tokyo)"
+        from: Jun 2019
+        to: Aug 2019
         duration: 3 months
-        description: Algorithmic options and futures market-making on the KRX.
+        description:
+          Algorithmic options market-making on the KRX in a prop-shop setting. Learned options trading mechanics,
+          as well as our models and strategies. Solved problems across our stack, in trading, simulation, viewers, and
+          infrastructure.
 
       -
         title: Systems Engineering Intern
-        organisation: "[Tower Research Capital](https://www.tower-research.com/)"
-        from: 06/2018
-        to: 08/2018
+        organisation: "[Tower Research Capital](https://www.tower-research.com/) (NYC)"
+        from: Jun 2018
+        to: Aug 2018
         duration: 3 months
         description: Worked on our core trading infrastructure.
         details:
@@ -90,9 +97,9 @@ bio_data:
 
       -
         title: Software Engineering Intern
-        organisation: "[Cryptosense](https://cryptosense.com/)"
-        from: 06/2017
-        to: 08/2017
+        organisation: "[Cryptosense](https://cryptosense.com/) (Paris)"
+        from: Jun 2017
+        to: Aug 2017
         duration: 3 months
         description: Worked on software that automatically identifies cryptographic vulnerabilities in Java software.
         details:
@@ -103,21 +110,21 @@ bio_data:
 
       -
         title: Software Engineering Intern
-        organisation: "[MongoDB](https://mongodb.com)"
-        from: 06/2016
-        to: 08/2016
+        organisation: "[MongoDB](https://mongodb.com) (NYC)"
+        from: Jun 2016
+        to: Aug 2016
         duration: 3 months
         description: Worked on performance regression testing at MongoDB.
         details:
-          - improved our test analysis, which consumes the diagnostic data produced by performance tests and tries to
-            identify performance regressions based on throughput-over-time, resource usage, logs, etc.
+          - improved our test analysis, which identifies performance regressions based on diagnostic data from stress
+            tests (resource usage, throughput, etc.)
           - added linting, testing, and helpful tooling to our Python codebase
 
       -
         title: Software Engineering Intern
-        organisation: "[Mapzen](https://mapzen.com/)"
-        from: 07/2014
-        to: 06/2015
+        organisation: "[Mapzen](https://mapzen.com/) (NYC)"
+        from: Jul 2014
+        to: Jun 2015
         duration: 1 year
         description:
           Interned at Mapzen, an open-source and open-data geographic software startup, during my

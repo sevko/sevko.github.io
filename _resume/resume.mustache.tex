@@ -4,13 +4,16 @@
 \moderncvtheme[blue]{banking}
 
 \usepackage[utf8]{inputenc}
-\usepackage[margin=0.9in,scale=0.8]{geometry}
+\usepackage[margin=0.8in,scale=0.8]{geometry}
 \usepackage{multicol}
 
 % Specify custom fonts.
-\usepackage[default]{sourcesanspro}
-\renewcommand*\sectionfont{\fontfamily{pag}\fontsize{15}{24}\selectfont\bfseries}
-\renewcommand*\namefont{\fontfamily{pag}\fontsize{25}{50}\selectfont}
+\usepackage{mathpazo}
+% \renewcommand{\sfdefault}{\rmdefault}
+\renewcommand{\sfdefault}{ppl}
+	% \usepackage[default]{sourcesanspro}
+% \renewcommand*\sectionfont{\fontfamily{pag}\fontsize{15}{24}\selectfont\bfseries}
+% \renewcommand*\namefont{\fontfamily{pag}\fontsize{25}{50}\selectfont}
 
 \usepackage{enumitem}
 \setlist{leftmargin=7mm,topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex}
@@ -25,6 +28,7 @@
 \renewcommand*{\linkedinsocialsymbol}{}
 \renewcommand*{\twittersocialsymbol} {}
 \renewcommand*{\githubsocialsymbol} {}
+\setlength{\itemindent}{0.8em}
 
 <%#bio_data%>
 	\firstname{<%&firstname%>}
@@ -49,9 +53,11 @@
 \renewcommand{\labelitemi}{\bullet}
 
 \begin{document}
+	\vspace*{-.6cm}
 	\maketitle
 
-	\vspace*{-1.3cm}
+	% \vspace*{-1.5cm}
+	\vspace*{-1.8cm}
 	<%#skills%>
 		\section{\textsc{Skills}}
 		\vspace*{-0.1cm}
@@ -67,7 +73,7 @@
 
 		<%#items%>
 		\cventry
-			{\textnormal{<%from%> - <%to%> (\textbf{<%duration%>})}}
+			{\textnormal{<%from%> - <%to%>}}
 			{\textnormal{{\textbf{<%title%>} at <%organisation%>}}}
 			{}
 			{<%location%>}
@@ -87,9 +93,9 @@
 
 	<%#education%>
 		\section{\textsc{##education##}}
-		\vspace*{0.2cm}
+		\vspace*{0.0cm}
 		<%#schools%>
-			\vspace*{-0.6cm}
+			\vspace*{-0.4cm}
 			\cventry
 			{\textnormal{<%&graduation_year%>}}
 			{\textnormal{\textbf{<%institution%>}} <%#gpa%>\textnormal{, ##gpa##:
@@ -98,19 +104,17 @@
 			{}
 			{}
 			{
-				<%#details%>
 				{
 					\begin{itemize}
-						\setlength{\itemindent}{1.5em}
-						\item <%& .%>
+						<%#details%>
+							\item <%& .%>
+						<%/details%>
 					\end{itemize}
-					\vspace*{-.01cm}
+					% \vspace*{.01cm}
 				}
-				<%/details%>
 			}
 		<%/schools%>
 	<%/education%>
-
 	<%#other_projects%>
 		\section{\textsc{Projects}}
 		<%#items%>
