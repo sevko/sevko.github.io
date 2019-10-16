@@ -25,11 +25,11 @@ out with the [formal grammar](https://en.wikipedia.org/wiki/Formal_grammar) of o
 simple grammar for common programming language literals might look like:
 
 {% highlight ruby table %}
-value: string | number | boolean
+value: string | boolean | number
 string: '"' char* '"'
 boolean: 'true' | 'false'
 number: '-'? digit+ ('.' digit+)?
-array: '[' value ']'
+array: '[' (value ((',' value)*)?)? ']'
 {% endhighlight %}
 
 In fact, the [JSON grammar](http://json.org/) that I used is fairly similar. Writing a [recursive-descent
@@ -84,17 +84,16 @@ parser, the call stack will grow quite deep, and that errors are fatal; in other
 `return` through many layers of function calls until we hit the `parse()` that started it all:
 
 {% highlight python table %}
-getNextChar()   # Error, hit EOF!
-matchChars()
-parseBoolean()
+parse()         # The top-level parse routine that we need to jump back to.
 parseValue()
 parseArray()
 parseValue()
-parse()         # The top-level parse routine that we need to jump back to.
+parseBoolean()
+matchChars()
+getNextChar()   # Error, hit EOF!
 {% endhighlight %}
 
-How should we
-handle errors in C, then?
+How should we handle errors in C, then?
 
 ## error codes
 The idiomatic solution is to simply use error codes. If `nextChar()` fails, return `-1` (which is suitable because
@@ -278,21 +277,17 @@ the potentially very dangerous subtleties of long jumping. In fact, while writin
 whenever an error occurred even though the cleanup clause *was* getting run. It turns out that `values` would get put
 into a register and then consequently take on a value of `NULL` after the jump -- since that's what it was at the time
 of the original `setjmp()` -- meaning that the only reference to the allocated memory was lost and it couldn't possibly
-be deallocated. Moreover, when passed to `free()`, it wouldn't blow up, because `free()` ignores NULL pointers[^1]!
+be deallocated. Moreover, when passed to `free()`, it wouldn't blow up, because `free()` ignores NULL pointers!
 
 To wrap up the above example, all of the other parsing functions that set intermediate breakpoints have virtually the same
 layout, so you could even theoretically encapsulate the different statements in macros like `try` and `catch` for a
-full blown mimicry of exceptions in other languages -- that's too much magic for me, though.
+full blown imitation of exceptions in other languages -- that's too much magic for me, though.
 
 # in conclusion
 `longjmp()` and `setjmp()` are tricky. They're obscure, can give rise to subtle bugs, are highly platform-specific,
-and, if abused, will probably lead to awfully confusing code; a footcannon if I ever saw one. That being said, like
+and, if abused, will probably lead to awfully confusing code. That being said, like
 `goto`, they *do* have valid uses and can be very powerful when used appropriately. In this case, I think they were
 superior to error codes and resulted in a slimmer, more readable implementation than what it otherwise would've been.
 If you're interested in more reading, I recommend [this comprehensive
 article](http://www.di.unipi.it/~nids/docs/longjump_try_trow_catch.html). Also,
 [here]({% static json_parser_c.zip %})'s the thoroughly documented parser source code; check out `src/json_parser.c`.
-
----
-
-[^1]: From `man -s3 free`: "If ptr is NULL, no operation is performed"
