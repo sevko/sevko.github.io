@@ -12,8 +12,8 @@ bio_data:
         items:
           - Python
           - C
-          - Haskell
           - C++
+          - Haskell
           - Go
           - x86
           - Java
@@ -56,7 +56,7 @@ bio_data:
         graduation_year: "2019-'20"
         details:
           - TA for 6.172 Performance Engineering
-          - High Performance Computing research with the Supertech group
+          - Ultra-low software performance variability research with the Supertech group
 
       -
         institution: MIT
@@ -72,6 +72,19 @@ bio_data:
 
   experience:
     items:
+      -
+        title: Software Engineer
+        organisation: "[Ansatz Capital](https://ansatz.capital/) (NYC)"
+        from: Aug 2020
+        to: now
+        description: Quantitative development and high-performance software engineering for high-frequency trading.
+
+        # duration: 3 months
+        # description:
+          # Algorithmic options market-making on the KRX in a prop-shop setting. Learned options trading mechanics,
+          # as well as our models and strategies. Solved problems across our stack, in trading, simulation, viewers, and
+          # infrastructure.
+
       -
         title: Trading/Engineering Intern
         organisation: "[Tsuru Capital](https://www.tsurucapital.com/en/) (Tokyo)"
@@ -113,11 +126,9 @@ bio_data:
         from: Jun 2016
         to: Aug 2016
         duration: 3 months
-        description: Worked on performance regression testing at MongoDB.
-        details:
-          - improved our test analysis, which identifies performance regressions based on diagnostic data from stress
-            tests (resource usage, throughput, etc.)
-          - added linting, testing, and helpful tooling to our Python codebase
+        description:
+          Worked on performance regression testing at MongoDB. Improved our test analysis, which identifies
+          performance regressions based on diagnostic data from stress tests (resource usage, throughput, etc.)
 
       -
         title: Software Engineering Intern
@@ -133,20 +144,3 @@ bio_data:
           - reduced data build times from days to hours, improved search quality, added new datasets, etc.
           - worked on our high-volume map [vector tile service](https://mapzen.com/projects/vector-tiles)'s
             PostgreSQL, Python, and AWS infrastructure
-          - worked with huge geographic datasets like OpenStreetMap, OpenAddresses, and GeoNames
-
-      # -
-        # title: Programming Mentor/TA
-        # organisation: "[CSTUY](https://cstuy.org/)"
-        # from: 10/2013
-        # to: 05/2014
-        # duration: 8 months
-        # details:
-          # - mentored 25 high school students at weekly, three-hour programming sessions
-          # - helped teach Python, databases, simple web-dev, and basic computer science
-
-  # other_projects:
-    # items:
-      # -
-        # name: portfolio
-        # description: "a collection of all my personal work. <<github.com/sevko/portfolio>>"
