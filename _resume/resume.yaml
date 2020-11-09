@@ -3,7 +3,7 @@ familyname: Kozak
 github_id: github.com/sevko
 linkedin_id: linkedin.com/in/sevko
 bio_data:
-  email: severyn.kozak@alum.mit.edu
+  email: sev@alum.mit.edu
   website: sevko.io
   skills:
     details:
@@ -31,7 +31,7 @@ bio_data:
           - Flask
           - Node.js
       -
-        type: Experience Areas
+        type: Experience
         items:
           - algorithmic trading
           - HPC
@@ -92,9 +92,8 @@ bio_data:
         to: Aug 2019
         duration: 3 months
         description:
-          Algorithmic options market-making on the KRX in a prop-shop setting. Learned options trading mechanics,
-          as well as our models and strategies. Solved problems across our stack, in trading, simulation, viewers, and
-          infrastructure.
+          Algorithmic options market-making on the KRX in a prop-shop setting. Solved problems across our stack, in
+          trading strategies, simulation, viewers, and infrastructure.
 
       -
         title: Systems Engineering Intern
@@ -117,8 +116,8 @@ bio_data:
         details:
           - "automated our product for CI integration: wrote a backend API and Java client library, plugins for Gradle
             and Jenkins, and helped make a demo video for clients"
-          - researched how to globally map Java crypto provider versions to the documented vulnerabilities that affect
-            them, using OpenJDK security reports, CVE databases, and automated vulnerability tests
+          - researched how to map Java crypto-provider versions to their known vulnerabilities, using OpenJDK security
+            reports, CVE databases, and automated vulnerability tests
 
       -
         title: Software Engineering Intern
@@ -141,6 +140,5 @@ bio_data:
           gap year.
         details:
           - developed our Node.js/Elasticsearch-based geocoder, [Pelias](https://github.com/pelias)
-          - reduced data build times from days to hours, improved search quality, added new datasets, etc.
           - worked on our high-volume map [vector tile service](https://mapzen.com/projects/vector-tiles)'s
             PostgreSQL, Python, and AWS infrastructure

@@ -61,11 +61,16 @@
 	<%#skills%>
 		\section{\textsc{Skills}}
 		\vspace*{-0.1cm}
-		<%#details%>
-			\cvitem{}{\textbf{<%type%>}: <%#items%><%name%><%^last%>, <%/last%><%/items%>}
-		<%/details%>
+		{
+			\renewcommand\arraystretch{1.3}
+			\begin{tabular}{ p{0.15\linewidth}  p{0.85\linewidth} }
+				<%#details%>
+					\textbf{<%type%>} & <%#items%><%name%><%^last%>, <%/last%><%/items%>} \\
+					% \vspace{0.1cm}
+				<%/details%>
+			\end{tabular}
+		}
 	<%/skills%>
-	% \vspace*{0.1cm}
 
 	<%#experience%>
 		\section{\textsc{Experience}}
@@ -84,7 +89,7 @@
 						\item <%& .%>
 					<%/details%>
 				\end{itemize}
-				\vspace*{-.3cm}
+				\vspace*{-.2cm}
 			}
 		<%/items%>
 		\vspace*{.3cm}
@@ -95,7 +100,7 @@
 		\section{\textsc{##education##}}
 		\vspace*{0.0cm}
 		<%#schools%>
-			\vspace*{-0.4cm}
+			\vspace*{-0.3cm}
 			\cventry
 			{\textnormal{<%&graduation_year%>}}
 			{\textnormal{\textbf{<%institution%>}} <%#gpa%>\textnormal{, ##gpa##:
