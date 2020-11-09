@@ -3,6 +3,10 @@ familyname: Kozak
 github_id: github.com/sevko
 linkedin_id: linkedin.com/in/sevko
 bio_data:
+  firstname: Severyn
+  familyname: Kozak
+  github_id: github.com/sevko
+  linkedin_id: linkedin.com/in/sevko
   email: sev@alum.mit.edu
   website: sevko.io
   skills:
@@ -98,12 +102,10 @@ bio_data:
         title: Software Engineering Intern
         organisation: "[Cryptosense](https://cryptosense.com/) (Paris)"
         when: summer 2017
-        description: |
+        description: >-
           Worked on software that automatically identifies cryptographic vulnerabilities in Java software. Automated our
-          product for CI integration: wrote a backend API and Java client library, plugins for Gradle and Jenkins, and
-          helped make a demo video for clients.  Researched how to map Java crypto-provider versions to their known
-          vulnerabilities, using OpenJDK security reports, CVE databases, and automated vulnerability tests.
-
+          product for CI integration, writing backend APIs and build-system plugins. Researched how to map Java
+          crypto-provider versions to their known vulnerabilities.
       -
         title: Software Engineering Intern
         organisation: "[MongoDB](https://mongodb.com) (NYC)"

@@ -5,7 +5,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage{changepage}
-\usepackage[left=1.3in,right=1.3in,top=0.9in,bottom=0,scale=0.8]{geometry}
+\usepackage[left=1in,right=1in,top=0.7in,bottom=0,scale=0.8]{geometry}
 \usepackage{multicol}
 
 \usepackage[dvipsnames]{xcolor}
@@ -20,7 +20,7 @@
 
 \usepackage{enumitem}
 \setlist{leftmargin=7mm,topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex}
-\definecolor{mylightgray}{HTML}{828282}
+\definecolor{mylightgray}{HTML}{888888}
 
 % Remove all of the moderncv icons.
 \renewcommand*{\addresssymbol} {}
@@ -58,17 +58,16 @@
 \renewcommand{\labelitemi}{{\Tiny$\bullet$}}
 
 \begin{document}
-	% \vspace*{-2.3cm}
 	\maketitle
 
 	% \vspace*{-1.5cm}
-	\vspace*{-1.3cm}
+	\vspace*{-1.4cm}
 	<%#skills%>
 		\section{\textsc{Skills}}
 		% \vspace*{-0.1cm}
 		{
 			\renewcommand\arraystretch{1.3}
-			\begin{tabular}{ p{0.2\linewidth}  p{0.8\linewidth} }
+			\begin{tabular}{ p{0.16\linewidth}  p{0.84\linewidth} }
 				<%#details%>
 					\textbf{<%type%>} & <%#items%><%name%><%^last%>, <%/last%><%/items%>} \\
 					% \vspace{0.1cm}
