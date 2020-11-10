@@ -3,7 +3,11 @@ familyname: Kozak
 github_id: github.com/sevko
 linkedin_id: linkedin.com/in/sevko
 bio_data:
-  email: severyn.kozak@alum.mit.edu
+  firstname: Severyn
+  familyname: Kozak
+  github_id: github.com/sevko
+  linkedin_id: linkedin.com/in/sevko
+  email: sev@alum.mit.edu
   website: sevko.io
   skills:
     details:
@@ -31,7 +35,7 @@ bio_data:
           - Flask
           - Node.js
       -
-        type: Experience Areas
+        type: Experience
         items:
           - algorithmic trading
           - HPC
@@ -45,7 +49,7 @@ bio_data:
           - AI
           - inference
           - web
-          - GIS
+          - geographic information systems (GIS)
           - various math
 
   education:
@@ -56,11 +60,11 @@ bio_data:
         graduation_year: "2019-'20"
         details:
           - TA for 6.172 Performance Engineering
-          - Ultra-low software performance variability research with the Supertech group ([thesis](https://dspace.mit.edu/handle/1721.1/127419))
+          - Ultra-low performance variability research with the Supertech group ([thesis](https://dspace.mit.edu/handle/1721.1/127419))
 
       -
         institution: MIT
-        degree: B.S. in Computer Science (course 6-3), Minor in Mathematics (course 18)
+        degree: B.S. in Computer Science, Minor in Mathematics
         graduation_year: "2015-'19"
         details:
           - Varsity Lighweight Rowing (4 years)
@@ -75,57 +79,46 @@ bio_data:
       -
         title: Software Engineer
         organisation: "[Ansatz Capital](https://ansatz.capital/) (NYC)"
-        from: Aug 2020
-        to: now
+        when: Sep 2020 - now
         description: Quantitative development and high-performance software engineering for high-frequency trading.
 
-        # duration: 3 months
-        # description:
-          # Algorithmic options market-making on the KRX in a prop-shop setting. Learned options trading mechanics,
-          # as well as our models and strategies. Solved problems across our stack, in trading, simulation, viewers, and
-          # infrastructure.
+      -
+        title: Contract Software Developer
+        organisation_custom: ", self-employed (remote)"
+        when: summer 2020
+        description:
+          Developed a [web-security API](https://typodomains.com) for domain owners to analyze the threat level of
+          typo’d domains. Developed a baby name website that combines public name datasets
+          with multilingual translations, machine-learned ethnic breakdowns, suggestions for similar names, and more.
 
       -
         title: Trading/Engineering Intern
         organisation: "[Tsuru Capital](https://www.tsurucapital.com/en/) (Tokyo)"
-        from: Jun 2019
-        to: Aug 2019
-        duration: 3 months
+        when: summer 2019
         description:
-          Algorithmic options market-making on the KRX in a prop-shop setting. Learned options trading mechanics,
-          as well as our models and strategies. Solved problems across our stack, in trading, simulation, viewers, and
-          infrastructure.
+          Algorithmic options market-making on the KRX in a prop-shop setting. Solved problems across our stack, in
+          trading strategies, simulation, viewers, and infrastructure.
 
       -
         title: Systems Engineering Intern
         organisation: "[Tower Research Capital](https://www.tower-research.com/) (NYC)"
-        from: Jun 2018
-        to: Aug 2018
-        duration: 3 months
-        description: Worked on our core trading infrastructure.
-        details:
-          - improved the performance of order placement in strategies with sparse order patterns
-          - dealt with large C++ codebases, low-level optimization, and rigorous performance testing
+        when: summer 2018
+        description:
+          Worked on core trading infrastructure. Improved the performance of order placement in strategies with sparse
+          order patterns. Dealt with large C++ codebases, low-level optimization, and rigorous performance testing.
 
       -
         title: Software Engineering Intern
         organisation: "[Cryptosense](https://cryptosense.com/) (Paris)"
-        from: Jun 2017
-        to: Aug 2017
-        duration: 3 months
-        description: Worked on software that automatically identifies cryptographic vulnerabilities in Java software.
-        details:
-          - "automated our product for CI integration: wrote a backend API and Java client library, plugins for Gradle
-            and Jenkins, and helped make a demo video for clients"
-          - researched how to globally map Java crypto provider versions to the documented vulnerabilities that affect
-            them, using OpenJDK security reports, CVE databases, and automated vulnerability tests
-
+        when: summer 2017
+        description: >-
+          Worked on software that automatically identifies cryptographic vulnerabilities in Java software. Automated our
+          product for CI integration, writing backend APIs and build-system plugins. Researched how to map Java
+          crypto-provider versions to their known vulnerabilities.
       -
         title: Software Engineering Intern
         organisation: "[MongoDB](https://mongodb.com) (NYC)"
-        from: Jun 2016
-        to: Aug 2016
-        duration: 3 months
+        when: summer 2016
         description:
           Worked on performance regression testing at MongoDB. Improved our test analysis, which identifies
           performance regressions based on diagnostic data from stress tests (resource usage, throughput, etc.)
@@ -133,14 +126,9 @@ bio_data:
       -
         title: Software Engineering Intern
         organisation: "[Mapzen](https://mapzen.com/) (NYC)"
-        from: Jul 2014
-        to: Jun 2015
-        duration: 1 year
+        when: 'Jul 2014 - Jun 2015'
         description:
           Interned at Mapzen, an open-source and open-data geographic software startup, during my
-          gap year.
-        details:
-          - developed our Node.js/Elasticsearch-based geocoder, [Pelias](https://github.com/pelias)
-          - reduced data build times from days to hours, improved search quality, added new datasets, etc.
-          - worked on our high-volume map [vector tile service](https://mapzen.com/projects/vector-tiles)'s
-            PostgreSQL, Python, and AWS infrastructure
+          gap year. Worked on our Node.js/Elasticsearch-based geocoder, [Pelias](https://github.com/pelias), as well our
+          high-volume map [vector tile service](https://mapzen.com/projects/vector-tiles)’s PostgreSQL, Python, and
+          AWS infrastructure.
