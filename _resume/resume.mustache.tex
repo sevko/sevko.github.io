@@ -5,7 +5,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage{changepage}
-\usepackage[left=1in,right=1in,top=0.7in,bottom=0,scale=0.8]{geometry}
+\usepackage[left=0.7in,right=0.7in,top=0.5in,bottom=0,scale=0.8]{geometry}
 \usepackage{multicol}
 
 \usepackage[dvipsnames]{xcolor}
@@ -64,7 +64,7 @@
 	\vspace*{-1.4cm}
 	<%#skills%>
 		\section{\textsc{Skills}}
-		% \vspace*{-0.1cm}
+		\vspace*{-0.1cm}
 		{
 			\renewcommand\arraystretch{1.3}
 			\begin{tabular}{ p{0.16\linewidth}  p{0.84\linewidth} }
@@ -78,12 +78,14 @@
 
 	<%#experience%>
 		\section{\textsc{Experience}}
-		\vspace*{-0.4cm}
+		\vspace*{-0.5cm}
 
 		<%#items%>
 		\cventry
-			{\textnormal{\textcolor{mylightgray}{<%when%>}}}
-			{\textnormal{{\textbf{<%title%>} at <%organisation%>}}}
+			% {\textnormal{\textcolor{mylightgray}{<%when%>}}}
+			{\textit{<%when%>}}
+			{\textnormal{\textbf{<%title%>}<%#organisation%> at <%organisation%><%/organisation%><%^organisation%><%organisation_custom%><%/organisation%>
+			}}
 			{}
 			{<%location%>}
 			{}
@@ -105,7 +107,7 @@
 	<%#education%>
 		\section{\textsc{##education##}}
 		<%#schools%>
-			\vspace*{-0.4cm}
+			\vspace*{-0.5cm}
 			\cventry
 			{\textnormal{<%&graduation_year%>}}
 			{\textnormal{\textbf{<%institution%>}} <%#gpa%>\textnormal{, ##gpa##:

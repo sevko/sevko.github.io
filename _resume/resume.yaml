@@ -49,7 +49,7 @@ bio_data:
           - AI
           - inference
           - web
-          - GIS
+          - geographic information systems (GIS)
           - various math
 
   education:
@@ -81,6 +81,15 @@ bio_data:
         organisation: "[Ansatz Capital](https://ansatz.capital/) (NYC)"
         when: Sep 2020 - now
         description: Quantitative development and high-performance software engineering for high-frequency trading.
+
+      -
+        title: Contract Software Developer
+        organisation_custom: ", self-employed (remote)"
+        when: summer 2020
+        description:
+          Developed a [web-security API](https://typodomains.com) for domain owners to analyze the threat level of
+          typo’d domains. Developed a baby name website that combines public name datasets
+          with multilingual translations, machine-learned ethnic breakdowns, suggestions for similar names, and more.
 
       -
         title: Trading/Engineering Intern
