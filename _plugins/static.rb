@@ -13,7 +13,8 @@ module Jekyll
 		def render(context)
 			files_url = context.registers[:site].config['files_url']
 			page_context = context.environments.first['page']
-			if page_context.has_key?('static')
+            puts page_context.class
+			if page_context.key?('static')
 				static = page_context['static']
 			else
 				post_title = page_context['title']
