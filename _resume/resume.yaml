@@ -14,9 +14,9 @@ bio_data:
       -
         type: Languages
         items:
+          - C++
           - Python
           - C
-          - C++
           - Haskell
           - Go
           - x86
@@ -25,14 +25,14 @@ bio_data:
       -
         type: Tools
         items:
-          - Linux
-          - Git
-          - Nginx
-          - PostgreSQL
-          - Elasticsearch
           - AWS
+          - Linux
+          - Docker
+          - Kubernetes
+          - Git
+          - PostgreSQL
+          - Nginx
           - MongoDB
-          - Flask
           - Node.js
       -
         type: Experience
@@ -40,6 +40,7 @@ bio_data:
           - algorithmic trading
           - HPC
           - operating systems
+          - various math
           - distributed systems
           - security
           - crypto
@@ -50,7 +51,6 @@ bio_data:
           - inference
           - web
           - geographic information systems (GIS)
-          - various math
 
   education:
     schools:
@@ -80,7 +80,10 @@ bio_data:
         title: Software Engineer
         organisation: "[Ansatz Capital](https://ansatz.capital/) (NYC)"
         when: Sep 2020 - now
-        description: Quantitative development and high-performance software engineering for high-frequency trading.
+        description: >-
+          Quantitative development and high-performance software engineering for worldwide equities/futures/crypto HFT.
+          Signal/feature exploration and implementation, market expansion, bleeding-edge C++ optimization, research
+          library development, compute cluster/infrastructure management, trading monitoring and operations.
 
       -
         title: Contract Software Developer
