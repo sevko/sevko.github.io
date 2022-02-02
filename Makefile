@@ -16,6 +16,6 @@ publish: build
 	bash publish.sh
 
 serve:
-	jekyll serve
+	bundle exec jekyll serve --trace
 
 .PHONY: build serve publish

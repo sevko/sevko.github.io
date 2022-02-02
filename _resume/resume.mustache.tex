@@ -5,7 +5,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage{changepage}
-\usepackage[left=0.7in,right=0.7in,top=0.5in,bottom=0,scale=0.8]{geometry}
+\usepackage[left=0.6in,right=0.6in,top=0.5in,bottom=0,scale=0.8]{geometry}
 \usepackage{multicol}
 
 \usepackage[dvipsnames]{xcolor}
@@ -71,11 +71,11 @@
 			\begin{tabular}{ p{0.16\linewidth}  p{0.84\linewidth} }
 				<%#details%>
 					\textbf{<%type%>} & <%#items%><%name%><%^last%>, <%/last%><%/items%>} \\
-					% \vspace{0.1cm}
 				<%/details%>
 			\end{tabular}
 		}
 	<%/skills%>
+	\vspace*{-0.1cm}
 
 	<%#experience%>
 		\section{\textsc{Experience}}

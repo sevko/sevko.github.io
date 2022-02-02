@@ -91,8 +91,8 @@ bio_data:
         when: summer 2020
         description:
           Developed a [web-security API](https://typodomains.com) for domain owners to analyze the threat level of
-          typo’d domains. Developed a baby name website that combines public name datasets
-          with multilingual translations, machine-learned ethnic breakdowns, suggestions for similar names, and more.
+          typo’d domains. Developed a name website that combines public name datasets with multilingual translations,
+          machine-learned ethnic breakdowns, suggestions for similar names, and more.
 
       -
         title: Trading/Engineering Intern
