@@ -82,11 +82,13 @@ bio_data:
         when: Sep 2020 - now
         description: >-
           Quantitative development and high-performance software engineering for worldwide equities/futures/crypto HFT.
-          Signal/feature exploration and implementation, market expansion, bleeding-edge C++ optimization, research
-          library development, compute cluster/infrastructure management, trading monitoring and operations.
+          Productionizing/optimizing/improving strategies, signal/feature exploration and implementation, new market
+          expansion, bleeding-edge C++ optimization, research library development, compute cluster/infrastructure
+          development and management, trading monitoring and operations, strategy/infrastructure/hardware deployments
+          and upgrades.
 
       -
-        title: Contract Software Developer
+        title: Freelance Software Developer
         organisation_custom: ", self-employed (remote)"
         when: summer 2020
         description:
