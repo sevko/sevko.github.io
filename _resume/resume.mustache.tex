@@ -41,6 +41,7 @@
 	<%#raw_website%>\homepage{<%& .%>}<%/raw_website%>
 	<%#linkedin_id%>\social[linkedin][<%& .%>]{<%& .%>}<%/linkedin_id%>
 	<%#github_id%>\social[github][<%& .%>]{<%& .%>}<%/github_id%>
+	<%#stackoverflow_id%>\social[github][<%& .%>]{<%& .%>}<%/stackoverflow_id%>
 	<%#phone%>\phone{<%.%>}<%/phone%>
 
 % the ConTeXt symbol
@@ -79,7 +80,7 @@
 
 	<%#experience%>
 		\section{\textsc{Experience}}
-		\vspace*{-0.5cm}
+		% \vspace*{-0.5cm}
 
 		<%#items%>
 		\cventry
@@ -99,7 +100,7 @@
 						\item <%& .%>
 					<%/details%>
 				\end{itemize}
-				\vspace*{-.4cm}
+				\vspace{-0.1cm}
 			}
 		<%/items%>
 		\vspace*{.1cm}
@@ -108,7 +109,7 @@
 	<%#education%>
 		\section{\textsc{##education##}}
 		<%#schools%>
-			\vspace*{-0.5cm}
+			% \vspace*{-0.5cm}
 			\cventry
 			{\textnormal{<%&graduation_year%>}}
 			{\textnormal{\textbf{<%institution%>}} <%#gpa%>\textnormal{, ##gpa##:

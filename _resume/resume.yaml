@@ -7,6 +7,7 @@ bio_data:
   familyname: Kozak
   github_id: github.com/sevko
   linkedin_id: linkedin.com/in/sevko
+  stackoverflow_id: stackoverflow.com/u/2398123/
   email: sev@alum.mit.edu
   website: sevko.io
   skills:
@@ -50,7 +51,6 @@ bio_data:
           - AI
           - inference
           - web
-          - geographic information systems (GIS)
 
   education:
     schools:
@@ -67,7 +67,7 @@ bio_data:
         degree: B.S. in Computer Science, Minor in Mathematics
         graduation_year: "2015-'19"
         details:
-          - Varsity Lighweight Rowing (4 years)
+          - Varsity Lightweight Rowing (4 years)
           - Parallel Computing research on the Cilk platform with the Supertech group
 
       -
